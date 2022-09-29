@@ -153,7 +153,7 @@ library(gert)
 
     ## Global config: /home/matt/.gitconfig
 
-    ## No default user configured
+    ## Default user: Matt Nunes <matt.nunes@gmail.com>
 
 ``` r
 gert::git_clone("https://github.com/christophsax/tsbox", path = "./tsbox-temp")
@@ -273,7 +273,7 @@ devtools::check("./tsbox-temp")
     ## • _R_CHECK_FORCE_SUGGESTS_          : FALSE
     ## • NOT_CRAN                          : true
     ## ── R CMD check ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ## * using log directory ‘/tmp/RtmpYAORiX/tsbox.Rcheck’
+    ## * using log directory ‘/tmp/RtmpGR3C9L/tsbox.Rcheck’
     ## * using R version 4.1.3 (2022-03-10)
     ## * using platform: x86_64-pc-linux-gnu (64-bit)
     ## * using session charset: UTF-8
@@ -350,11 +350,11 @@ devtools::check("./tsbox-temp")
     ## 
     ## Status: 1 NOTE
     ## See
-    ##   ‘/tmp/RtmpYAORiX/tsbox.Rcheck/00check.log’
+    ##   ‘/tmp/RtmpGR3C9L/tsbox.Rcheck/00check.log’
     ## for details.
 
     ## ── R CMD check results ─────────────────────────────────────────────────────────────────────────── tsbox 0.3.1.9004 ────
-    ## Duration: 1m 2.5s
+    ## Duration: 1m 1.4s
     ## 
     ## ❯ checking R code for possible problems ... NOTE
     ##   dts_first_of_period: no visible binding for global variable ‘time.orig’
@@ -402,93 +402,93 @@ devtools::test("./tsbox-temp")
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 7 ] @ auto                                                                          
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 8 ] @ auto                                                                          
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 13 ] @ auto                                                                         
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 17 ] @ auto                                                                         
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 18 ] @ auto                                                                         
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 19 ] @ auto                                                                         
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 21 ] @ auto                                                                         
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 23 ] @ auto                                                                         
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 13 ] @ auto                                                                         
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 17 ] @ auto                                                                         
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 18 ] @ auto                                                                         
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 19 ] @ auto                                                                         
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 20 ] @ auto                                                                         
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 23 ] @ auto                                                                         
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 32 ] @ auto                                                                         
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 34 ] @ auto                                                                         
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 36 ] @ auto                                                                         
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 41 ] @ auto                                                                         
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 46 ] @ auto                                                                         
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 51 ] @ auto                                                                         
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 56 ] @ auto                                                                         
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 61 ] @ auto                                                                         
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 23 ] @ auto                                                                         
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 32 ] @ auto                                                                         
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 33 ] @ auto                                                                         
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 35 ] @ auto                                                                         
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 36 ] @ auto                                                                         
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 41 ] @ auto                                                                         
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 46 ] @ auto                                                                         
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 51 ] @ auto                                                                         
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 56 ] @ auto                                                                         
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 61 ] @ auto                                                                         
     ##                                                                                                                         
     ## ✔ |        58 | auto [3.8s]                                                                                             
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 64 ] Starting up...                                                                 
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 64 ] Starting up...                                                                 
     ##                                                                                                                         
-    ## ✔ |         5 | date_utils [0.1s]                                                                                       
+    ## ✔ |         5 | date_utils                                                                                              
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 69 ] Starting up...                                                                 
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 69 ] Starting up...                                                                 
     ##                                                                                                                         
     ## ✔ |         4 | defects                                                                                                 
     ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 73 ] Starting up...                                                                 
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 73 ] Starting up...                                                                 
     ##                                                                                                                         
     ## ✔ |         4 | dirty [0.1s]                                                                                            
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 77 ] Starting up...                                                                 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 80 ] @ edge                                                                         
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 77 ] Starting up...                                                                 
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 80 ] @ edge                                                                         
     ##                                                                                                                         
     ## ✔ |        82 | edge [1.3s]                                                                                             
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 159 ] Starting up...                                                                
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 166 ] @ error_handling                                                              
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 185 ] @ error_handling                                                              
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 159 ] Starting up...                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 166 ] @ error_handling                                                              
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 185 ] @ error_handling                                                              
     ##                                                                                                                         
     ## ✔ |        43 | error_handling [0.9s]                                                                                   
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 202 ] Starting up...                                                                
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 202 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |        16 | high_freq [0.3s]                                                                                        
     ## 
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 218 ] Starting up...                                                                
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 218 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |         8 | irregular [0.1s]                                                                                        
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 226 ] Starting up...                                                                
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 226 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |         4 | issues                                                                                                  
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 230 ] Starting up...                                                                
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 262 ] @ missing                                                                     
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 264 ] @ missing                                                                     
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 266 ] @ missing                                                                     
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 268 ] @ missing                                                                     
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 230 ] Starting up...                                                                
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 262 ] @ missing                                                                     
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 264 ] @ missing                                                                     
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 266 ] @ missing                                                                     
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 268 ] @ missing                                                                     
     ##                                                                                                                         
-    ## ✔ |        39 | missing [1.0s]                                                                                          
+    ## ✔ |        39 | missing [1.1s]                                                                                          
     ## 
     ##                                                                                                                         
     ## ✔ |         2 | non_heuristic                                                                                           
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 271 ] Starting up...                                                                
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 275 ] @ nonstandard_cnames                                                          
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 292 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 271 ] Starting up...                                                                
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 275 ] @ nonstandard_cnames                                                          
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 292 ] @ nonstandard_cnames, nyc_flights                                             
     ##                                                                                                                         
     ## ✔ |        25 | nonstandard_cnames [1.5s]                                                                               
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
     ##                                                                                                                         
     ## ✔ |         2 | nyc_flights [0.9s]                                                                                      
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 314 ] @ object_conversion                                                           
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 314 ] @ object_conversion                                                           
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 324 ] @ object_conversion, readme                                                   
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 325 ] @ object_conversion, readme                                                   
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 327 ] @ object_conversion, readme                                                   
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 365 ] @ object_conversion, readme                                                   
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 323 ] @ object_conversion                                                           
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 323 ] @ object_conversion                                                           
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 324 ] @ object_conversion, readme                                                   
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 326 ] @ object_conversion, readme                                                   
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 327 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 365 ] @ object_conversion, readme                                                   
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
@@ -497,197 +497,208 @@ devtools::test("./tsbox-temp")
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 390 ] @ object_conversion, readme                                                   
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 392 ] @ object_conversion, readme                                                   
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 390 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 392 ] @ object_conversion, readme                                                   
     ##                                                                                                                         
     ## ✔ |        95 | object_conversion [4.2s]                                                                                
     ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 465 ] @ readme, subannual                                                           
-    ##                                                                                                                         
-    ## ✔ |         2 | readme [6.8s]                                                                                           
-    ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 572 ] @ subannual                                                                   
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 573 ] @ subannual                                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 465 ] @ readme, subannual                                                           
     ##                                                                                                                         
     ## ✔ |       180 | subannual [2.8s]                                                                                        
     ## 
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 574 ] @ readme                                                                      
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 574 ] @ readme                                                                      
     ##                                                                                                                         
     ## ✔ |        12 | time_conversion [0.1s]                                                                                  
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 590 ] @ tricky                                                                      
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 590 ] @ tricky                                                                      
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 601 ] @ tricky, ts_                                                                 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 602 ] @ tricky, ts_                                                                 
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 586 ] @ readme                                                                      
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 586 ] @ readme                                                                      
+    ##                                                                                                                         
+    ## ✔ |         2 | readme [7.1s]                                                                                           
+    ## 
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 592 ] @ tricky                                                                      
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 592 ] @ tricky                                                                      
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 601 ] @ tricky, ts_                                                                 
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 602 ] @ tricky, ts_                                                                 
     ##                                                                                                                         
     ## ✔ |        17 | tricky [0.6s]                                                                                           
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_, ts_bind                                                                
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 614 ] @ ts_, ts_bind                                                                
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 615 ] @ ts_, ts_bind                                                                
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 616 ] @ ts_, ts_bind                                                                
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 621 ] @ ts_, ts_bind                                                                
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 609 ] @ ts_, ts_bind                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 614 ] @ ts_, ts_bind                                                                
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 615 ] @ ts_, ts_bind                                                                
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 616 ] @ ts_, ts_bind                                                                
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 620 ] @ ts_, ts_bind                                                                
     ##                                                                                                                         
     ## ✔ |        16 | ts_bind [0.9s]                                                                                          
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
     ##                                                                                                                         
     ## ✔ |         2 | ts_c                                                                                                    
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 628 ] @ ts_, ts_chain                                                               
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 628 ] @ ts_, ts_chain                                                               
     ##                                                                                                                         
-    ## ✔ |         6 | ts_ [1.7s]                                                                                              
+    ## ✔ |         6 | ts_ [1.6s]                                                                                              
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 629 ] @ ts_chain                                                                    
     ##                                                                                                                         
     ## ✔ |         1 | ts_default                                                                                              
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 631 ] @ ts_chain                                                                    
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 631 ] @ ts_chain                                                                    
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
     ##                                                                                                                         
     ## ✔ |         3 | ts_chain [0.3s]                                                                                         
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period, ts_frequency                                            
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 636 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 636 ] @ ts_first_of_period, ts_frequency                                            
     ##                                                                                                                         
     ## ✔ |        11 | ts_frequency [0.7s]                                                                                     
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 650 ] @ ts_first_of_period, ts_index                                                
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 650 ] @ ts_first_of_period, ts_index                                                
     ##                                                                                                                         
-    ## ✔ |         7 | ts_first_of_period [1.0s]                                                                               
+    ## ✔ |         7 | ts_first_of_period [1.2s]                                                                               
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 653 ] @ ts_index                                                                    
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 653 ] @ ts_index                                                                    
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 657 ] @ ts_index, ts_lag                                                            
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 662 ] @ ts_index, ts_lag                                                            
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 654 ] @ ts_index                                                                    
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 654 ] @ ts_index                                                                    
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 656 ] @ ts_index, ts_lag                                                            
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 661 ] @ ts_index, ts_lag                                                            
     ##                                                                                                                         
     ## ✔ |        10 | ts_index [0.9s]                                                                                         
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 670 ] @ ts_lag                                                                      
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 670 ] @ ts_lag                                                                      
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 669 ] @ ts_lag                                                                      
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 669 ] @ ts_lag                                                                      
     ##                                                                                                                         
-    ## ✔ |        12 | ts_lag [0.9s]                                                                                           
+    ## ✔ |        12 | ts_lag [1.0s]                                                                                           
     ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 676 ] @ ts_long_wide                                                                
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 676 ] @ ts_long_wide                                                                
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 677 ] @ ts_long_wide                                                                
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 677 ] @ ts_long_wide                                                                
     ##                                                                                                                         
     ## ✔ |         1 | ts_low_freq                                                                                             
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 677 ] @ ts_long_wide                                                                
-    ##                                                                                                                         
-    ## ✔ |         3 | ts_na_omit                                                                                              
-    ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 681 ] @ ts_long_wide                                                                
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 681 ] @ ts_long_wide                                                                
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 678 ] @ ts_long_wide                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 678 ] @ ts_long_wide                                                                
     ##                                                                                                                         
     ## ✔ |         6 | ts_long_wide [0.4s]                                                                                     
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 683 ] @ ts_pc, ts_pick                                                              
+    ##                                                                                                                         
+    ## ✔ |         3 | ts_na_omit                                                                                              
+    ## 
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 682 ] @ ts_pc                                                                       
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 682 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         4 | ts_pick [0.2s]                                                                                          
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 688 ] @ ts_pc, ts_plot                                                              
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 688 ] @ ts_pc, ts_plot                                                              
     ##                                                                                                                         
-    ## ✔ |         1 | ts_plot [0.2s]                                                                                          
+    ## ✔ |         1 | ts_plot [0.1s]                                                                                          
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 689 ] @ ts_pc                                                                       
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 689 ] @ ts_pc                                                                       
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 690 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         7 | ts_regular [0.2s]                                                                                       
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 698 ] @ ts_pc                                                                       
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 698 ] @ ts_pc                                                                       
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 698 ] @ ts_pc                                                                       
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 698 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         2 | ts_scale                                                                                                
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 715 ] @ ts_pc, ts_span                                                              
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 717 ] @ ts_pc, ts_span                                                              
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 722 ] @ ts_pc, ts_span                                                              
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 704 ] @ ts_pc, ts_span                                                              
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 715 ] @ ts_pc, ts_span                                                              
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 717 ] @ ts_pc, ts_span                                                              
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 722 ] @ ts_pc, ts_span                                                              
     ##                                                                                                                         
-    ## ✔ |        16 | ts_span [0.9s]                                                                                          
+    ## ✔ |        16 | ts_span [1.0s]                                                                                          
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 723 ] @ ts_pc                                                                       
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 723 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         7 | ts_summary [0.2s]                                                                                       
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 732 ] @ ts_pc, tsibble                                                              
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 733 ] @ ts_pc, tsibble                                                              
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 745 ] @ ts_pc, tsibble                                                              
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 732 ] @ ts_pc, tsibble                                                              
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 732 ] @ ts_pc, tsibble                                                              
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 734 ] @ ts_pc, tsibble                                                              
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 746 ] @ ts_pc, tsibble                                                              
     ##                                                                                                                         
-    ## ✔ |        25 | ts_pc [2.7s]                                                                                            
+    ## ✔ |        25 | ts_pc [2.9s]                                                                                            
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 749 ] @ tsibble                                                                     
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 749 ] @ tsibble                                                                     
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 751 ] @ tsibble, tslist                                                             
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 748 ] @ tsibble                                                                     
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 748 ] @ tsibble                                                                     
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 750 ] @ tsibble, tslist                                                             
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 751 ] @ tsibble, tslist                                                             
     ##                                                                                                                         
     ## ✔ |         2 | tslist [0.2s]                                                                                           
     ## 
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 752 ] @ tsibble                                                                     
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 752 ] @ tsibble                                                                     
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 752 ] @ tsibble                                                                     
     ##                                                                                                                         
     ## ✔ |         1 | tzone                                                                                                   
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble, units                                                              
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 761 ] @ tsibble, units                                                              
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 764 ] @ tsibble, units                                                              
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble, units                                                              
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 764 ] @ tsibble, units                                                              
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
     ##                                                                                                                         
-    ## ✔ |        13 | tsibble [2.2s]                                                                                          
+    ## ✔ |        13 | tsibble [2.3s]                                                                                          
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 773 ] @ units                                                                       
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ##                                                                                                                         
-    ## ✔ |        17 | units [2.6s]                                                                                            
+    ## ✔ |        17 | units [3.4s]                                                                                            
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ] Starting up...                                                                
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ] Starting up...                                                                
     ##                                                                                                                         
     ## ══ Results ═════════════════════════════════════════════════════════════════════════════════════════════════════════════
-    ## Duration: 28.5 s
+    ## Duration: 29.7 s
     ## 
     ## [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ]
 
@@ -816,1874 +827,20 @@ ts_plot(EuStockMarkets)
 ![](tsbox-review_files/figure-gfm/unnamed-chunk-4-3.png)<!-- -->
 
 ``` r
-ts_prcomp(EuStockMarkets)
+head(ts_prcomp(EuStockMarkets))
 ```
 
     ## Time Series:
     ## Start = c(1991, 130) 
-    ## End = c(1998, 169) 
+    ## End = c(1991, 135) 
     ## Frequency = 260 
-    ##                   PC1           PC2           PC3           PC4
-    ## 1991.496 -1.893408167 -2.507029e-01 -1.401344e-01  0.0309715878
-    ## 1991.500 -1.907712736 -2.088328e-01 -1.355814e-01  0.0264487615
-    ## 1991.504 -1.947691149 -1.726866e-01 -1.569514e-01  0.0243434330
-    ## 1991.508 -1.936312385 -1.461250e-01 -1.611058e-01  0.0364156941
-    ## 1991.512 -1.916887631 -1.579422e-01 -1.419475e-01  0.0392050032
-    ## 1991.515 -1.941546410 -1.582128e-01 -1.509523e-01  0.0366749724
-    ## 1991.519 -1.900856278 -1.725771e-01 -1.411733e-01  0.0472364918
-    ## 1991.523 -1.860324642 -1.892270e-01 -1.236672e-01  0.0484882455
-    ## 1991.527 -1.866172480 -1.841819e-01 -1.208512e-01  0.0503843875
-    ## 1991.531 -1.862049107 -1.895245e-01 -1.368855e-01  0.0405064573
-    ## 1991.535 -1.836289721 -1.759159e-01 -1.157881e-01  0.0510424038
-    ## 1991.538 -1.829915279 -1.549027e-01 -9.906915e-02  0.0532643688
-    ## 1991.542 -1.830429950 -1.562721e-01 -8.907064e-02  0.0528454661
-    ## 1991.546 -1.840071160 -1.621312e-01 -9.197396e-02  0.0412169347
-    ## 1991.550 -1.836222738 -1.736044e-01 -9.372846e-02  0.0398775642
-    ## 1991.554 -1.828522081 -1.638988e-01 -8.604602e-02  0.0504002399
-    ## 1991.558 -1.803647235 -1.542334e-01 -6.952806e-02  0.0591001736
-    ## 1991.562 -1.808911340 -1.727926e-01 -5.921874e-02  0.0584136185
-    ## 1991.565 -1.811137984 -1.757286e-01 -5.325144e-02  0.0545662885
-    ## 1991.569 -1.822031728 -1.537478e-01 -4.941540e-02  0.0572646762
-    ## 1991.573 -1.826384870 -1.368338e-01 -5.313067e-02  0.0589069080
-    ## 1991.577 -1.820851247 -1.344190e-01 -6.141216e-02  0.0616947419
-    ## 1991.581 -1.824135454 -1.354988e-01 -6.837957e-02  0.0592796957
-    ## 1991.585 -1.811845241 -1.503659e-01 -5.996402e-02  0.0606551069
-    ## 1991.588 -1.806041918 -1.435624e-01 -5.441113e-02  0.0620200783
-    ## 1991.592 -1.818697316 -1.482369e-01 -6.783953e-02  0.0609045656
-    ## 1991.596 -1.833578180 -1.522849e-01 -6.946419e-02  0.0560450038
-    ## 1991.600 -1.791573304 -1.692769e-01 -5.431828e-02  0.0691119865
-    ## 1991.604 -1.784744576 -1.771419e-01 -4.700641e-02  0.0697755140
-    ## 1991.608 -1.802058996 -1.853555e-01 -7.022375e-02  0.0570187733
-    ## 1991.612 -1.810431507 -1.825672e-01 -6.754503e-02  0.0568174834
-    ## 1991.615 -1.766611500 -2.127548e-01 -5.743496e-02  0.0709540079
-    ## 1991.619 -1.742080591 -2.134012e-01 -3.742912e-02  0.0753265297
-    ## 1991.623 -1.734268735 -2.079103e-01 -3.598447e-02  0.0776035183
-    ## 1991.627 -1.736450092 -2.076641e-01 -3.227624e-02  0.0850887532
-    ## 1991.631 -2.002835792 -8.921046e-02 -4.456998e-02  0.0614222277
-    ## 1991.635 -1.939845995 -1.272560e-01 -3.216717e-02  0.0543248464
-    ## 1991.638 -1.805019941 -1.859254e-01 -2.241057e-02  0.0773963923
-    ## 1991.642 -1.758486604 -2.077460e-01 -8.412462e-03  0.0851087784
-    ## 1991.646 -1.725577933 -2.151565e-01 -6.683194e-04  0.0893782346
-    ## 1991.650 -1.699050494 -2.414808e-01  5.881354e-04  0.0913895175
-    ## 1991.654 -1.718694758 -2.496316e-01 -8.268619e-03  0.0854984105
-    ## 1991.658 -1.709759766 -2.487237e-01 -8.452411e-03  0.0845530530
-    ## 1991.662 -1.693541608 -2.470553e-01  1.183776e-03  0.0846596066
-    ## 1991.665 -1.685142133 -2.518414e-01  1.074686e-02  0.0871097832
-    ## 1991.669 -1.668095522 -2.321531e-01  2.719168e-02  0.1037093341
-    ## 1991.673 -1.663794414 -2.517151e-01  2.475087e-02  0.1016855762
-    ## 1991.677 -1.681556789 -2.377479e-01  2.030429e-02  0.0990307115
-    ## 1991.681 -1.675468565 -2.491039e-01  2.476462e-02  0.0977472202
-    ## 1991.685 -1.683961349 -2.365274e-01  2.439751e-02  0.1020765465
-    ## 1991.688 -1.700091633 -2.389967e-01  1.933110e-02  0.0958275100
-    ## 1991.692 -1.732588586 -2.314312e-01  6.451963e-03  0.0854550085
-    ## 1991.696 -1.730326239 -2.361211e-01  3.076086e-03  0.0828827821
-    ## 1991.700 -1.704939880 -2.527643e-01  2.086794e-02  0.0896398749
-    ## 1991.704 -1.698418626 -2.817482e-01  1.986093e-02  0.0815597433
-    ## 1991.708 -1.712846321 -2.982992e-01  1.332570e-02  0.0808225643
-    ## 1991.712 -1.716526729 -3.051886e-01  3.742364e-03  0.0782831730
-    ## 1991.715 -1.741527151 -3.012044e-01  3.501344e-03  0.0764674027
-    ## 1991.719 -1.727309710 -3.130349e-01  1.072578e-02  0.0785141549
-    ## 1991.723 -1.720026891 -3.126010e-01  2.592194e-02  0.0776609876
-    ## 1991.727 -1.729171836 -3.294302e-01  1.533485e-02  0.0735057143
-    ## 1991.731 -1.730190726 -3.276732e-01  5.555153e-03  0.0786127352
-    ## 1991.735 -1.728613855 -3.066323e-01  1.489460e-02  0.0894795864
-    ## 1991.738 -1.739013608 -3.071414e-01  2.117791e-02  0.0888778397
-    ## 1991.742 -1.730143725 -3.141516e-01  2.843196e-02  0.0861912602
-    ## 1991.746 -1.726076701 -2.973228e-01  4.456652e-02  0.0941783513
-    ## 1991.750 -1.704017759 -2.919156e-01  5.890104e-02  0.1011240649
-    ## 1991.754 -1.708626339 -2.779316e-01  5.216472e-02  0.0924977217
-    ## 1991.758 -1.727882183 -2.734189e-01  3.478213e-02  0.0860074312
-    ## 1991.762 -1.742536826 -2.532336e-01  2.644634e-02  0.0849437533
-    ## 1991.765 -1.774684840 -2.593001e-01  1.703836e-02  0.0729129516
-    ## 1991.769 -1.771892172 -2.631065e-01  2.620903e-02  0.0704722633
-    ## 1991.773 -1.791658348 -2.657066e-01  2.470861e-02  0.0607692686
-    ## 1991.777 -1.800686416 -2.748124e-01  1.804848e-02  0.0597198987
-    ## 1991.781 -1.814420727 -2.695658e-01  1.372099e-03  0.0514131669
-    ## 1991.785 -1.803527145 -2.577888e-01  1.057444e-02  0.0592209019
-    ## 1991.788 -1.774976645 -2.883776e-01  1.693698e-02  0.0634250979
-    ## 1991.792 -1.770490887 -2.929905e-01  3.117932e-02  0.0498037044
-    ## 1991.796 -1.774830325 -2.758653e-01  3.678801e-02  0.0484178183
-    ## 1991.800 -1.753651637 -2.777758e-01  4.509241e-02  0.0448279672
-    ## 1991.804 -1.780482634 -2.680431e-01  1.618048e-02  0.0389274258
-    ## 1991.808 -1.795932690 -2.661854e-01 -2.414612e-03  0.0396394808
-    ## 1991.812 -1.792468671 -2.560028e-01 -1.514935e-02  0.0428712897
-    ## 1991.815 -1.816830669 -2.760638e-01 -2.072926e-02  0.0236858872
-    ## 1991.819 -1.827796287 -2.913712e-01 -2.386606e-02  0.0284562757
-    ## 1991.823 -1.784342217 -2.886045e-01  5.749205e-03  0.0428849072
-    ## 1991.827 -1.784169105 -2.885497e-01 -5.188941e-03  0.0443526383
-    ## 1991.831 -1.765244645 -2.923015e-01  1.821744e-02  0.0555464732
-    ## 1991.835 -1.780897756 -2.928797e-01  1.389522e-02  0.0532260289
-    ## 1991.838 -1.794093860 -3.027940e-01  9.970230e-03  0.0461927421
-    ## 1991.842 -1.821746559 -2.951342e-01 -8.195708e-03  0.0388708053
-    ## 1991.846 -1.802738674 -2.938011e-01 -5.281586e-03  0.0431248333
-    ## 1991.850 -1.815931381 -2.821026e-01 -1.336197e-02  0.0367977646
-    ## 1991.854 -1.806424016 -2.827461e-01 -1.569651e-02  0.0388974913
-    ## 1991.858 -1.758322375 -2.933904e-01 -1.365025e-02  0.0451046489
-    ## 1991.862 -1.763662871 -2.960366e-01 -1.225620e-02  0.0429084784
-    ## 1991.865 -1.739008610 -2.835448e-01 -1.438048e-02  0.0509081483
-    ## 1991.869 -1.768817247 -2.846235e-01 -3.173898e-02  0.0383318031
-    ## 1991.873 -1.735431401 -3.050284e-01 -1.821979e-02  0.0457381782
-    ## 1991.877 -1.748084430 -3.065884e-01 -2.974377e-02  0.0407626106
-    ## 1991.881 -1.837364503 -2.613604e-01 -7.097489e-02  0.0331759981
-    ## 1991.885 -1.908009705 -2.278697e-01 -1.075977e-01  0.0221752647
-    ## 1991.888 -1.905456648 -2.207388e-01 -1.029769e-01  0.0273678098
-    ## 1991.892 -1.903307880 -2.305500e-01 -1.151878e-01  0.0320772006
-    ## 1991.896 -1.940078599 -2.093140e-01 -1.362521e-01  0.0332160040
-    ## 1991.900 -1.942688919 -2.087335e-01 -1.217589e-01  0.0416742268
-    ## 1991.904 -1.901182728 -2.323803e-01 -1.075168e-01  0.0425982023
-    ## 1991.908 -1.933102335 -2.325014e-01 -1.174593e-01  0.0342197661
-    ## 1991.912 -1.947195728 -2.396390e-01 -1.283109e-01  0.0278183664
-    ## 1991.915 -1.977096340 -2.256640e-01 -1.295886e-01  0.0257387513
-    ## 1991.919 -2.023915258 -1.899740e-01 -1.350150e-01  0.0284039232
-    ## 1991.923 -2.005121505 -2.027288e-01 -1.248851e-01  0.0220501116
-    ## 1991.927 -2.004029660 -1.876144e-01 -1.328814e-01  0.0196512276
-    ## 1991.931 -2.024732985 -1.848975e-01 -1.495789e-01  0.0216595288
-    ## 1991.935 -2.051112359 -1.720191e-01 -1.689643e-01  0.0159528148
-    ## 1991.938 -2.056020916 -1.292210e-01 -1.746676e-01  0.0242692595
-    ## 1991.942 -2.095032395 -1.039740e-01 -1.927806e-01  0.0170317388
-    ## 1991.946 -2.099276383 -1.241849e-01 -1.897979e-01  0.0161327333
-    ## 1991.950 -2.048196443 -1.331308e-01 -1.548251e-01  0.0280922395
-    ## 1991.954 -2.011512058 -1.374879e-01 -1.346438e-01  0.0335769271
-    ## 1991.958 -2.011934373 -1.549110e-01 -1.319048e-01  0.0265465964
-    ## 1991.962 -1.996926244 -1.794240e-01 -1.349030e-01  0.0258296589
-    ## 1991.965 -2.007753462 -1.830358e-01 -1.542726e-01  0.0211957737
-    ## 1991.969 -2.046545402 -1.671805e-01 -1.717579e-01  0.0146910898
-    ## 1991.973 -2.103947958 -1.391653e-01 -2.026841e-01  0.0031007568
-    ## 1991.977 -2.125710924 -1.266237e-01 -2.166818e-01 -0.0008251950
-    ## 1991.981 -2.041604418 -1.892771e-01 -1.564125e-01 -0.0011025979
-    ## 1991.985 -2.041604418 -1.892771e-01 -1.564125e-01 -0.0011025979
-    ## 1991.988 -2.021779812 -2.211602e-01 -1.417091e-01 -0.0015605347
-    ## 1991.992 -1.987078016 -1.954255e-01 -1.409466e-01  0.0065907283
-    ## 1991.996 -1.958036064 -2.217703e-01 -1.370923e-01  0.0050474658
-    ## 1992.000 -1.900559812 -2.124944e-01 -8.114018e-02  0.0326740043
-    ## 1992.004 -1.900559812 -2.124944e-01 -8.114018e-02  0.0326740043
-    ## 1992.008 -1.904352948 -1.917494e-01 -1.054327e-01  0.0415493104
-    ## 1992.012 -1.868288107 -2.081406e-01 -9.351211e-02  0.0314064840
-    ## 1992.015 -1.856530654 -2.367693e-01 -8.993910e-02  0.0233441908
-    ## 1992.019 -1.877897351 -2.319060e-01 -9.273304e-02  0.0204864849
-    ## 1992.023 -1.888784896 -2.515148e-01 -8.815867e-02  0.0142842347
-    ## 1992.027 -1.816398060 -2.964659e-01 -5.479231e-02  0.0201882721
-    ## 1992.031 -1.814348394 -3.118484e-01 -7.454607e-02  0.0145762927
-    ## 1992.035 -1.817376235 -2.878532e-01 -8.003786e-02  0.0242687285
-    ## 1992.038 -1.778712635 -2.974706e-01 -6.067891e-02  0.0304053689
-    ## 1992.042 -1.715278059 -3.213968e-01 -5.717224e-02  0.0332877138
-    ## 1992.046 -1.727944568 -3.024743e-01 -6.213063e-02  0.0415313332
-    ## 1992.050 -1.731998923 -3.074037e-01 -6.714583e-02  0.0481877340
-    ## 1992.054 -1.714693697 -3.105013e-01 -7.000459e-02  0.0563400752
-    ## 1992.058 -1.711318908 -3.133669e-01 -7.138875e-02  0.0540401858
-    ## 1992.062 -1.748221791 -2.892357e-01 -9.533028e-02  0.0437992010
-    ## 1992.065 -1.753631807 -2.840826e-01 -8.916328e-02  0.0433362806
-    ## 1992.069 -1.752434445 -3.075788e-01 -8.903370e-02  0.0357953500
-    ## 1992.073 -1.707809019 -3.151274e-01 -7.358396e-02  0.0456485944
-    ## 1992.077 -1.684692176 -3.374833e-01 -5.242686e-02  0.0502610402
-    ## 1992.081 -1.708910457 -3.278723e-01 -5.089554e-02  0.0509234185
-    ## 1992.085 -1.706813564 -3.184437e-01 -5.995985e-02  0.0590985232
-    ## 1992.088 -1.692043557 -3.078218e-01 -5.004523e-02  0.0648876451
-    ## 1992.092 -1.713393201 -2.892679e-01 -6.761884e-02  0.0613429430
-    ## 1992.096 -1.718730199 -2.903099e-01 -6.517615e-02  0.0571395379
-    ## 1992.100 -1.708925544 -3.069369e-01 -7.070977e-02  0.0504172750
-    ## 1992.104 -1.717189891 -3.052610e-01 -8.086822e-02  0.0388169894
-    ## 1992.108 -1.722971572 -3.160851e-01 -9.202412e-02  0.0322024146
-    ## 1992.112 -1.708333542 -3.084794e-01 -7.623888e-02  0.0362591254
-    ## 1992.115 -1.708430649 -3.050612e-01 -7.605717e-02  0.0275024389
-    ## 1992.119 -1.715889811 -3.100921e-01 -8.874402e-02  0.0268424239
-    ## 1992.123 -1.705459188 -3.307315e-01 -7.724198e-02  0.0238417776
-    ## 1992.127 -1.726209012 -3.222657e-01 -8.471381e-02  0.0260077571
-    ## 1992.131 -1.689490084 -3.289503e-01 -6.804436e-02  0.0367535454
-    ## 1992.135 -1.651190718 -3.609870e-01 -4.671380e-02  0.0429562012
-    ## 1992.138 -1.664191520 -3.775991e-01 -5.024870e-02  0.0376725196
-    ## 1992.142 -1.615848607 -4.207966e-01 -3.982460e-02  0.0406533971
-    ## 1992.146 -1.605766059 -4.360927e-01 -3.373840e-02  0.0380864333
-    ## 1992.150 -1.572590482 -4.440744e-01 -2.888906e-02  0.0462557133
-    ## 1992.154 -1.606550610 -4.205716e-01 -4.105412e-02  0.0390379513
-    ## 1992.158 -1.557803071 -4.471230e-01 -3.260550e-02  0.0510209624
-    ## 1992.162 -1.553360761 -4.531118e-01 -3.373391e-02  0.0474749580
-    ## 1992.165 -1.550247428 -4.489089e-01 -3.701712e-02  0.0421646139
-    ## 1992.169 -1.556033708 -4.483158e-01 -4.548071e-02  0.0400452738
-    ## 1992.173 -1.538532287 -4.472086e-01 -4.706179e-02  0.0477405874
-    ## 1992.177 -1.538080130 -4.564547e-01 -4.756317e-02  0.0425041160
-    ## 1992.181 -1.564460762 -4.490126e-01 -6.727973e-02  0.0404429317
-    ## 1992.185 -1.585213641 -4.460586e-01 -6.169398e-02  0.0412862951
-    ## 1992.188 -1.566649512 -4.497786e-01 -5.000060e-02  0.0530936027
-    ## 1992.192 -1.537933895 -4.591844e-01 -2.574806e-02  0.0592595098
-    ## 1992.196 -1.596926174 -4.554424e-01 -6.107048e-02  0.0406775146
-    ## 1992.200 -1.646171605 -4.382549e-01 -8.151837e-02  0.0310365819
-    ## 1992.204 -1.641132383 -4.534137e-01 -9.643603e-02  0.0214288122
-    ## 1992.208 -1.666535242 -4.328530e-01 -1.022769e-01  0.0187135967
-    ## 1992.212 -1.633396645 -4.381138e-01 -9.024724e-02  0.0208698302
-    ## 1992.215 -1.660683189 -4.318128e-01 -1.129521e-01  0.0086098676
-    ## 1992.219 -1.662504475 -4.196528e-01 -1.136377e-01  0.0018878890
-    ## 1992.223 -1.667020526 -4.215530e-01 -1.254946e-01 -0.0019938198
-    ## 1992.227 -1.717736320 -3.858163e-01 -1.427564e-01 -0.0050445503
-    ## 1992.231 -1.696054012 -3.908266e-01 -1.274222e-01 -0.0005040142
-    ## 1992.235 -1.662626611 -4.300660e-01 -1.063547e-01 -0.0004846468
-    ## 1992.238 -1.652120692 -4.339008e-01 -9.812875e-02 -0.0008387472
-    ## 1992.242 -1.685210580 -4.328454e-01 -1.050556e-01 -0.0146285902
-    ## 1992.246 -1.654861444 -4.565287e-01 -1.013040e-01 -0.0116168556
-    ## 1992.250 -1.661516249 -4.623312e-01 -1.116051e-01 -0.0140449819
-    ## 1992.254 -1.698325043 -4.620658e-01 -1.293384e-01 -0.0255911045
-    ## 1992.258 -1.676986978 -4.816084e-01 -1.347995e-01 -0.0256799220
-    ## 1992.262 -1.694029016 -4.966490e-01 -1.413579e-01 -0.0330632351
-    ## 1992.265 -1.642772744 -5.285452e-01 -1.276561e-01 -0.0241442010
-    ## 1992.269 -1.638972747 -5.263204e-01 -1.252109e-01 -0.0270614448
-    ## 1992.273 -1.719754436 -4.429593e-01 -1.564383e-01 -0.0279496266
-    ## 1992.277 -1.662103140 -4.674747e-01 -1.161422e-01 -0.0091008134
-    ## 1992.281 -1.556570368 -4.287479e-01 -2.887287e-02  0.0373883011
-    ## 1992.285 -1.560377785 -4.045587e-01 -2.203401e-02  0.0467446110
-    ## 1992.288 -1.541773197 -4.095209e-01 -1.538232e-02  0.0456058018
-    ## 1992.292 -1.495156151 -4.091600e-01  9.784055e-03  0.0547140095
-    ## 1992.296 -1.506234368 -3.935389e-01 -4.144129e-04  0.0567573735
-    ## 1992.300 -1.506234368 -3.935389e-01 -4.144129e-04  0.0567573735
-    ## 1992.304 -1.506234368 -3.935389e-01 -4.144129e-04  0.0567573735
-    ## 1992.308 -1.513906081 -4.054901e-01 -5.572230e-03  0.0573019980
-    ## 1992.312 -1.513368280 -4.182717e-01 -1.877826e-02  0.0457367021
-    ## 1992.315 -1.519145919 -4.084518e-01 -1.631597e-02  0.0406946743
-    ## 1992.319 -1.497820759 -3.996093e-01  6.723023e-03  0.0561794728
-    ## 1992.323 -1.481943066 -4.054348e-01  2.384660e-02  0.0602095824
-    ## 1992.327 -1.486502202 -4.265013e-01  3.582992e-02  0.0604114271
-    ## 1992.331 -1.449679106 -4.573446e-01  6.146425e-02  0.0577945894
-    ## 1992.335 -1.459584910 -4.548930e-01  5.341683e-02  0.0495974613
-    ## 1992.338 -1.456675433 -4.516411e-01  5.661361e-02  0.0517879693
-    ## 1992.342 -1.437915864 -4.618654e-01  5.838623e-02  0.0394624744
-    ## 1992.346 -1.427139032 -4.658549e-01  6.011535e-02  0.0350940365
-    ## 1992.350 -1.397587823 -4.432480e-01  7.104648e-02  0.0458905757
-    ## 1992.354 -1.379219712 -4.637693e-01  7.846304e-02  0.0498632831
-    ## 1992.358 -1.365406979 -4.482006e-01  9.363957e-02  0.0511751571
-    ## 1992.362 -1.341658777 -4.583753e-01  1.061381e-01  0.0495018027
-    ## 1992.365 -1.366508631 -4.500922e-01  9.190018e-02  0.0489835257
-    ## 1992.369 -1.376457366 -4.365354e-01  8.547800e-02  0.0462620476
-    ## 1992.373 -1.427740255 -4.029117e-01  5.616756e-02  0.0368624582
-    ## 1992.377 -1.442417522 -4.225178e-01  6.653761e-02  0.0373240957
-    ## 1992.381 -1.382519825 -4.466958e-01  6.430609e-02  0.0541978080
-    ## 1992.385 -1.410088154 -4.113474e-01  4.363303e-02  0.0603256707
-    ## 1992.388 -1.387478873 -4.151199e-01  4.164634e-02  0.0696181116
-    ## 1992.392 -1.407586015 -4.028038e-01  2.928574e-02  0.0690759308
-    ## 1992.396 -1.365440804 -4.336485e-01  3.963302e-02  0.0792470237
-    ## 1992.400 -1.361651150 -4.359686e-01  3.531041e-02  0.0839661312
-    ## 1992.404 -1.388351784 -4.194085e-01  2.808369e-02  0.0770250560
-    ## 1992.408 -1.410795547 -4.030747e-01  2.052112e-02  0.0772577854
-    ## 1992.412 -1.413041459 -4.055849e-01  1.805342e-02  0.0755668671
-    ## 1992.415 -1.381679452 -4.235286e-01  2.782001e-02  0.0828469678
-    ## 1992.419 -1.403220831 -4.069234e-01  1.747554e-02  0.0746274565
-    ## 1992.423 -1.389363159 -4.114028e-01  2.453918e-02  0.0752024256
-    ## 1992.427 -1.440819631 -3.835339e-01  1.471944e-03  0.0676475041
-    ## 1992.431 -1.435442141 -3.859908e-01 -1.854305e-04  0.0692987924
-    ## 1992.435 -1.455561310 -3.759158e-01 -1.419955e-02  0.0649658452
-    ## 1992.438 -1.467148174 -3.888663e-01 -2.693062e-02  0.0562422435
-    ## 1992.442 -1.495191307 -3.703730e-01 -4.065350e-02  0.0576948528
-    ## 1992.446 -1.503377907 -3.603009e-01 -4.769162e-02  0.0657967662
-    ## 1992.450 -1.546049541 -3.415462e-01 -6.724329e-02  0.0631565838
-    ## 1992.454 -1.545047337 -3.453302e-01 -7.936176e-02  0.0567603691
-    ## 1992.458 -1.569541091 -3.389419e-01 -8.076368e-02  0.0543062901
-    ## 1992.462 -1.538055936 -3.419974e-01 -6.685315e-02  0.0586406829
-    ## 1992.465 -1.572492028 -3.224271e-01 -8.496619e-02  0.0529348809
-    ## 1992.469 -1.608333082 -3.212349e-01 -1.146506e-01  0.0447126210
-    ## 1992.473 -1.575060107 -3.377854e-01 -9.078028e-02  0.0505343267
-    ## 1992.477 -1.625889646 -3.224057e-01 -1.218196e-01  0.0464085906
-    ## 1992.481 -1.611321818 -3.301733e-01 -1.109114e-01  0.0507664193
-    ## 1992.485 -1.629646428 -3.523688e-01 -1.167065e-01  0.0401377563
-    ## 1992.488 -1.596387885 -3.653995e-01 -9.178914e-02  0.0463173060
-    ## 1992.492 -1.620955192 -3.730442e-01 -9.913796e-02  0.0377394951
-    ## 1992.496 -1.632239272 -3.709970e-01 -1.176323e-01  0.0267617766
-    ## 1992.500 -1.633150922 -3.575166e-01 -1.189038e-01  0.0245456713
-    ## 1992.504 -1.664353124 -3.478317e-01 -1.490370e-01  0.0211215953
-    ## 1992.508 -1.676944828 -3.465104e-01 -1.645139e-01  0.0099185547
-    ## 1992.512 -1.645056956 -3.463574e-01 -1.592289e-01  0.0169059175
-    ## 1992.515 -1.677625806 -3.428192e-01 -1.792944e-01  0.0075472741
-    ## 1992.519 -1.659255020 -3.439905e-01 -1.561692e-01  0.0185110161
-    ## 1992.523 -1.709147582 -3.158265e-01 -1.758790e-01  0.0141788916
-    ## 1992.527 -1.677942524 -3.193216e-01 -1.591129e-01  0.0224624609
-    ## 1992.531 -1.685213124 -3.183315e-01 -1.588645e-01  0.0109205263
-    ## 1992.535 -1.704844827 -3.271351e-01 -1.516552e-01  0.0054478495
-    ## 1992.538 -1.702103323 -3.250310e-01 -1.505650e-01  0.0126396270
-    ## 1992.542 -1.703971883 -3.138794e-01 -1.528233e-01  0.0084087545
-    ## 1992.546 -1.710375880 -3.134723e-01 -1.532208e-01  0.0087074373
-    ## 1992.550 -1.803202291 -2.796674e-01 -1.886981e-01 -0.0068837401
-    ## 1992.554 -1.882952110 -2.556133e-01 -1.893926e-01 -0.0125747817
-    ## 1992.558 -1.871690496 -2.373163e-01 -1.897594e-01 -0.0217004871
-    ## 1992.562 -1.932496044 -2.090410e-01 -2.129027e-01 -0.0246947373
-    ## 1992.565 -1.925349415 -2.108255e-01 -1.929880e-01 -0.0289599211
-    ## 1992.569 -1.942952807 -2.241793e-01 -1.985079e-01 -0.0385261655
-    ## 1992.573 -1.936630151 -2.685361e-01 -2.053033e-01 -0.0508062622
-    ## 1992.577 -1.907386049 -2.700466e-01 -1.837020e-01 -0.0496479489
-    ## 1992.581 -1.834453526 -2.814768e-01 -1.524413e-01 -0.0393326352
-    ## 1992.585 -1.865654079 -2.627546e-01 -1.597919e-01 -0.0465989611
-    ## 1992.588 -1.904227452 -2.323959e-01 -1.739843e-01 -0.0524534468
-    ## 1992.592 -1.871095246 -2.614958e-01 -1.411686e-01 -0.0449609567
-    ## 1992.596 -1.869585619 -2.716442e-01 -1.503427e-01 -0.0531534918
-    ## 1992.600 -1.856619140 -2.923946e-01 -1.638833e-01 -0.0599072136
-    ## 1992.604 -1.871347333 -2.952488e-01 -1.703200e-01 -0.0681748727
-    ## 1992.608 -1.905242239 -2.897905e-01 -1.910048e-01 -0.0760823126
-    ## 1992.612 -1.954733837 -2.741018e-01 -1.952530e-01 -0.0939926388
-    ## 1992.615 -1.985748479 -2.590053e-01 -2.033437e-01 -0.1073178093
-    ## 1992.619 -2.004009041 -2.528861e-01 -2.019839e-01 -0.1118623728
-    ## 1992.623 -2.005152069 -2.352024e-01 -1.981637e-01 -0.1015290025
-    ## 1992.627 -1.951536830 -2.547343e-01 -1.653455e-01 -0.0858061920
-    ## 1992.631 -1.938401609 -2.474573e-01 -1.492884e-01 -0.0848447813
-    ## 1992.635 -1.980955283 -2.326842e-01 -1.575929e-01 -0.0965082471
-    ## 1992.638 -1.985163460 -2.260417e-01 -1.491012e-01 -0.0891690299
-    ## 1992.642 -2.010430892 -2.176142e-01 -1.439436e-01 -0.0868295647
-    ## 1992.646 -1.976032619 -2.396602e-01 -1.435010e-01 -0.0832516063
-    ## 1992.650 -2.083283821 -2.013325e-01 -1.739287e-01 -0.1022228625
-    ## 1992.654 -2.132589151 -1.906859e-01 -1.886704e-01 -0.1131291278
-    ## 1992.658 -2.126820409 -1.896205e-01 -1.933987e-01 -0.1045619923
-    ## 1992.662 -2.066449866 -1.971749e-01 -1.973176e-01 -0.0952568641
-    ## 1992.665 -2.062814473 -1.958009e-01 -1.997316e-01 -0.0958746648
-    ## 1992.669 -2.058410025 -1.916510e-01 -2.089151e-01 -0.0944831512
-    ## 1992.673 -2.082358363 -1.854435e-01 -2.140021e-01 -0.1031990357
-    ## 1992.677 -2.040628001 -2.261847e-01 -1.828318e-01 -0.1038095407
-    ## 1992.681 -1.928735852 -2.793749e-01 -1.215842e-01 -0.0749107895
-    ## 1992.685 -1.944271457 -2.882718e-01 -1.273747e-01 -0.0863531341
-    ## 1992.688 -1.932861056 -2.809876e-01 -1.255872e-01 -0.0876541459
-    ## 1992.692 -1.964686469 -2.794031e-01 -1.533869e-01 -0.1012698508
-    ## 1992.696 -1.984436327 -2.767910e-01 -1.538509e-01 -0.1060607975
-    ## 1992.700 -1.957329026 -2.910481e-01 -1.391062e-01 -0.1066855862
-    ## 1992.704 -1.911041769 -3.088256e-01 -1.085939e-01 -0.1036541799
-    ## 1992.708 -1.772813108 -3.701634e-01 -8.903066e-02 -0.0850872902
-    ## 1992.712 -1.847248846 -3.514403e-01 -1.253735e-01 -0.1030894299
-    ## 1992.715 -1.809451904 -3.759647e-01 -1.180440e-01 -0.1049416905
-    ## 1992.719 -1.763923372 -3.031379e-01 -5.424397e-02 -0.0785925884
-    ## 1992.723 -1.683689481 -2.962992e-01 -3.747023e-03 -0.0423371516
-    ## 1992.727 -1.754078810 -2.231497e-01 -1.900874e-02 -0.0539857343
-    ## 1992.731 -1.735848930 -2.154847e-01  4.708996e-03 -0.0535441536
-    ## 1992.735 -1.744660887 -2.109248e-01  7.602491e-03 -0.0678342999
-    ## 1992.738 -1.727438501 -1.888641e-01  3.551043e-02 -0.0531709687
-    ## 1992.742 -1.737554345 -2.185781e-01  5.028286e-02 -0.0722813148
-    ## 1992.746 -1.843881969 -1.461470e-01  4.429819e-03 -0.0834988760
-    ## 1992.750 -1.872000073 -9.061892e-02 -1.860959e-02 -0.0799595735
-    ## 1992.754 -1.881288270 -1.041762e-01 -1.310173e-02 -0.0896306408
-    ## 1992.758 -1.873262678 -7.524685e-02 -2.088512e-02 -0.0792337978
-    ## 1992.762 -1.928982658 -3.507452e-02 -5.108574e-02 -0.0824338832
-    ## 1992.765 -2.101189546 -5.461866e-03 -9.728863e-02 -0.1122808601
-    ## 1992.769 -2.059651913  2.087002e-02 -8.884963e-02 -0.1040228206
-    ## 1992.773 -1.992126569 -1.425331e-02 -5.907630e-02 -0.1067357963
-    ## 1992.777 -1.955236402 -2.722662e-02 -4.363397e-02 -0.0998203032
-    ## 1992.781 -1.969654516 -1.760650e-03 -4.761697e-02 -0.1061157785
-    ## 1992.785 -1.960585565  1.071943e-02 -4.298291e-02 -0.0998083710
-    ## 1992.788 -1.903580877 -1.357605e-02 -3.023042e-02 -0.0830552211
-    ## 1992.792 -1.932677585  4.081259e-03 -3.427261e-02 -0.0919989471
-    ## 1992.796 -1.965901085  1.062836e-02 -6.001701e-02 -0.0966671719
-    ## 1992.800 -1.941037809  2.040323e-03 -4.490542e-02 -0.0918065370
-    ## 1992.804 -1.912957940 -1.672973e-02 -5.311781e-02 -0.0938900721
-    ## 1992.808 -1.823520105 -5.460586e-02 -8.475542e-03 -0.0721280015
-    ## 1992.812 -1.824776587 -2.773775e-02  8.931959e-03 -0.0574654013
-    ## 1992.815 -1.803632941 -3.222879e-02  1.114053e-02 -0.0482816226
-    ## 1992.819 -1.756207354 -7.330741e-02  2.703141e-02 -0.0418404329
-    ## 1992.823 -1.751353200 -8.247060e-02  2.075765e-02 -0.0476231832
-    ## 1992.827 -1.743657109 -8.349933e-02  2.628285e-02 -0.0420144895
-    ## 1992.831 -1.793545934 -6.316901e-02  2.109052e-02 -0.0512716240
-    ## 1992.835 -1.821327140 -4.183710e-02  1.477666e-02 -0.0589198493
-    ## 1992.838 -1.803637010 -4.747849e-02  3.309415e-02 -0.0571307205
-    ## 1992.842 -1.788764712 -2.884839e-02  5.353977e-02 -0.0539127300
-    ## 1992.846 -1.737918452 -7.753643e-02  8.971972e-02 -0.0534164132
-    ## 1992.850 -1.733839211 -1.072578e-01  1.005854e-01 -0.0684842102
-    ## 1992.854 -1.713901470 -9.598722e-02  1.012499e-01 -0.0597502019
-    ## 1992.858 -1.724982430 -8.510390e-02  8.721357e-02 -0.0636169979
-    ## 1992.862 -1.724297354 -8.022139e-02  6.443074e-02 -0.0584383860
-    ## 1992.865 -1.699921476 -8.479818e-02  7.763836e-02 -0.0509239902
-    ## 1992.869 -1.716450729 -9.724545e-02  7.289657e-02 -0.0521238026
-    ## 1992.873 -1.665506847 -1.120243e-01  8.155183e-02 -0.0297407167
-    ## 1992.877 -1.707632261 -9.794483e-02  5.212734e-02 -0.0305788009
-    ## 1992.881 -1.741810832 -7.780634e-02  2.804478e-02 -0.0287582185
-    ## 1992.885 -1.752670760 -7.056922e-02  1.962005e-02 -0.0138737608
-    ## 1992.888 -1.746450238 -5.034925e-02  3.090587e-02 -0.0009769821
-    ## 1992.892 -1.775979222  3.290938e-03  1.242182e-02 -0.0084103797
-    ## 1992.896 -1.758156235  1.589698e-02  2.503734e-02  0.0022571104
-    ## 1992.900 -1.818076868  7.752538e-02  5.712278e-03 -0.0073547873
-    ## 1992.904 -1.779164950  1.570376e-02  3.586720e-02  0.0001865260
-    ## 1992.908 -1.791839589  6.606384e-03  3.463416e-02 -0.0154083855
-    ## 1992.912 -1.753755751 -1.174011e-04  5.750871e-02 -0.0015617610
-    ## 1992.915 -1.725798026  1.271797e-05  6.730009e-02 -0.0032617189
-    ## 1992.919 -1.685647267 -1.682505e-02  7.936059e-02  0.0018122284
-    ## 1992.923 -1.661018154 -3.812338e-02  9.893550e-02  0.0081555443
-    ## 1992.927 -1.693078253 -4.197259e-02  9.078799e-02 -0.0077593272
-    ## 1992.931 -1.673918997 -5.963817e-02  1.027985e-01 -0.0056888350
-    ## 1992.935 -1.694457180 -4.080042e-02  8.738593e-02 -0.0155231363
-    ## 1992.938 -1.688075594 -4.971302e-02  9.160329e-02 -0.0302886310
-    ## 1992.942 -1.703408538 -8.651244e-03  9.396886e-02 -0.0325993703
-    ## 1992.946 -1.687204878 -5.115209e-02  9.896871e-02 -0.0504229488
-    ## 1992.950 -1.726830323 -3.364130e-02  8.712918e-02 -0.0725184809
-    ## 1992.954 -1.741256488 -2.377904e-02  7.666846e-02 -0.0808271303
-    ## 1992.958 -1.748368297  1.049970e-02  6.394559e-02 -0.0884264468
-    ## 1992.962 -1.747376805 -2.245824e-03  6.582040e-02 -0.0841962377
-    ## 1992.965 -1.741863291  2.021111e-02  6.867350e-02 -0.0883787420
-    ## 1992.969 -1.740219768  2.737460e-02  7.485910e-02 -0.0897656783
-    ## 1992.973 -1.678218743  2.343948e-02  1.010260e-01 -0.0697148629
-    ## 1992.977 -1.636386852 -2.491953e-03  1.126770e-01 -0.0546857110
-    ## 1992.981 -1.581490886 -3.319756e-02  1.523875e-01 -0.0464094538
-    ## 1992.985 -1.587549672 -3.654407e-02  1.375446e-01 -0.0515568075
-    ## 1992.988 -1.559117249 -8.213154e-02  1.586505e-01 -0.0521739708
-    ## 1992.992 -1.559117249 -8.213154e-02  1.586505e-01 -0.0521739708
-    ## 1992.996 -1.537853952 -8.205091e-02  1.436588e-01 -0.0586574061
-    ## 1993.000 -1.518102316 -8.819341e-02  1.644446e-01 -0.0507357135
-    ## 1993.004 -1.534453869 -7.872233e-02  1.521786e-01 -0.0669101727
-    ## 1993.008 -1.528154991 -6.937273e-02  1.594020e-01 -0.0615104078
-    ## 1993.012 -1.528154991 -6.937273e-02  1.594020e-01 -0.0615104078
-    ## 1993.015 -1.529402160 -3.891374e-02  1.576594e-01 -0.0616128246
-    ## 1993.019 -1.526488513 -6.420099e-02  1.349947e-01 -0.0709689318
-    ## 1993.023 -1.525306041 -8.097298e-02  1.385383e-01 -0.0735428263
-    ## 1993.027 -1.562500521 -7.222260e-02  1.367131e-01 -0.0603798552
-    ## 1993.031 -1.570302160 -9.361432e-02  1.388687e-01 -0.0685956787
-    ## 1993.035 -1.627497077 -6.066948e-02  1.079023e-01 -0.0667182486
-    ## 1993.038 -1.634986651 -4.054313e-02  7.699163e-02 -0.0838173075
-    ## 1993.042 -1.665467460 -2.802641e-02  7.725193e-02 -0.0966622530
-    ## 1993.046 -1.624356408 -4.499232e-02  8.422157e-02 -0.0983369090
-    ## 1993.050 -1.588999728 -7.510219e-02  8.326185e-02 -0.0831053651
-    ## 1993.054 -1.574365835 -9.378984e-02  7.272405e-02 -0.0648766669
-    ## 1993.058 -1.597445714 -1.113917e-01  6.650464e-02 -0.0685703351
-    ## 1993.062 -1.608118902 -7.949133e-02  6.091529e-02 -0.0633168888
-    ## 1993.065 -1.589199426 -5.258138e-02  6.255642e-02 -0.0636888627
-    ## 1993.069 -1.568357417 -5.765171e-02  6.226827e-02 -0.0618753672
-    ## 1993.073 -1.622820420 -9.687086e-03  4.819930e-02 -0.0655769701
-    ## 1993.077 -1.577518621  9.266012e-03  8.904719e-02 -0.0394707585
-    ## 1993.081 -1.605074158  2.525613e-02  8.916532e-02 -0.0355097672
-    ## 1993.085 -1.602641158  1.297874e-02  7.420656e-02 -0.0412364446
-    ## 1993.088 -1.608523391  2.161899e-02  6.080570e-02 -0.0531518131
-    ## 1993.092 -1.557808806  3.222457e-02  8.045779e-02 -0.0438270839
-    ## 1993.096 -1.568223822  2.071552e-02  7.587034e-02 -0.0531293814
-    ## 1993.100 -1.507648090 -8.007302e-03  1.065939e-01 -0.0283141219
-    ## 1993.104 -1.479470462 -5.317015e-02  1.137854e-01 -0.0307382531
-    ## 1993.108 -1.419875143 -1.277133e-01  1.262005e-01 -0.0255337144
-    ## 1993.112 -1.416353720 -1.182560e-01  1.254732e-01 -0.0238227132
-    ## 1993.115 -1.449354791 -1.259987e-01  1.025629e-01 -0.0406220465
-    ## 1993.119 -1.459990048 -1.355441e-01  9.249643e-02 -0.0382772886
-    ## 1993.123 -1.431005940 -1.416437e-01  9.864190e-02 -0.0278625807
-    ## 1993.127 -1.423106820 -1.439145e-01  1.131694e-01 -0.0324535894
-    ## 1993.131 -1.417618970 -1.245606e-01  8.889329e-02 -0.0251358149
-    ## 1993.135 -1.467916396 -1.161709e-01  7.376063e-02 -0.0406230841
-    ## 1993.138 -1.447572278 -1.545369e-01  9.012899e-02 -0.0296668949
-    ## 1993.142 -1.404902429 -1.679516e-01  1.052918e-01 -0.0239095424
-    ## 1993.146 -1.392985312 -1.836233e-01  1.061928e-01 -0.0115142625
-    ## 1993.150 -1.383609672 -2.177381e-01  1.237888e-01 -0.0036389069
-    ## 1993.154 -1.430223415 -2.148699e-01  1.216661e-01  0.0017422397
-    ## 1993.158 -1.420953903 -2.258123e-01  1.290899e-01 -0.0078870296
-    ## 1993.162 -1.419653828 -2.081225e-01  1.244426e-01  0.0028210636
-    ## 1993.165 -1.346043890 -2.335129e-01  1.549937e-01  0.0053558489
-    ## 1993.169 -1.314476055 -2.430785e-01  1.630577e-01  0.0056831871
-    ## 1993.173 -1.304488056 -2.456499e-01  1.567418e-01  0.0046331069
-    ## 1993.177 -1.292920290 -2.142959e-01  1.794832e-01  0.0085491188
-    ## 1993.181 -1.310298186 -2.110157e-01  1.701493e-01  0.0027409073
-    ## 1993.185 -1.298408627 -2.163542e-01  1.819858e-01  0.0097867974
-    ## 1993.188 -1.263061701 -2.065041e-01  1.998898e-01  0.0331033692
-    ## 1993.192 -1.252344364 -2.156570e-01  1.908724e-01  0.0254311095
-    ## 1993.196 -1.260239902 -1.872371e-01  1.814089e-01  0.0260870690
-    ## 1993.200 -1.265177027 -1.829702e-01  1.805438e-01  0.0185714229
-    ## 1993.204 -1.325136531 -1.772094e-01  1.617605e-01  0.0147826540
-    ## 1993.208 -1.287500223 -1.977794e-01  1.645275e-01  0.0090219990
-    ## 1993.212 -1.302310535 -1.857979e-01  1.599165e-01  0.0091797752
-    ## 1993.215 -1.332566556 -1.931318e-01  1.466957e-01 -0.0006458305
-    ## 1993.219 -1.331315933 -1.895543e-01  1.345819e-01 -0.0079419005
-    ## 1993.223 -1.319582117 -1.744022e-01  1.474911e-01 -0.0190350594
-    ## 1993.227 -1.378246091 -1.654875e-01  1.348494e-01 -0.0346435652
-    ## 1993.231 -1.368807873 -1.838060e-01  1.432033e-01 -0.0398142756
-    ## 1993.235 -1.366650666 -1.907067e-01  1.371361e-01 -0.0249447191
-    ## 1993.238 -1.335957052 -2.605012e-01  1.655760e-01 -0.0248809697
-    ## 1993.242 -1.305730591 -2.899937e-01  1.758338e-01 -0.0359430473
-    ## 1993.246 -1.293956809 -3.026737e-01  1.705386e-01 -0.0424868850
-    ## 1993.250 -1.275519973 -2.954642e-01  1.708848e-01 -0.0386316003
-    ## 1993.254 -1.274436214 -2.787367e-01  1.844966e-01 -0.0364884074
-    ## 1993.258 -1.299935893 -2.442523e-01  1.731004e-01 -0.0379994615
-    ## 1993.262 -1.322534930 -2.278606e-01  1.674665e-01 -0.0472800956
-    ## 1993.265 -1.353355545 -2.246579e-01  1.396321e-01 -0.0553080258
-    ## 1993.269 -1.331310034 -2.549469e-01  1.414260e-01 -0.0602450237
-    ## 1993.273 -1.355478536 -2.466107e-01  1.385735e-01 -0.0639059105
-    ## 1993.277 -1.350499499 -2.503220e-01  1.375061e-01 -0.0642703253
-    ## 1993.281 -1.350499499 -2.503220e-01  1.375061e-01 -0.0642703253
-    ## 1993.285 -1.350499499 -2.503220e-01  1.375061e-01 -0.0642703253
-    ## 1993.288 -1.307064046 -2.799605e-01  1.626708e-01 -0.0464955260
-    ## 1993.292 -1.315017126 -2.814835e-01  1.575642e-01 -0.0390389442
-    ## 1993.296 -1.340655337 -2.471156e-01  1.400685e-01 -0.0370193759
-    ## 1993.300 -1.347493268 -2.530088e-01  1.273634e-01 -0.0423804760
-    ## 1993.304 -1.354730245 -2.252947e-01  1.132338e-01 -0.0380151054
-    ## 1993.308 -1.359944554 -1.828114e-01  1.199255e-01 -0.0327304685
-    ## 1993.312 -1.371898965 -1.499006e-01  1.250656e-01 -0.0363872174
-    ## 1993.315 -1.349301452 -1.610237e-01  1.303391e-01 -0.0262167208
-    ## 1993.319 -1.407694745 -1.458578e-01  1.095966e-01 -0.0426432496
-    ## 1993.323 -1.435370091 -1.542590e-01  1.049816e-01 -0.0453224683
-    ## 1993.327 -1.424670662 -1.720262e-01  1.269596e-01 -0.0368641680
-    ## 1993.331 -1.428510133 -2.105868e-01  1.191685e-01 -0.0597097777
-    ## 1993.335 -1.462692563 -1.886484e-01  1.092907e-01 -0.0611015446
-    ## 1993.338 -1.427875235 -1.979716e-01  1.293951e-01 -0.0511078337
-    ## 1993.342 -1.420153727 -1.919027e-01  1.224099e-01 -0.0601790867
-    ## 1993.346 -1.435201937 -1.724878e-01  1.212107e-01 -0.0686275626
-    ## 1993.350 -1.435200621 -1.847361e-01  1.072425e-01 -0.0739770620
-    ## 1993.354 -1.450629432 -1.823876e-01  1.054720e-01 -0.0822091974
-    ## 1993.358 -1.487874666 -1.212063e-01  9.037353e-02 -0.0813455921
-    ## 1993.362 -1.461604647 -9.651996e-02  1.021622e-01 -0.0718932181
-    ## 1993.365 -1.475320880 -6.003653e-02  9.236187e-02 -0.0760763193
-    ## 1993.369 -1.438078705 -7.125324e-02  1.043654e-01 -0.0590344841
-    ## 1993.373 -1.438925823 -8.895339e-02  1.011733e-01 -0.0583428273
-    ## 1993.377 -1.464789708 -5.128126e-02  8.436464e-02 -0.0616587590
-    ## 1993.381 -1.467866860 -2.023094e-02  8.006153e-02 -0.0671096689
-    ## 1993.385 -1.462812892 -3.731820e-02  8.614752e-02 -0.0867966063
-    ## 1993.388 -1.490971110 -3.964535e-02  7.321527e-02 -0.1023525114
-    ## 1993.392 -1.492451370 -4.129981e-02  7.158883e-02 -0.1034669804
-    ## 1993.396 -1.489591508 -4.324602e-02  6.346294e-02 -0.1050648644
-    ## 1993.400 -1.463059583 -6.828067e-02  8.966552e-02 -0.1048289905
-    ## 1993.404 -1.423132774 -1.013445e-01  1.047123e-01 -0.0977303455
-    ## 1993.408 -1.420549521 -9.436534e-02  1.130290e-01 -0.0985647473
-    ## 1993.412 -1.390834661 -1.064232e-01  1.139250e-01 -0.0985275502
-    ## 1993.415 -1.413172135 -9.223311e-02  9.936249e-02 -0.1084959090
-    ## 1993.419 -1.413172135 -9.223311e-02  9.936249e-02 -0.1084959090
-    ## 1993.423 -1.428458880 -6.836541e-02  9.694968e-02 -0.0969176044
-    ## 1993.427 -1.415683881 -6.375816e-02  1.040031e-01 -0.0933768487
-    ## 1993.431 -1.423846698 -5.748080e-02  9.105680e-02 -0.1007825323
-    ## 1993.435 -1.434187829 -5.730417e-02  6.623396e-02 -0.1135473602
-    ## 1993.438 -1.384519453 -8.402373e-02  7.465716e-02 -0.1115020479
-    ## 1993.442 -1.383769634 -9.449517e-02  7.858961e-02 -0.1037828116
-    ## 1993.446 -1.340501937 -1.087386e-01  9.117799e-02 -0.0971054531
-    ## 1993.450 -1.348413980 -1.077242e-01  8.511218e-02 -0.0980710099
-    ## 1993.454 -1.337014609 -1.195033e-01  8.778204e-02 -0.0947119230
-    ## 1993.458 -1.332182856 -1.033337e-01  9.983517e-02 -0.0780779701
-    ## 1993.462 -1.362984858 -8.936583e-02  8.243907e-02 -0.0747933994
-    ## 1993.465 -1.329896728 -1.074660e-01  9.724564e-02 -0.0780200465
-    ## 1993.469 -1.344497565 -8.181943e-02  8.449525e-02 -0.0980044262
-    ## 1993.473 -1.333135091 -9.431650e-02  8.952741e-02 -0.0917954060
-    ## 1993.477 -1.296671096 -1.049319e-01  1.068932e-01 -0.0843475385
-    ## 1993.481 -1.287192378 -1.100464e-01  1.118269e-01 -0.0850887580
-    ## 1993.485 -1.291498734 -1.251207e-01  1.184849e-01 -0.0855281581
-    ## 1993.488 -1.272685510 -1.552552e-01  1.262939e-01 -0.0935431650
-    ## 1993.492 -1.271562433 -1.544317e-01  1.145868e-01 -0.0988114480
-    ## 1993.496 -1.228336337 -1.871303e-01  1.280381e-01 -0.1014007380
-    ## 1993.500 -1.249072384 -1.744229e-01  1.194786e-01 -0.1102361834
-    ## 1993.504 -1.246353182 -1.580932e-01  1.248360e-01 -0.1077207875
-    ## 1993.508 -1.263391427 -1.485721e-01  1.130134e-01 -0.1125209101
-    ## 1993.512 -1.297847300 -1.414122e-01  8.493491e-02 -0.1212387544
-    ## 1993.515 -1.323560490 -1.314289e-01  6.639842e-02 -0.1272261699
-    ## 1993.519 -1.297359423 -1.354758e-01  6.798295e-02 -0.1321460007
-    ## 1993.523 -1.279957713 -1.509273e-01  5.237738e-02 -0.1090010229
-    ## 1993.527 -1.214932366 -2.002323e-01  3.155757e-02 -0.0983364533
-    ## 1993.531 -1.210156008 -2.080935e-01  3.298923e-02 -0.1024643810
-    ## 1993.535 -1.204364792 -2.234081e-01  2.258642e-02 -0.1057901948
-    ## 1993.538 -1.200229055 -2.170214e-01  2.603696e-02 -0.1088886656
-    ## 1993.542 -1.200743010 -2.211759e-01  1.789679e-02 -0.1032517549
-    ## 1993.546 -1.232034385 -1.845863e-01  6.695284e-03 -0.1012976675
-    ## 1993.550 -1.212079873 -2.011020e-01  9.064308e-05 -0.0900989726
-    ## 1993.554 -1.203027113 -2.070955e-01  7.433446e-03 -0.0769373461
-    ## 1993.558 -1.245401202 -2.082302e-01 -2.081233e-04 -0.0596446849
-    ## 1993.562 -1.273794140 -1.868273e-01 -1.429144e-02 -0.0598842411
-    ## 1993.565 -1.243896382 -2.044048e-01 -6.956713e-03 -0.0678388153
-    ## 1993.569 -1.211100402 -2.384933e-01  1.331487e-02 -0.0696471721
-    ## 1993.573 -1.168151941 -2.394048e-01  6.343504e-03 -0.0701583637
-    ## 1993.577 -1.160497547 -2.064859e-01  2.923736e-02 -0.0665907758
-    ## 1993.581 -1.168522178 -1.900070e-01  3.487025e-02 -0.0755233957
-    ## 1993.585 -1.118360731 -2.351416e-01  8.948197e-02 -0.0637398788
-    ## 1993.588 -1.071878017 -2.981351e-01  1.261097e-01 -0.0611406977
-    ## 1993.592 -1.029979770 -3.480732e-01  1.651067e-01 -0.0581068311
-    ## 1993.596 -1.016773933 -3.178648e-01  1.259677e-01 -0.0543723528
-    ## 1993.600 -1.024143679 -3.072961e-01  1.153301e-01 -0.0548414353
-    ## 1993.604 -1.008837230 -3.263156e-01  1.193789e-01 -0.0471171532
-    ## 1993.608 -0.962828307 -3.587413e-01  1.504958e-01 -0.0334909248
-    ## 1993.612 -0.968829102 -3.340438e-01  1.588758e-01 -0.0291347952
-    ## 1993.615 -0.988872716 -3.495377e-01  1.587412e-01 -0.0196845986
-    ## 1993.619 -0.925816918 -3.643147e-01  1.724920e-01 -0.0074622794
-    ## 1993.623 -0.910715158 -3.497125e-01  1.574412e-01 -0.0190501792
-    ## 1993.627 -0.914301010 -3.287261e-01  1.420574e-01 -0.0202638650
-    ## 1993.631 -0.916484961 -3.266586e-01  1.490110e-01 -0.0354900708
-    ## 1993.635 -0.914930996 -3.037250e-01  1.419681e-01 -0.0157693268
-    ## 1993.638 -0.856985302 -3.062226e-01  1.745705e-01 -0.0040400587
-    ## 1993.642 -0.878181640 -2.827514e-01  1.520935e-01 -0.0000221651
-    ## 1993.646 -0.906533743 -2.723682e-01  1.604923e-01 -0.0115842602
-    ## 1993.650 -0.938387576 -2.589979e-01  1.527657e-01 -0.0203998184
-    ## 1993.654 -0.916349480 -2.708260e-01  1.542983e-01 -0.0144366367
-    ## 1993.658 -0.858692790 -2.987842e-01  1.856140e-01 -0.0136564153
-    ## 1993.662 -0.865656725 -3.212441e-01  2.139196e-01 -0.0123730410
-    ## 1993.665 -0.836147118 -3.231090e-01  2.192064e-01  0.0018571176
-    ## 1993.669 -0.807627772 -3.530340e-01  2.190945e-01  0.0085651003
-    ## 1993.673 -0.795428424 -3.670246e-01  2.232492e-01  0.0054312985
-    ## 1993.677 -0.833189609 -3.445056e-01  2.067448e-01  0.0056000021
-    ## 1993.681 -0.845023911 -3.435152e-01  1.927320e-01  0.0062023138
-    ## 1993.685 -0.888805784 -3.162735e-01  1.738954e-01  0.0096693816
-    ## 1993.688 -0.906534520 -3.266800e-01  1.847713e-01  0.0276112062
-    ## 1993.692 -0.944417315 -3.054648e-01  1.832566e-01  0.0028187092
-    ## 1993.696 -0.958346989 -2.971117e-01  1.827583e-01  0.0009183619
-    ## 1993.700 -0.982671790 -2.738344e-01  1.688835e-01  0.0074636135
-    ## 1993.704 -0.986678163 -2.727157e-01  1.751430e-01  0.0178097520
-    ## 1993.708 -0.980393163 -2.941305e-01  1.706942e-01  0.0144676263
-    ## 1993.712 -0.961553222 -3.091584e-01  1.832105e-01  0.0022160753
-    ## 1993.715 -1.044055856 -2.589525e-01  1.403254e-01 -0.0054374507
-    ## 1993.719 -1.030720673 -2.451092e-01  1.387696e-01 -0.0018783309
-    ## 1993.723 -0.996111684 -2.757712e-01  1.386897e-01  0.0021527815
-    ## 1993.727 -0.962152663 -2.831938e-01  1.141115e-01  0.0012081437
-    ## 1993.731 -0.970879030 -2.650894e-01  1.034618e-01 -0.0064461446
-    ## 1993.735 -0.995767269 -2.440475e-01  1.146449e-01 -0.0048535064
-    ## 1993.738 -1.013385331 -2.153093e-01  9.418902e-02 -0.0111742875
-    ## 1993.742 -0.981128419 -2.575184e-01  1.246104e-01 -0.0251163710
-    ## 1993.746 -0.934451037 -2.624667e-01  1.265593e-01 -0.0250583284
-    ## 1993.750 -0.920062809 -2.726077e-01  1.392410e-01 -0.0187083551
-    ## 1993.754 -0.918710468 -2.844841e-01  1.435209e-01 -0.0276680946
-    ## 1993.758 -0.928414284 -2.655373e-01  1.403337e-01 -0.0180700739
-    ## 1993.762 -0.918373968 -2.663847e-01  1.349064e-01 -0.0173175926
-    ## 1993.765 -0.884305830 -2.656410e-01  1.476823e-01 -0.0048503644
-    ## 1993.769 -0.822558411 -2.931030e-01  1.473422e-01  0.0021344796
-    ## 1993.773 -0.796059845 -2.905302e-01  1.443748e-01  0.0100016190
-    ## 1993.777 -0.817894303 -2.729896e-01  1.310245e-01  0.0095336205
-    ## 1993.781 -0.789237770 -2.758573e-01  1.291108e-01  0.0227099291
-    ## 1993.785 -0.805973475 -2.529496e-01  1.173278e-01  0.0106701498
-    ## 1993.788 -0.820992511 -2.403944e-01  1.088290e-01  0.0039255181
-    ## 1993.792 -0.824184743 -2.458816e-01  1.026204e-01 -0.0122699102
-    ## 1993.796 -0.830087543 -2.220889e-01  9.863055e-02 -0.0191984902
-    ## 1993.800 -0.770013426 -2.338663e-01  1.124890e-01 -0.0076258623
-    ## 1993.804 -0.736949506 -2.245949e-01  1.144898e-01 -0.0224005819
-    ## 1993.808 -0.737785079 -2.328683e-01  1.085528e-01 -0.0221658669
-    ## 1993.812 -0.723074413 -2.195346e-01  1.290834e-01 -0.0186320023
-    ## 1993.815 -0.649331109 -2.666528e-01  1.640296e-01 -0.0103448780
-    ## 1993.819 -0.596598211 -3.037516e-01  1.650503e-01  0.0023851747
-    ## 1993.823 -0.622829375 -3.079555e-01  1.712452e-01 -0.0043069657
-    ## 1993.827 -0.648615709 -2.928458e-01  1.564074e-01 -0.0240237577
-    ## 1993.831 -0.668678350 -2.714482e-01  1.424435e-01 -0.0387673495
-    ## 1993.835 -0.653422775 -2.715493e-01  1.407479e-01 -0.0326747442
-    ## 1993.838 -0.655231310 -2.478928e-01  1.285384e-01 -0.0257516431
-    ## 1993.842 -0.655773206 -2.511713e-01  1.220674e-01 -0.0287240034
-    ## 1993.846 -0.653222933 -2.327158e-01  1.005164e-01 -0.0288762296
-    ## 1993.850 -0.650830916 -2.347221e-01  9.989827e-02 -0.0330825351
-    ## 1993.854 -0.714138013 -2.000491e-01  9.423722e-02 -0.0284866240
-    ## 1993.858 -0.829226113 -1.679383e-01  5.863170e-02 -0.0442667525
-    ## 1993.862 -0.826552134 -1.743079e-01  5.867471e-02 -0.0602467994
-    ## 1993.865 -0.762159635 -1.952319e-01  5.912272e-02 -0.0651763159
-    ## 1993.869 -0.787627139 -1.560527e-01  5.698921e-02 -0.0795798549
-    ## 1993.873 -0.792897851 -1.587462e-01  5.862512e-02 -0.0676946926
-    ## 1993.877 -0.784185489 -1.720540e-01  6.337675e-02 -0.0680818877
-    ## 1993.881 -0.759236738 -2.052412e-01  5.730148e-02 -0.0589062333
-    ## 1993.885 -0.749638924 -2.015630e-01  4.331078e-02 -0.0452406588
-    ## 1993.888 -0.711322935 -2.326451e-01  7.621516e-02 -0.0366374465
-    ## 1993.892 -0.699510858 -2.295730e-01  7.488151e-02 -0.0399385792
-    ## 1993.896 -0.711990130 -2.322839e-01  6.420336e-02 -0.0514899234
-    ## 1993.900 -0.819568801 -1.724722e-01  4.260478e-02 -0.0678888400
-    ## 1993.904 -0.824384469 -1.574656e-01  2.918712e-02 -0.0677348555
-    ## 1993.908 -0.817516160 -1.553094e-01  2.019558e-02 -0.0726645921
-    ## 1993.912 -0.751127472 -2.049242e-01  4.940965e-02 -0.0591760692
-    ## 1993.915 -0.741185092 -1.948302e-01  6.811546e-02 -0.0647490007
-    ## 1993.919 -0.727769464 -1.798982e-01  7.669955e-02 -0.0507068191
-    ## 1993.923 -0.719211738 -1.495992e-01  8.776902e-02 -0.0383769543
-    ## 1993.927 -0.620157035 -1.672501e-01  1.240995e-01 -0.0159148159
-    ## 1993.931 -0.610831629 -1.797524e-01  1.149513e-01 -0.0217574906
-    ## 1993.935 -0.558999616 -2.079136e-01  1.158423e-01 -0.0220009663
-    ## 1993.938 -0.558369774 -2.008954e-01  1.218187e-01 -0.0335221312
-    ## 1993.942 -0.563467892 -1.869689e-01  1.089498e-01 -0.0286444786
-    ## 1993.946 -0.497575395 -2.036426e-01  1.227673e-01 -0.0021964987
-    ## 1993.950 -0.490644955 -2.130725e-01  1.215158e-01 -0.0113969343
-    ## 1993.954 -0.506823631 -2.003719e-01  1.078453e-01 -0.0169071252
-    ## 1993.958 -0.507782735 -1.993176e-01  1.025793e-01 -0.0277887706
-    ## 1993.962 -0.564078428 -1.489580e-01  9.922424e-02 -0.0397914393
-    ## 1993.965 -0.547936584 -1.425707e-01  1.207775e-01 -0.0192464631
-    ## 1993.969 -0.521402489 -1.187894e-01  1.260170e-01 -0.0090631424
-    ## 1993.973 -0.465987666 -1.502158e-01  1.538516e-01 -0.0059870730
-    ## 1993.977 -0.407360322 -1.693066e-01  1.619277e-01  0.0085273122
-    ## 1993.981 -0.424602067 -1.702976e-01  1.466521e-01 -0.0061807330
-    ## 1993.985 -0.390200379 -1.732493e-01  1.407637e-01 -0.0026201756
-    ## 1993.988 -0.338621985 -1.701652e-01  1.595281e-01  0.0081989878
-    ## 1993.992 -0.323355873 -1.727327e-01  1.737303e-01  0.0141045774
-    ## 1993.996 -0.282320790 -2.072871e-01  1.625015e-01  0.0272853594
-    ## 1994.000 -0.319010481 -1.963752e-01  1.791779e-01  0.0354809744
-    ## 1994.004 -0.281378522 -1.908804e-01  2.225494e-01  0.0496105131
-    ## 1994.008 -0.279865439 -2.060773e-01  1.838276e-01  0.0361119395
-    ## 1994.012 -0.296187628 -1.942978e-01  1.698263e-01  0.0323696327
-    ## 1994.015 -0.256498135 -2.195433e-01  1.670777e-01  0.0211422553
-    ## 1994.019 -0.285984578 -2.018043e-01  1.677957e-01  0.0059208602
-    ## 1994.023 -0.326333582 -1.828480e-01  1.458770e-01 -0.0165614631
-    ## 1994.027 -0.294832994 -2.017437e-01  1.828497e-01 -0.0193883069
-    ## 1994.031 -0.236967151 -2.184431e-01  2.224373e-01 -0.0119392384
-    ## 1994.035 -0.239674149 -2.388267e-01  2.280667e-01 -0.0010285653
-    ## 1994.038 -0.236803047 -2.716633e-01  2.187013e-01 -0.0155292201
-    ## 1994.042 -0.329803074 -2.310320e-01  1.981002e-01 -0.0362754472
-    ## 1994.046 -0.394468514 -2.036797e-01  2.043514e-01 -0.0328459442
-    ## 1994.050 -0.348797927 -1.883746e-01  2.236658e-01 -0.0336706413
-    ## 1994.054 -0.378726780 -1.426588e-01  2.325246e-01 -0.0550741704
-    ## 1994.058 -0.338250707 -1.396059e-01  2.442475e-01 -0.0508272217
-    ## 1994.062 -0.291053535 -1.533296e-01  2.801531e-01 -0.0416175238
-    ## 1994.065 -0.324942678 -1.327437e-01  2.901803e-01 -0.0557104035
-    ## 1994.069 -0.342759310 -1.061245e-01  3.066713e-01 -0.0568966022
-    ## 1994.073 -0.302212876 -1.499510e-01  3.014527e-01 -0.0457109822
-    ## 1994.077 -0.318125756 -1.721703e-01  2.916396e-01 -0.0792841897
-    ## 1994.081 -0.293521871 -1.796186e-01  2.617068e-01 -0.0787715381
-    ## 1994.085 -0.300507691 -1.819851e-01  2.591454e-01 -0.0862452254
-    ## 1994.088 -0.233657399 -2.084805e-01  2.636883e-01 -0.0875072870
-    ## 1994.092 -0.164836763 -2.073836e-01  2.738734e-01 -0.0742995063
-    ## 1994.096 -0.186723241 -2.132162e-01  2.762766e-01 -0.0681731120
-    ## 1994.100 -0.138877311 -2.215756e-01  3.100607e-01 -0.0627829482
-    ## 1994.104 -0.209387681 -1.930462e-01  3.061204e-01 -0.0842894653
-    ## 1994.108 -0.203870142 -2.100168e-01  2.955753e-01 -0.0949509346
-    ## 1994.112 -0.314294707 -1.949675e-01  2.780263e-01 -0.0985817203
-    ## 1994.115 -0.288358389 -1.993809e-01  2.941660e-01 -0.0924790039
-    ## 1994.119 -0.297355916 -2.157095e-01  2.820231e-01 -0.0688440319
-    ## 1994.123 -0.324351561 -2.275459e-01  2.681266e-01 -0.0554178402
-    ## 1994.127 -0.362163914 -2.136912e-01  2.461386e-01 -0.0703214133
-    ## 1994.131 -0.387454148 -2.409828e-01  2.524867e-01 -0.0474858228
-    ## 1994.135 -0.378887178 -1.927244e-01  2.347937e-01 -0.0236728420
-    ## 1994.138 -0.364267528 -1.788797e-01  2.454549e-01 -0.0123743899
-    ## 1994.142 -0.301958661 -1.938879e-01  2.376541e-01 -0.0407392409
-    ## 1994.146 -0.364180355 -1.784938e-01  2.152442e-01 -0.0647157226
-    ## 1994.150 -0.432270202 -1.505807e-01  1.943462e-01 -0.0733212044
-    ## 1994.154 -0.432892618 -1.781224e-01  1.899009e-01 -0.0704002700
-    ## 1994.158 -0.381320064 -2.019309e-01  1.880489e-01 -0.0784855801
-    ## 1994.162 -0.503988711 -1.936126e-01  1.644087e-01 -0.0963430182
-    ## 1994.165 -0.517228627 -1.773066e-01  1.741820e-01 -0.0798578681
-    ## 1994.169 -0.459637292 -2.108585e-01  2.100762e-01 -0.0309980261
-    ## 1994.173 -0.569400384 -1.735510e-01  1.784207e-01 -0.0512368420
-    ## 1994.177 -0.655287967 -1.448782e-01  1.753822e-01 -0.0366635829
-    ## 1994.181 -0.633521090 -1.412637e-01  1.536557e-01 -0.0435977039
-    ## 1994.185 -0.554842422 -1.612128e-01  1.648270e-01 -0.0488663203
-    ## 1994.188 -0.463686673 -1.949554e-01  1.636674e-01 -0.0420546516
-    ## 1994.192 -0.495876864 -2.161343e-01  1.442716e-01 -0.0527511825
-    ## 1994.196 -0.535852859 -2.099019e-01  1.331335e-01 -0.0409317191
-    ## 1994.200 -0.551333382 -1.964117e-01  1.117982e-01 -0.0441746621
-    ## 1994.204 -0.600418242 -2.111100e-01  1.004003e-01 -0.0550879916
-    ## 1994.208 -0.502109360 -2.380226e-01  9.927725e-02 -0.0308733266
-    ## 1994.212 -0.432429124 -2.726660e-01  1.357277e-01 -0.0324487159
-    ## 1994.215 -0.469356863 -2.677955e-01  1.212889e-01 -0.0363875135
-    ## 1994.219 -0.461887313 -2.671272e-01  1.368102e-01 -0.0350378493
-    ## 1994.223 -0.526281648 -2.585723e-01  1.169287e-01 -0.0357542520
-    ## 1994.227 -0.568774614 -2.503397e-01  1.044130e-01 -0.0280970474
-    ## 1994.231 -0.557301242 -2.428574e-01  9.559439e-02 -0.0320273562
-    ## 1994.235 -0.561607570 -2.642680e-01  5.184259e-02 -0.0566911997
-    ## 1994.238 -0.629627130 -2.189753e-01  1.630115e-02 -0.0733663130
-    ## 1994.242 -0.645388492 -1.958743e-01  1.241328e-02 -0.0611399196
-    ## 1994.246 -0.618111310 -2.024166e-01 -1.374203e-03 -0.0661727171
-    ## 1994.250 -0.652001661 -1.822996e-01 -1.136365e-02 -0.0530836991
-    ## 1994.254 -0.710316340 -1.477964e-01 -4.488133e-02 -0.0624931258
-    ## 1994.258 -0.725222489 -1.512130e-01 -4.153095e-02 -0.0588779684
-    ## 1994.262 -0.725222489 -1.512130e-01 -4.153095e-02 -0.0588779684
-    ## 1994.265 -0.725222489 -1.512130e-01 -4.153095e-02 -0.0588779684
-    ## 1994.269 -0.674700914 -1.583910e-01 -3.766241e-02 -0.0396864970
-    ## 1994.273 -0.632674365 -1.844400e-01 -1.904367e-02 -0.0422747855
-    ## 1994.277 -0.623689498 -1.700205e-01 -4.079428e-02 -0.0506915843
-    ## 1994.281 -0.627865095 -1.662852e-01 -5.002526e-02 -0.0595861571
-    ## 1994.285 -0.574120441 -1.905553e-01 -3.053833e-02 -0.0453682892
-    ## 1994.288 -0.571581163 -1.885436e-01 -1.412483e-02 -0.0492225298
-    ## 1994.292 -0.576352353 -2.029539e-01 -2.093796e-02 -0.0478280149
-    ## 1994.296 -0.613025536 -1.975251e-01 -2.243592e-02 -0.0434513862
-    ## 1994.300 -0.561746663 -2.005583e-01 -1.115296e-03 -0.0383398512
-    ## 1994.304 -0.574836688 -2.191752e-01 -2.169181e-02 -0.0453902685
-    ## 1994.308 -0.621568460 -1.962835e-01 -2.287362e-02 -0.0434012686
-    ## 1994.312 -0.670429754 -1.706452e-01 -5.882059e-02 -0.0451154564
-    ## 1994.315 -0.689121761 -1.600341e-01 -6.056626e-02 -0.0255829411
-    ## 1994.319 -0.622976967 -2.000938e-01 -3.188890e-02 -0.0071694871
-    ## 1994.323 -0.664880420 -1.935035e-01 -5.048738e-02 -0.0094377719
-    ## 1994.327 -0.623640581 -2.014763e-01 -5.393295e-02  0.0050224282
-    ## 1994.331 -0.585284033 -2.079021e-01 -4.182228e-02  0.0133155349
-    ## 1994.335 -0.608719989 -2.262859e-01 -3.605986e-02  0.0084989376
-    ## 1994.338 -0.600817487 -2.556634e-01 -3.560304e-02  0.0284004821
-    ## 1994.342 -0.568318911 -2.792292e-01 -3.532830e-02  0.0198185224
-    ## 1994.346 -0.592487267 -2.851134e-01 -4.974903e-02  0.0126897466
-    ## 1994.350 -0.663739239 -2.580147e-01 -7.148565e-02  0.0183544909
-    ## 1994.354 -0.631234559 -2.701468e-01 -4.150859e-02  0.0462763647
-    ## 1994.358 -0.654898354 -2.698502e-01 -2.934072e-02  0.0595091950
-    ## 1994.362 -0.703708060 -2.593590e-01 -2.881228e-02  0.0856265983
-    ## 1994.365 -0.633806029 -2.639328e-01 -1.216563e-02  0.0802930980
-    ## 1994.369 -0.622530169 -2.827733e-01 -1.298242e-02  0.0786570506
-    ## 1994.373 -0.618803997 -2.786086e-01 -8.888283e-03  0.0814624380
-    ## 1994.377 -0.601371336 -2.966119e-01 -2.355811e-02  0.0557084938
-    ## 1994.381 -0.586060138 -2.956283e-01 -3.859020e-02  0.0460295931
-    ## 1994.385 -0.572525181 -2.983238e-01 -2.796099e-02  0.0380903399
-    ## 1994.388 -0.587963403 -2.846083e-01 -3.079477e-02  0.0232764635
-    ## 1994.392 -0.608916705 -2.576643e-01 -3.181423e-02  0.0297799645
-    ## 1994.396 -0.616174000 -2.402285e-01 -3.161174e-02  0.0255143695
-    ## 1994.400 -0.625821213 -2.510111e-01 -4.221162e-02  0.0182511065
-    ## 1994.404 -0.690473256 -2.365784e-01 -2.844280e-02  0.0099592349
-    ## 1994.408 -0.796041122 -2.103586e-01 -6.149367e-02 -0.0270871639
-    ## 1994.412 -0.781382762 -2.189589e-01 -6.461505e-02 -0.0319617427
-    ## 1994.415 -0.852065822 -1.888261e-01 -1.000603e-01 -0.0764693275
-    ## 1994.419 -0.833238173 -1.870842e-01 -1.134145e-01 -0.0845737143
-    ## 1994.423 -0.852830703 -1.571996e-01 -1.285335e-01 -0.0696673261
-    ## 1994.427 -0.923498912 -1.088280e-01 -1.664636e-01 -0.0975476186
-    ## 1994.431 -0.873692241 -1.197126e-01 -1.255780e-01 -0.0738273035
-    ## 1994.435 -0.817200232 -1.574999e-01 -1.209472e-01 -0.0531521817
-    ## 1994.438 -0.796818203 -1.368698e-01 -1.255612e-01 -0.0724753566
-    ## 1994.442 -0.826407383 -1.206702e-01 -1.147440e-01 -0.0855570350
-    ## 1994.446 -0.777161994 -1.299643e-01 -9.193669e-02 -0.0793482797
-    ## 1994.450 -0.810704429 -1.134418e-01 -9.774027e-02 -0.0762226494
-    ## 1994.454 -0.801719192 -8.993761e-02 -9.458485e-02 -0.0540072124
-    ## 1994.458 -0.891856135 -5.517749e-02 -1.018011e-01 -0.0833729421
-    ## 1994.462 -0.867250385 -6.212172e-02 -8.207086e-02 -0.0709848563
-    ## 1994.465 -0.904455757 -2.903835e-02 -8.067517e-02 -0.0558064791
-    ## 1994.469 -0.955212721 -1.040778e-02 -8.334292e-02 -0.0549790897
-    ## 1994.473 -0.983694242 -1.069805e-02 -7.739619e-02 -0.0450363088
-    ## 1994.477 -1.084284176 -6.457633e-03 -8.845853e-02 -0.0428755407
-    ## 1994.481 -1.124297099 -6.727003e-03 -9.347674e-02 -0.0662915778
-    ## 1994.485 -1.053883532 -2.450769e-02 -1.030939e-01 -0.0642860380
-    ## 1994.488 -1.022180407 -6.086849e-02 -1.210606e-01 -0.0752939966
-    ## 1994.492 -1.110677728 -6.149384e-02 -1.546914e-01 -0.0872229806
-    ## 1994.496 -1.101818480 -5.672499e-02 -1.341005e-01 -0.0725645714
-    ## 1994.500 -1.061959992 -6.501179e-02 -1.389761e-01 -0.0812660546
-    ## 1994.504 -1.016488060 -5.457410e-02 -1.277379e-01 -0.0718160990
-    ## 1994.508 -1.084706033 -1.243275e-02 -1.539674e-01 -0.0794092037
-    ## 1994.512 -1.088907568  1.981352e-02 -1.678655e-01 -0.0545004779
-    ## 1994.515 -1.053034434  5.491206e-02 -1.718261e-01 -0.0557316194
-    ## 1994.519 -1.065901730  3.155109e-02 -1.460780e-01 -0.0562666534
-    ## 1994.523 -1.071334464  5.539607e-03 -1.465855e-01 -0.0596118439
-    ## 1994.527 -1.029632792 -2.948091e-02 -1.279222e-01 -0.0419687249
-    ## 1994.531 -1.040407732 -3.515391e-02 -1.252778e-01 -0.0285500083
-    ## 1994.535 -0.994176208 -6.275758e-02 -1.099364e-01 -0.0129936735
-    ## 1994.538 -1.037119902 -7.125424e-02 -1.065244e-01 -0.0026017755
-    ## 1994.542 -0.997369754 -9.706402e-02 -6.147993e-02  0.0301057425
-    ## 1994.546 -0.948964837 -6.376331e-02 -5.455984e-02  0.0292968004
-    ## 1994.550 -0.925288855 -5.282984e-02 -6.185439e-02  0.0588197783
-    ## 1994.554 -0.878709669 -1.209780e-01 -3.324428e-02  0.0760067043
-    ## 1994.558 -0.836750404 -1.490401e-01 -2.227436e-02  0.0712928200
-    ## 1994.562 -0.843024616 -1.389490e-01 -3.347067e-02  0.0425251682
-    ## 1994.565 -0.817451510 -1.400802e-01 -2.265042e-02  0.0432724285
-    ## 1994.569 -0.801943060 -1.096352e-01 -3.592329e-02  0.0503099040
-    ## 1994.573 -0.792009288 -1.391919e-01 -2.665054e-02  0.0440029728
-    ## 1994.577 -0.762071716 -1.560965e-01 -2.301293e-02  0.0543033882
-    ## 1994.581 -0.828568142 -1.554594e-01 -3.154368e-02  0.0589330524
-    ## 1994.585 -0.820048639 -1.423352e-01 -2.551877e-02  0.0564377929
-    ## 1994.588 -0.793994974 -1.768254e-01 -3.360490e-02  0.0485571365
-    ## 1994.592 -0.786680346 -1.612964e-01 -3.501233e-02  0.0582120708
-    ## 1994.596 -0.685484523 -1.852092e-01  1.982331e-03  0.0692453812
-    ## 1994.600 -0.689902515 -1.818370e-01  4.991197e-03  0.0736265075
-    ## 1994.604 -0.718865596 -1.626812e-01 -2.055036e-03  0.0669375178
-    ## 1994.608 -0.699949623 -1.699742e-01  7.293301e-03  0.0853674853
-    ## 1994.612 -0.696336681 -1.636576e-01  1.205413e-02  0.0762455243
-    ## 1994.615 -0.744803396 -1.264175e-01  8.058903e-03  0.0821650878
-    ## 1994.619 -0.749785685 -1.125776e-01 -3.913674e-03  0.0813451259
-    ## 1994.623 -0.791458863 -9.463160e-02 -2.879464e-02  0.0678084139
-    ## 1994.627 -0.829419649 -4.942416e-02 -3.043255e-02  0.0646906285
-    ## 1994.631 -0.832194978 -5.099657e-02 -2.994342e-02  0.0697245607
-    ## 1994.635 -0.810999432 -5.324131e-02 -3.785018e-02  0.0703547635
-    ## 1994.638 -0.760210807 -5.830541e-02 -9.987684e-03  0.0870424391
-    ## 1994.642 -0.796974613 -3.138609e-02 -1.784859e-02  0.0863791661
-    ## 1994.646 -0.811613344 -1.749659e-02 -1.106728e-02  0.0993102944
-    ## 1994.650 -0.867839578  7.309332e-03 -1.734066e-02  0.0914947654
-    ## 1994.654 -0.838964037 -2.913064e-02 -2.816204e-03  0.0964064612
-    ## 1994.658 -0.810214243 -1.852442e-02  8.709440e-03  0.1077580671
-    ## 1994.662 -0.765718469 -2.858893e-02  2.279998e-02  0.1221382630
-    ## 1994.665 -0.692839266 -5.679883e-02  3.480748e-02  0.1339790189
-    ## 1994.669 -0.654104985 -6.654657e-02  2.048867e-02  0.1178988226
-    ## 1994.673 -0.679098213 -5.472282e-02  9.100080e-03  0.1078838162
-    ## 1994.677 -0.667264756 -6.414621e-02  1.370656e-02  0.1040701476
-    ## 1994.681 -0.729143580 -3.938097e-02 -1.119186e-02  0.0909070142
-    ## 1994.685 -0.719633662 -9.829822e-03 -2.888723e-02  0.0771420520
-    ## 1994.688 -0.739159862  3.221692e-02 -1.640383e-02  0.0737197642
-    ## 1994.692 -0.802615532  5.873654e-02 -4.705138e-02  0.0648907925
-    ## 1994.696 -0.793554582  5.544919e-02 -5.368577e-02  0.0633266237
-    ## 1994.700 -0.784150217  1.559121e-02 -6.224706e-02  0.0573085953
-    ## 1994.704 -0.851399235  3.684462e-02 -8.942340e-02  0.0437226989
-    ## 1994.708 -0.841128943  6.458349e-03 -8.424447e-02  0.0389921942
-    ## 1994.712 -0.837285733  1.045346e-03 -8.918952e-02  0.0289552035
-    ## 1994.715 -0.897051094 -2.259127e-03 -9.441957e-02  0.0074034074
-    ## 1994.719 -0.857136427 -1.843889e-02 -6.735086e-02  0.0286444868
-    ## 1994.723 -0.948615441  2.331487e-02 -1.030837e-01  0.0104741652
-    ## 1994.727 -0.938007353  3.525239e-02 -9.949927e-02  0.0116191287
-    ## 1994.731 -0.988254741  1.423722e-02 -9.503662e-02 -0.0109734196
-    ## 1994.735 -1.014424925  3.142951e-02 -1.270780e-01 -0.0163483340
-    ## 1994.738 -1.003967816  3.326488e-02 -1.267878e-01 -0.0159287701
-    ## 1994.742 -0.963374452 -6.708212e-04 -1.224958e-01 -0.0066369457
-    ## 1994.746 -1.024167756  1.445580e-02 -1.249398e-01 -0.0222454789
-    ## 1994.750 -1.022898109  2.058260e-02 -1.198121e-01 -0.0167797397
-    ## 1994.754 -0.995345551  3.373850e-02 -1.105518e-01 -0.0040441772
-    ## 1994.758 -1.078310895  4.336678e-02 -1.146644e-01 -0.0281584942
-    ## 1994.762 -1.072008648  5.525821e-02 -8.214362e-02 -0.0094471043
-    ## 1994.765 -1.126894882  6.166725e-02 -1.194422e-01 -0.0083724947
-    ## 1994.769 -1.097182492  4.423885e-02 -8.750544e-02 -0.0186553667
-    ## 1994.773 -1.188742634  7.091508e-02 -1.070068e-01 -0.0322947212
-    ## 1994.777 -1.156036664  7.384255e-02 -9.840839e-02 -0.0159818258
-    ## 1994.781 -1.128343886  6.576033e-02 -9.169928e-02 -0.0115509011
-    ## 1994.785 -1.025544028  3.431591e-02 -1.000445e-01  0.0024174793
-    ## 1994.788 -0.963905260  3.072879e-02 -9.238185e-02  0.0257067773
-    ## 1994.792 -0.959904867  4.694851e-02 -6.660839e-02  0.0337126154
-    ## 1994.796 -0.881234961  2.306784e-02 -4.678062e-02  0.0486630582
-    ## 1994.800 -0.915915027  3.226359e-02 -8.703469e-02  0.0438060898
-    ## 1994.804 -0.945184588  7.541141e-02 -7.968484e-02  0.0447256410
-    ## 1994.808 -0.991756159  6.188048e-02 -8.334049e-02  0.0368089245
-    ## 1994.812 -1.033359003  7.676456e-02 -1.006201e-01  0.0283600775
-    ## 1994.815 -1.042967680  9.065432e-02 -9.968841e-02  0.0256894724
-    ## 1994.819 -1.101375960  1.053310e-01 -1.090907e-01  0.0122805451
-    ## 1994.823 -1.095839251  1.062364e-01 -1.171734e-01  0.0052858289
-    ## 1994.827 -1.146533654  1.097520e-01 -1.226922e-01 -0.0014665764
-    ## 1994.831 -1.140005747  9.646244e-02 -1.263331e-01  0.0121775912
-    ## 1994.835 -1.100074811  7.385474e-02 -1.026496e-01  0.0391511639
-    ## 1994.838 -1.004481321  4.362142e-02 -7.151761e-02  0.0594712745
-    ## 1994.842 -0.994212295  5.389687e-02 -6.320432e-02  0.0555417200
-    ## 1994.846 -0.993420672  5.274151e-02 -6.669125e-02  0.0582937643
-    ## 1994.850 -1.041688102  8.809864e-02 -7.708045e-02  0.0441613013
-    ## 1994.854 -0.977575882  5.482057e-02 -5.846481e-02  0.0442506671
-    ## 1994.858 -0.957978890  2.357679e-02 -5.537060e-02  0.0415400684
-    ## 1994.862 -1.002920230  4.363471e-02 -7.322027e-02  0.0107646204
-    ## 1994.865 -0.989060494  1.901102e-02 -7.217714e-02  0.0219328002
-    ## 1994.869 -0.921674075  1.494384e-02 -6.584272e-02  0.0268733629
-    ## 1994.873 -0.908758580  1.268620e-02 -6.693518e-02  0.0253025608
-    ## 1994.877 -0.935680878 -3.088844e-03 -6.541345e-02  0.0069750347
-    ## 1994.881 -0.925968352  1.637378e-02 -7.023816e-02  0.0251399029
-    ## 1994.885 -0.883986381  2.052581e-02 -5.378390e-02  0.0485817980
-    ## 1994.888 -0.876654024  3.536493e-02 -5.194364e-02  0.0444052985
-    ## 1994.892 -0.917601267  5.476101e-02 -6.229693e-02  0.0332815914
-    ## 1994.896 -0.916108380  5.903945e-02 -5.983239e-02  0.0308974055
-    ## 1994.900 -0.916364920  5.141314e-02 -6.990833e-02  0.0299874759
-    ## 1994.904 -0.973663627  4.499936e-02 -8.433364e-02  0.0212853035
-    ## 1994.908 -1.038577002  3.780686e-02 -9.952967e-02  0.0007015254
-    ## 1994.912 -0.983135695 -1.082606e-02 -8.316162e-02  0.0001950764
-    ## 1994.915 -0.975219491 -2.719118e-02 -7.652854e-02 -0.0041608508
-    ## 1994.919 -0.963215016 -2.708549e-02 -6.178387e-02 -0.0046839716
-    ## 1994.923 -0.971755281 -9.751539e-04 -5.234412e-02 -0.0076909074
-    ## 1994.927 -0.918180166 -3.737434e-02 -3.351762e-02  0.0030822152
-    ## 1994.931 -0.960705834 -4.752964e-02 -5.479298e-02 -0.0083267270
-    ## 1994.935 -0.957262104 -8.541179e-02 -5.355046e-02 -0.0193041108
-    ## 1994.938 -0.934868865 -5.956566e-02 -7.021761e-02 -0.0189044670
-    ## 1994.942 -0.963815289 -6.580954e-02 -6.707443e-02 -0.0232367856
-    ## 1994.946 -0.967805050 -6.959338e-02 -6.612819e-02 -0.0235208645
-    ## 1994.950 -0.979945356 -4.663963e-02 -7.425968e-02 -0.0260585072
-    ## 1994.954 -1.025321858 -4.566001e-02 -9.221755e-02 -0.0405958050
-    ## 1994.958 -1.071194913 -4.227998e-02 -1.071436e-01 -0.0553696244
-    ## 1994.962 -1.063343819 -3.753948e-02 -1.176578e-01 -0.0493078045
-    ## 1994.965 -1.019960591 -3.418474e-02 -1.065201e-01 -0.0348779353
-    ## 1994.969 -1.011648427 -3.739557e-02 -1.206035e-01 -0.0402379274
-    ## 1994.973 -0.987645315 -4.504146e-03 -1.136664e-01 -0.0214187969
-    ## 1994.977 -0.976479047  1.540082e-03 -9.692055e-02 -0.0129257303
-    ## 1994.981 -0.956695902  2.141516e-02 -9.631579e-02 -0.0049437980
-    ## 1994.985 -0.923057137  9.148886e-03 -9.170122e-02 -0.0045977273
-    ## 1994.988 -0.895396520  7.915854e-03 -7.861384e-02 -0.0005064834
-    ## 1994.992 -0.901724260  6.396882e-03 -8.390519e-02 -0.0047645556
-    ## 1994.996 -0.887575931 -1.635725e-02 -7.341173e-02 -0.0050913737
-    ## 1995.000 -0.885171174  1.203503e-03 -8.887665e-02 -0.0117856985
-    ## 1995.004 -0.914235354  4.447602e-02 -8.886854e-02 -0.0036101032
-    ## 1995.008 -0.976981159  6.954432e-02 -1.089134e-01 -0.0106074968
-    ## 1995.012 -0.977415318  8.653283e-02 -1.326231e-01 -0.0009220405
-    ## 1995.015 -0.985945838  8.706826e-02 -1.201970e-01 -0.0085208499
-    ## 1995.019 -0.991650121  7.858229e-02 -1.085787e-01 -0.0047566269
-    ## 1995.023 -0.977425078  5.179876e-02 -1.111286e-01 -0.0186287330
-    ## 1995.027 -1.028785740  7.977907e-02 -1.245933e-01 -0.0249423013
-    ## 1995.031 -0.993541471  7.932793e-02 -1.023478e-01 -0.0143541015
-    ## 1995.035 -1.020792847  1.037108e-01 -1.177271e-01 -0.0170059044
-    ## 1995.038 -1.023771254  1.103375e-01 -1.225442e-01 -0.0033100715
-    ## 1995.042 -1.039123376  1.173183e-01 -1.345157e-01 -0.0058158882
-    ## 1995.046 -1.051535070  1.154791e-01 -1.456689e-01 -0.0145117147
-    ## 1995.050 -1.033454442  1.104290e-01 -1.339758e-01 -0.0069064378
-    ## 1995.054 -0.994413315  9.901015e-02 -1.217611e-01  0.0178302599
-    ## 1995.058 -1.025334961  1.065929e-01 -1.389835e-01  0.0108599638
-    ## 1995.062 -1.016748686  1.039841e-01 -1.402503e-01  0.0076318321
-    ## 1995.065 -1.052054968  1.210538e-01 -1.656776e-01 -0.0054439350
-    ## 1995.069 -1.108633230  1.325042e-01 -1.774679e-01 -0.0192826786
-    ## 1995.073 -1.196802985  1.575431e-01 -1.959022e-01 -0.0261865801
-    ## 1995.077 -1.173279960  1.569133e-01 -1.937957e-01 -0.0191999564
-    ## 1995.081 -1.150797120  1.326732e-01 -1.710111e-01 -0.0103227986
-    ## 1995.085 -1.102527277  1.185787e-01 -1.541616e-01 -0.0096372207
-    ## 1995.088 -1.110719025  1.436530e-01 -1.463109e-01 -0.0067950150
-    ## 1995.092 -1.130244670  1.278701e-01 -1.576957e-01 -0.0125536490
-    ## 1995.096 -1.147438535  1.460911e-01 -1.682678e-01 -0.0130664671
-    ## 1995.100 -1.091204874  1.229685e-01 -1.527079e-01 -0.0060373290
-    ## 1995.104 -1.095537198  1.495380e-01 -1.444890e-01 -0.0042592333
-    ## 1995.108 -1.034313973  1.307007e-01 -1.431926e-01  0.0086875756
-    ## 1995.112 -0.994944476  9.617872e-02 -1.311613e-01 -0.0036393060
-    ## 1995.115 -0.985228107  1.053662e-01 -1.322420e-01  0.0005795298
-    ## 1995.119 -1.007502044  1.303704e-01 -1.400402e-01  0.0038795210
-    ## 1995.123 -0.954171380  1.155424e-01 -1.326491e-01  0.0165545091
-    ## 1995.127 -0.948754128  1.280613e-01 -1.361534e-01  0.0256203311
-    ## 1995.131 -0.983628168  1.382696e-01 -1.586573e-01  0.0110707420
-    ## 1995.135 -0.977242384  1.251979e-01 -1.673544e-01  0.0079554773
-    ## 1995.138 -0.969098814  1.181716e-01 -1.659319e-01  0.0153135082
-    ## 1995.142 -1.019497933  1.396608e-01 -1.788477e-01  0.0042835847
-    ## 1995.146 -1.036311442  1.495186e-01 -1.935523e-01  0.0146198467
-    ## 1995.150 -1.075789982  1.625039e-01 -2.085588e-01 -0.0001493917
-    ## 1995.154 -1.066771729  1.624905e-01 -2.048145e-01 -0.0044792030
-    ## 1995.158 -1.072246667  1.621235e-01 -2.040231e-01 -0.0084555651
-    ## 1995.162 -1.017130709  1.507932e-01 -1.957053e-01  0.0043048140
-    ## 1995.165 -1.047888063  1.721243e-01 -2.087458e-01  0.0008805051
-    ## 1995.169 -1.067349888  1.677657e-01 -2.085524e-01 -0.0009048022
-    ## 1995.173 -1.102923529  1.922749e-01 -2.271784e-01 -0.0065004178
-    ## 1995.177 -1.040578578  1.695408e-01 -2.112170e-01  0.0081605276
-    ## 1995.181 -1.048485701  1.691981e-01 -2.061661e-01  0.0036173941
-    ## 1995.185 -1.085290288  1.743595e-01 -2.029786e-01  0.0044552190
-    ## 1995.188 -1.137062556  1.866325e-01 -2.101270e-01  0.0021506489
-    ## 1995.192 -1.187121901  2.053917e-01 -2.191810e-01 -0.0139141977
-    ## 1995.196 -1.186281901  1.990505e-01 -1.948761e-01  0.0001017879
-    ## 1995.200 -1.249282235  2.295098e-01 -1.839787e-01  0.0084748370
-    ## 1995.204 -1.207239182  2.275844e-01 -1.686689e-01  0.0264344617
-    ## 1995.208 -1.251473228  2.496824e-01 -1.620520e-01  0.0173578799
-    ## 1995.212 -1.165217726  2.080603e-01 -1.446851e-01  0.0450699905
-    ## 1995.215 -1.201963194  2.499947e-01 -1.484279e-01  0.0272656891
-    ## 1995.219 -1.123120998  2.144693e-01 -1.081567e-01  0.0449872921
-    ## 1995.223 -1.138326125  2.095914e-01 -8.467621e-02  0.0250645883
-    ## 1995.227 -1.093035711  2.010756e-01 -5.626601e-02  0.0312857115
-    ## 1995.231 -1.089236013  2.026754e-01 -4.724692e-02  0.0401605024
-    ## 1995.235 -1.087202041  1.992672e-01 -3.750172e-02  0.0411166386
-    ## 1995.238 -1.134229106  2.258178e-01 -2.216652e-02  0.0327824699
-    ## 1995.242 -1.092958124  2.130072e-01 -4.010378e-03  0.0168570639
-    ## 1995.246 -1.084729896  1.842580e-01  1.138299e-02  0.0163228386
-    ## 1995.250 -1.109570585  1.675896e-01  1.379229e-02  0.0119002825
-    ## 1995.254 -1.086399697  1.545666e-01  2.640301e-02  0.0202410396
-    ## 1995.258 -1.008746929  1.234492e-01  4.629648e-02  0.0267320351
-    ## 1995.262 -1.080350239  1.446070e-01  2.988133e-02  0.0099133019
-    ## 1995.265 -1.063777556  1.411827e-01  2.166498e-02  0.0191593425
-    ## 1995.269 -1.002960725  1.441397e-01  3.546495e-02  0.0365977597
-    ## 1995.273 -1.007028235  1.586399e-01  2.572552e-02  0.0404159541
-    ## 1995.277 -0.979072630  1.440535e-01  3.802698e-02  0.0361725084
-    ## 1995.281 -0.963336156  1.362809e-01  4.825135e-02  0.0391651554
-    ## 1995.285 -0.981722267  1.592538e-01  3.063375e-02  0.0369172835
-    ## 1995.288 -0.998483908  1.678041e-01  1.675430e-02  0.0304644766
-    ## 1995.292 -0.981342481  1.745928e-01  2.103797e-02  0.0429206381
-    ## 1995.296 -0.978462793  1.614058e-01  3.194720e-02  0.0400238723
-    ## 1995.300 -0.978462793  1.614058e-01  3.194720e-02  0.0400238723
-    ## 1995.304 -0.978462793  1.614058e-01  3.194720e-02  0.0400238723
-    ## 1995.308 -1.024496115  1.866877e-01  2.847941e-02  0.0296894178
-    ## 1995.312 -1.034878393  1.423366e-01  3.705822e-02  0.0302448146
-    ## 1995.315 -1.012870476  1.390978e-01  3.369775e-02  0.0232730331
-    ## 1995.319 -0.940587983  9.181893e-02  5.343394e-02  0.0373879604
-    ## 1995.323 -0.950062672  1.100180e-01  5.898362e-02  0.0404964000
-    ## 1995.327 -0.908762090  7.599702e-02  5.933644e-02  0.0509055361
-    ## 1995.331 -0.892253734  8.874875e-02  4.792275e-02  0.0575282143
-    ## 1995.335 -0.910450341  9.824412e-02  3.960714e-02  0.0562786971
-    ## 1995.338 -0.915270620  1.195154e-01  3.261650e-02  0.0388502348
-    ## 1995.342 -0.913382013  1.216263e-01  3.469161e-02  0.0402721435
-    ## 1995.346 -0.867637403  1.155360e-01  4.695535e-02  0.0464865918
-    ## 1995.350 -0.831454473  7.668494e-02  7.575936e-02  0.0533459034
-    ## 1995.354 -0.846461642  1.151888e-01  6.144968e-02  0.0416389243
-    ## 1995.358 -0.872171372  1.353251e-01  5.049385e-02  0.0275139813
-    ## 1995.362 -0.865262161  1.363053e-01  4.329939e-02  0.0273814387
-    ## 1995.365 -0.800132777  5.713344e-02  7.388071e-02  0.0396915475
-    ## 1995.369 -0.770441304  6.319651e-02  8.523162e-02  0.0535186175
-    ## 1995.373 -0.728146756  7.500345e-02  8.642773e-02  0.0538983511
-    ## 1995.377 -0.704721260  5.564894e-02  7.731198e-02  0.0440895078
-    ## 1995.381 -0.727940908  9.296817e-02  6.734021e-02  0.0351724055
-    ## 1995.385 -0.714302244  7.460992e-02  5.543986e-02  0.0346737887
-    ## 1995.388 -0.724705431  6.760415e-02  7.013994e-02  0.0281646255
-    ## 1995.392 -0.749337653  7.960890e-02  5.895582e-02  0.0277410026
-    ## 1995.396 -0.799708423  9.509651e-02  4.549110e-02  0.0236562570
-    ## 1995.400 -0.745511600  9.607467e-02  4.062938e-02  0.0214144813
-    ## 1995.404 -0.760260786  1.198554e-01  4.491254e-02  0.0193626406
-    ## 1995.408 -0.727114203  1.499748e-01  4.408333e-02  0.0286664611
-    ## 1995.412 -0.726654812  1.504882e-01  4.458808e-02  0.0290123308
-    ## 1995.415 -0.797462879  1.945328e-01  3.868239e-02  0.0196506532
-    ## 1995.419 -0.785162441  1.842091e-01  4.070240e-02  0.0156908792
-    ## 1995.423 -0.775390285  1.864061e-01  2.981478e-02  0.0120658038
-    ## 1995.427 -0.742270520  1.641403e-01  3.493500e-02  0.0195703242
-    ## 1995.431 -0.705130109  1.614687e-01  3.972545e-02  0.0250415892
-    ## 1995.435 -0.688470220  1.489002e-01  3.988810e-02  0.0333363405
-    ## 1995.438 -0.672340488  1.669282e-01  5.761064e-02  0.0454802090
-    ## 1995.442 -0.663856984  1.762643e-01  4.115215e-02  0.0536458084
-    ## 1995.446 -0.666219318  1.610333e-01  5.240567e-02  0.0378765945
-    ## 1995.450 -0.684679668  1.968067e-01  4.414658e-02  0.0486191631
-    ## 1995.454 -0.770079511  2.452051e-01  7.406088e-03  0.0262553830
-    ## 1995.458 -0.745677741  2.348824e-01  3.395934e-03  0.0338421008
-    ## 1995.462 -0.733307309  2.162760e-01  1.726381e-02  0.0340689515
-    ## 1995.465 -0.762721344  2.508064e-01 -5.750967e-03  0.0330961217
-    ## 1995.469 -0.720824460  2.316198e-01  2.414526e-02  0.0457679428
-    ## 1995.473 -0.746508255  2.469733e-01  1.813356e-02  0.0541332417
-    ## 1995.477 -0.705487086  2.407133e-01  1.270611e-02  0.0583227633
-    ## 1995.481 -0.732095564  2.695543e-01  5.484264e-03  0.0502052182
-    ## 1995.485 -0.720355028  2.626154e-01  6.168102e-03  0.0469147638
-    ## 1995.488 -0.680321422  2.506521e-01  3.199580e-02  0.0433646678
-    ## 1995.492 -0.719975951  2.768964e-01 -6.344549e-05  0.0373052526
-    ## 1995.496 -0.755370635  2.260007e-01 -2.903507e-02  0.0106708349
-    ## 1995.500 -0.773661940  2.644209e-01 -3.805826e-02  0.0020088061
-    ## 1995.504 -0.819634287  2.634890e-01 -3.646716e-02 -0.0210627810
-    ## 1995.508 -0.812672526  2.760734e-01 -3.553070e-02 -0.0195353288
-    ## 1995.512 -0.813569158  2.891432e-01 -2.014733e-02 -0.0040068645
-    ## 1995.515 -0.785595723  2.658799e-01 -9.339631e-03  0.0024226453
-    ## 1995.519 -0.753427796  2.699318e-01  2.045180e-03  0.0066225012
-    ## 1995.523 -0.712172984  2.701394e-01  3.451563e-02  0.0287872154
-    ## 1995.527 -0.737003937  2.899788e-01  2.453665e-02  0.0288763508
-    ## 1995.531 -0.618309260  2.497195e-01  6.819535e-02  0.0707602783
-    ## 1995.535 -0.615408739  2.456736e-01  4.915661e-02  0.0791501486
-    ## 1995.538 -0.594853476  2.349746e-01  5.463836e-02  0.0842804623
-    ## 1995.542 -0.592231360  2.297212e-01  4.120815e-02  0.0716454624
-    ## 1995.546 -0.607846490  2.465045e-01  3.518490e-02  0.0669865199
-    ## 1995.550 -0.620095868  2.353544e-01  2.737106e-02  0.0621141100
-    ## 1995.554 -0.597069083  2.427161e-01  2.726004e-02  0.0573138477
-    ## 1995.558 -0.640746758  2.587923e-01  1.446566e-02  0.0503973139
-    ## 1995.562 -0.647076455  2.438105e-01  1.160877e-03  0.0584560052
-    ## 1995.565 -0.686817404  2.706874e-01 -6.217484e-03  0.0687433059
-    ## 1995.569 -0.669303433  2.746751e-01 -6.810386e-03  0.0750678933
-    ## 1995.573 -0.626402196  2.610441e-01 -9.993896e-03  0.0934293023
-    ## 1995.577 -0.614218491  2.412361e-01  1.565286e-04  0.0953848710
-    ## 1995.581 -0.601568272  2.507263e-01  9.768698e-03  0.1088387523
-    ## 1995.585 -0.594920795  2.452399e-01  1.453039e-02  0.1121156996
-    ## 1995.588 -0.609742394  2.737592e-01  2.472835e-02  0.1034950438
-    ## 1995.592 -0.623214539  2.869170e-01  1.103061e-02  0.1065709546
-    ## 1995.596 -0.637156661  2.825986e-01  9.763611e-03  0.0967980940
-    ## 1995.600 -0.550293516  2.563629e-01  3.586424e-02  0.1186658241
-    ## 1995.604 -0.588884130  2.497164e-01  3.010767e-02  0.1219079143
-    ## 1995.608 -0.581412804  2.438694e-01  3.733803e-02  0.1286607595
-    ## 1995.612 -0.584830467  2.524122e-01  2.902534e-02  0.1356500310
-    ## 1995.615 -0.593233211  2.379069e-01  2.899307e-02  0.1282944051
-    ## 1995.619 -0.614495439  2.506006e-01  3.325894e-02  0.1301018233
-    ## 1995.623 -0.593382751  2.495585e-01  2.846127e-02  0.1280653429
-    ## 1995.627 -0.598145476  2.524281e-01  2.647115e-02  0.1133963228
-    ## 1995.631 -0.624708453  2.361716e-01  2.665986e-02  0.1013431727
-    ## 1995.635 -0.600524124  2.417758e-01  6.132719e-03  0.0990413920
-    ## 1995.638 -0.549709551  2.265611e-01  1.877626e-02  0.0921464566
-    ## 1995.642 -0.548644223  2.337650e-01  1.841744e-02  0.0955629555
-    ## 1995.646 -0.516554815  2.513586e-01  3.409871e-02  0.1108630974
-    ## 1995.650 -0.491598362  2.481614e-01  5.439991e-02  0.1234814681
-    ## 1995.654 -0.512953582  2.762168e-01  4.391104e-02  0.1105017884
-    ## 1995.658 -0.524746701  2.753845e-01  3.006563e-02  0.1086011986
-    ## 1995.662 -0.545090394  3.013096e-01  2.779697e-02  0.1116297046
-    ## 1995.665 -0.540145422  3.069261e-01  2.669449e-02  0.1116984896
-    ## 1995.669 -0.591672672  3.708275e-01  9.283127e-03  0.1106840614
-    ## 1995.673 -0.598553051  3.461962e-01  9.108082e-03  0.0958169231
-    ## 1995.677 -0.560875655  3.208378e-01  6.658431e-03  0.0908121392
-    ## 1995.681 -0.616484780  3.571214e-01 -1.967106e-02  0.0777686435
-    ## 1995.685 -0.594941082  3.786536e-01 -9.716136e-03  0.0888552685
-    ## 1995.688 -0.552326051  3.652366e-01 -7.535183e-03  0.0852664928
-    ## 1995.692 -0.538472765  3.707272e-01 -4.975242e-03  0.0814377736
-    ## 1995.696 -0.532000507  4.135954e-01 -4.513283e-03  0.0775381732
-    ## 1995.700 -0.562376402  4.366686e-01 -2.270180e-02  0.0771702144
-    ## 1995.704 -0.561934452  4.509241e-01 -2.436670e-02  0.0821265723
-    ## 1995.708 -0.552236132  4.273098e-01 -1.871518e-02  0.0818695467
-    ## 1995.712 -0.555517321  4.150507e-01 -2.269840e-02  0.0736889056
-    ## 1995.715 -0.492748042  4.044096e-01 -1.369953e-02  0.0881778189
-    ## 1995.719 -0.502196090  4.084573e-01 -1.958071e-02  0.0885713021
-    ## 1995.723 -0.506459617  4.268295e-01 -3.273631e-02  0.0839770707
-    ## 1995.727 -0.542209002  4.181345e-01 -4.292850e-02  0.0738660095
-    ## 1995.731 -0.513223247  4.113814e-01 -4.568852e-02  0.0715138650
-    ## 1995.735 -0.525996710  4.480125e-01 -3.724773e-02  0.0766078174
-    ## 1995.738 -0.541738998  4.615144e-01 -3.395818e-02  0.0628527086
-    ## 1995.742 -0.663943906  5.184028e-01 -4.522409e-02  0.0395931764
-    ## 1995.746 -0.649315996  5.033313e-01 -5.114500e-02  0.0299032258
-    ## 1995.750 -0.609661644  4.952512e-01 -4.796404e-02  0.0290475728
-    ## 1995.754 -0.679946337  5.025833e-01 -5.351438e-02  0.0151463251
-    ## 1995.758 -0.709403763  5.309360e-01 -6.668332e-02  0.0150341086
-    ## 1995.762 -0.664639065  5.209050e-01 -5.015393e-02  0.0259937981
-    ## 1995.765 -0.659678655  5.420283e-01 -4.770025e-02  0.0171983499
-    ## 1995.769 -0.637658800  5.185728e-01 -3.385167e-02  0.0134719345
-    ## 1995.773 -0.621788924  5.232482e-01 -2.937406e-02  0.0331988140
-    ## 1995.777 -0.633996125  5.289258e-01 -1.787123e-02  0.0250153032
-    ## 1995.781 -0.637047784  5.091188e-01 -1.343710e-02  0.0031761439
-    ## 1995.785 -0.671350239  5.345074e-01 -2.565551e-02 -0.0153099777
-    ## 1995.788 -0.717244198  5.148375e-01 -4.346458e-02 -0.0360915861
-    ## 1995.792 -0.681417300  5.035894e-01 -3.863335e-02 -0.0352969279
-    ## 1995.796 -0.642067673  5.204603e-01 -1.017938e-02 -0.0191121176
-    ## 1995.800 -0.578990261  5.301938e-01 -1.100715e-02  0.0044290518
-    ## 1995.804 -0.610457449  5.616288e-01 -2.602663e-02 -0.0077088527
-    ## 1995.808 -0.622198521  5.787778e-01 -2.402992e-02 -0.0071206786
-    ## 1995.812 -0.601482465  6.117548e-01 -2.280622e-02 -0.0013648118
-    ## 1995.815 -0.633494286  6.207760e-01 -2.368444e-02 -0.0102352959
-    ## 1995.819 -0.675709601  6.280732e-01 -3.000414e-02 -0.0299672341
-    ## 1995.823 -0.740906025  6.324323e-01 -2.470817e-02 -0.0118529845
-    ## 1995.827 -0.731011944  6.335510e-01 -2.126741e-02 -0.0213113443
-    ## 1995.831 -0.678854465  5.823683e-01 -1.393098e-02 -0.0184930461
-    ## 1995.835 -0.695351407  5.857183e-01 -3.188413e-02 -0.0249979792
-    ## 1995.838 -0.746850858  5.820988e-01 -2.542655e-02 -0.0198369410
-    ## 1995.842 -0.668806369  5.205582e-01 -1.398215e-02 -0.0158349107
-    ## 1995.846 -0.620479744  5.131167e-01 -7.244181e-03 -0.0267107333
-    ## 1995.850 -0.612016015  5.097769e-01 -2.611923e-02 -0.0338163574
-    ## 1995.854 -0.599668909  4.914767e-01 -1.288153e-02 -0.0306386646
-    ## 1995.858 -0.609044847  4.764147e-01 -1.746048e-02 -0.0507885670
-    ## 1995.862 -0.614633530  4.954281e-01 -1.320904e-02 -0.0385173042
-    ## 1995.865 -0.575401285  4.537852e-01  8.034253e-03 -0.0390779506
-    ## 1995.869 -0.556167894  4.495778e-01  1.535278e-02 -0.0289616831
-    ## 1995.873 -0.560903846  4.735055e-01  8.656677e-03 -0.0361459585
-    ## 1995.877 -0.590595752  4.778068e-01 -2.482791e-03 -0.0364811279
-    ## 1995.881 -0.578356985  4.856747e-01 -8.923796e-03 -0.0184660946
-    ## 1995.885 -0.568151960  4.936983e-01 -5.299593e-03 -0.0189437651
-    ## 1995.888 -0.527623985  4.554716e-01  3.239260e-02 -0.0069319430
-    ## 1995.892 -0.473787216  4.407032e-01  6.921010e-02 -0.0027749335
-    ## 1995.896 -0.486986393  4.603825e-01  6.057584e-02 -0.0062216116
-    ## 1995.900 -0.472225390  4.882399e-01  5.796094e-02 -0.0099040471
-    ## 1995.904 -0.492501087  4.860488e-01  4.003486e-02 -0.0209333704
-    ## 1995.908 -0.474096664  5.014540e-01  6.089457e-02 -0.0214970049
-    ## 1995.912 -0.492716098  4.970020e-01  3.620693e-02 -0.0356860374
-    ## 1995.915 -0.451825838  4.779534e-01  5.296893e-02 -0.0275361069
-    ## 1995.919 -0.413454581  4.974433e-01  3.813374e-02 -0.0175925969
-    ## 1995.923 -0.438956430  5.207934e-01  3.126869e-02 -0.0089113784
-    ## 1995.927 -0.438389437  5.446099e-01  2.064098e-02 -0.0112354841
-    ## 1995.931 -0.454315857  5.898539e-01  3.278924e-03 -0.0079064140
-    ## 1995.935 -0.452266451  6.010497e-01 -1.016901e-02 -0.0076233018
-    ## 1995.938 -0.485814760  6.695689e-01 -3.398195e-02 -0.0153010823
-    ## 1995.942 -0.450857412  6.117039e-01 -1.754474e-02 -0.0148201496
-    ## 1995.946 -0.431194848  5.840813e-01 -9.912628e-03 -0.0148864954
-    ## 1995.950 -0.450451223  5.494404e-01 -2.283792e-03 -0.0125726672
-    ## 1995.954 -0.439025713  5.307136e-01 -1.331399e-02 -0.0097634481
-    ## 1995.958 -0.428870371  5.547201e-01 -6.572082e-03 -0.0084476300
-    ## 1995.962 -0.421740859  5.601638e-01 -7.935438e-03 -0.0163713718
-    ## 1995.965 -0.430829652  5.837469e-01 -1.562953e-02 -0.0076231634
-    ## 1995.969 -0.390219237  5.325919e-01  1.353275e-02 -0.0030856155
-    ## 1995.973 -0.414086673  5.401709e-01 -1.268197e-02 -0.0234811888
-    ## 1995.977 -0.502585255  5.620031e-01 -2.989403e-02 -0.0400644492
-    ## 1995.981 -0.530842994  5.599197e-01 -4.468081e-02 -0.0302310321
-    ## 1995.985 -0.470758574  5.570601e-01 -3.243606e-02 -0.0232822843
-    ## 1995.988 -0.457700240  5.639796e-01 -1.969012e-02 -0.0160375514
-    ## 1995.992 -0.399148614  5.282044e-01  8.182691e-03 -0.0131824750
-    ## 1995.996 -0.399148614  5.282044e-01  8.182691e-03 -0.0131824750
-    ## 1996.000 -0.404824890  5.373333e-01  3.972741e-03 -0.0130513563
-    ## 1996.004 -0.375138780  5.395670e-01  1.707665e-02 -0.0255496556
-    ## 1996.008 -0.382137780  5.341329e-01  2.486628e-02 -0.0187360409
-    ## 1996.012 -0.387872563  5.513812e-01  3.643163e-02 -0.0192341914
-    ## 1996.015 -0.387872563  5.513812e-01  3.643163e-02 -0.0192341914
-    ## 1996.019 -0.335859173  4.996128e-01  2.663257e-02 -0.0009856470
-    ## 1996.023 -0.257466607  4.808648e-01  4.302574e-02 -0.0256433190
-    ## 1996.027 -0.261713661  4.976026e-01  2.918612e-02 -0.0287444402
-    ## 1996.031 -0.292013824  5.080406e-01  2.884654e-02 -0.0296847731
-    ## 1996.035 -0.277329964  5.168975e-01  2.364265e-02 -0.0108263462
-    ## 1996.038 -0.272737011  5.158777e-01  1.411147e-02 -0.0015033676
-    ## 1996.042 -0.322417384  4.895743e-01 -5.260345e-03 -0.0021268709
-    ## 1996.046 -0.354885330  4.923546e-01 -1.295510e-02  0.0028202909
-    ## 1996.050 -0.332104661  4.811692e-01 -2.189982e-02  0.0087678919
-    ## 1996.054 -0.329528278  4.522142e-01 -7.720647e-03  0.0423671217
-    ## 1996.058 -0.266864999  4.444340e-01  2.229582e-02  0.0575368755
-    ## 1996.062 -0.270895789  4.165838e-01  3.343238e-02  0.0705255266
-    ## 1996.065 -0.234984728  4.554262e-01  4.149044e-02  0.0747870978
-    ## 1996.069 -0.227902169  4.485010e-01  3.697938e-02  0.0814255678
-    ## 1996.073 -0.238416120  4.650731e-01  4.031534e-02  0.0817406826
-    ## 1996.077 -0.274147238  4.770633e-01  1.882763e-02  0.0903869433
-    ## 1996.081 -0.231242325  4.731599e-01  9.549491e-03  0.1160171144
-    ## 1996.085 -0.242840524  4.522072e-01 -5.307897e-04  0.1117736925
-    ## 1996.088 -0.228704788  4.266443e-01  3.414442e-03  0.1265535096
-    ## 1996.092 -0.220424163  4.088917e-01  1.964736e-02  0.1179464603
-    ## 1996.096 -0.180815068  3.840731e-01  1.792891e-02  0.1065981975
-    ## 1996.100 -0.146571621  3.749745e-01  3.680511e-02  0.1125392956
-    ## 1996.104 -0.133359454  3.714842e-01  2.564272e-02  0.0987322445
-    ## 1996.108 -0.129348366  3.892064e-01  5.001267e-02  0.1092694305
-    ## 1996.112 -0.212730965  4.132265e-01  4.134500e-02  0.1023601018
-    ## 1996.115 -0.190231884  4.140274e-01  2.624579e-02  0.0957779036
-    ## 1996.119 -0.200788286  4.101201e-01  7.102045e-03  0.0851651645
-    ## 1996.123 -0.252377292  4.352637e-01  2.777476e-03  0.0743915338
-    ## 1996.127 -0.234432513  4.325114e-01 -5.679183e-03  0.0885329421
-    ## 1996.131 -0.223106576  4.306128e-01  7.890892e-03  0.0845993466
-    ## 1996.135 -0.193554942  4.221779e-01  2.371046e-02  0.0920646635
-    ## 1996.138 -0.219725613  4.584974e-01  1.041583e-02  0.0852175994
-    ## 1996.142 -0.194090249  4.686830e-01  3.510213e-02  0.0949439044
-    ## 1996.146 -0.207442884  4.808576e-01  2.395367e-02  0.0865990958
-    ## 1996.150 -0.251570690  4.827070e-01  2.634340e-02  0.0664211112
-    ## 1996.154 -0.287931044  4.720358e-01  1.760205e-02  0.0623023034
-    ## 1996.158 -0.262313548  4.727820e-01  6.299972e-03  0.0736674049
-    ## 1996.162 -0.228139240  4.597822e-01  9.788390e-03  0.0817627168
-    ## 1996.165 -0.185496913  4.318026e-01  3.013494e-03  0.0773663523
-    ## 1996.169 -0.221774976  4.336862e-01 -2.019866e-02  0.0581614235
-    ## 1996.173 -0.196028441  4.232377e-01 -1.320506e-02  0.0611831183
-    ## 1996.177 -0.132687143  4.119884e-01 -1.716960e-02  0.0603648785
-    ## 1996.181 -0.145819270  4.134418e-01 -2.519866e-02  0.0584536771
-    ## 1996.185 -0.099617835  3.963284e-01  2.486472e-05  0.0541475019
-    ## 1996.188 -0.089470854  4.103318e-01  7.666153e-03  0.0521001443
-    ## 1996.192 -0.108366512  4.312548e-01  1.537385e-02  0.0580736054
-    ## 1996.196 -0.107243745  4.192221e-01  6.058314e-03  0.0383964052
-    ## 1996.200 -0.049426397  4.419925e-01 -1.513788e-02 -0.0431770963
-    ## 1996.204 -0.125419159  4.549693e-01 -3.858477e-02 -0.0579445320
-    ## 1996.208 -0.192967122  4.650569e-01 -5.146880e-02 -0.0620496287
-    ## 1996.212 -0.216721513  4.732985e-01 -8.194871e-02 -0.0937205232
-    ## 1996.215 -0.199780479  4.597752e-01 -7.670602e-02 -0.1016151020
-    ## 1996.219 -0.149965880  4.613787e-01 -5.447742e-02 -0.0894015030
-    ## 1996.223 -0.172628982  4.536652e-01 -9.861652e-02 -0.0843574105
-    ## 1996.227 -0.133745266  4.504910e-01 -8.737826e-02 -0.0800457749
-    ## 1996.231 -0.107737978  4.637398e-01 -8.320832e-02 -0.0765152849
-    ## 1996.235 -0.104339319  4.565649e-01 -9.115524e-02 -0.0795108456
-    ## 1996.238 -0.079889615  4.566069e-01 -9.042739e-02 -0.0779228685
-    ## 1996.242 -0.083848770  4.685051e-01 -7.160615e-02 -0.0940640622
-    ## 1996.246 -0.046584427  4.175385e-01 -9.374041e-02 -0.1040601446
-    ## 1996.250 -0.063679638  3.972394e-01 -9.494310e-02 -0.1067454796
-    ## 1996.254 -0.026438164  3.745682e-01 -8.782563e-02 -0.1015729924
-    ## 1996.258 -0.054264043  3.849540e-01 -7.720274e-02 -0.0949894519
-    ## 1996.262 -0.023867532  3.679593e-01 -3.779939e-02 -0.0937179296
-    ## 1996.265  0.002502232  3.647594e-01 -2.900807e-02 -0.0858146928
-    ## 1996.269  0.021802963  3.492333e-01 -1.845904e-02 -0.0762467759
-    ## 1996.273 -0.006632350  3.502632e-01 -7.777048e-03 -0.0648705332
-    ## 1996.277  0.023887981  3.530718e-01  9.556733e-03 -0.0516799990
-    ## 1996.281  0.023887981  3.530718e-01  9.556733e-03 -0.0516799990
-    ## 1996.285  0.023887981  3.530718e-01  9.556733e-03 -0.0516799990
-    ## 1996.288  0.031644380  3.427753e-01  8.875382e-03 -0.0375193467
-    ## 1996.292  0.055508411  3.318152e-01  1.076882e-02 -0.0317050554
-    ## 1996.296  0.006903737  3.430133e-01 -5.120140e-04 -0.0305903907
-    ## 1996.300  0.031582869  3.536661e-01  8.865425e-05 -0.0184151337
-    ## 1996.304  0.059498870  3.608708e-01  6.201883e-03 -0.0104648287
-    ## 1996.308  0.099881826  3.604876e-01  3.006179e-02 -0.0034307568
-    ## 1996.312  0.057120971  3.797557e-01  2.406275e-02 -0.0202195191
-    ## 1996.315  0.075274078  3.729829e-01  3.668285e-02 -0.0115059587
-    ## 1996.319  0.112960887  3.886214e-01  5.067217e-02 -0.0059062593
-    ## 1996.323  0.150975515  3.598421e-01  4.985145e-02 -0.0244783171
-    ## 1996.327  0.129179600  3.508203e-01  3.856814e-02 -0.0194041356
-    ## 1996.331  0.124971710  3.321750e-01  5.071673e-02 -0.0458712913
-    ## 1996.335  0.127363811  3.404613e-01  3.873004e-02 -0.0392196814
-    ## 1996.338  0.161916849  3.223737e-01  5.662774e-02 -0.0475579165
-    ## 1996.342  0.116173435  3.145371e-01  6.525247e-02 -0.0521269470
-    ## 1996.346  0.125773381  2.970007e-01  8.992612e-02 -0.0511218588
-    ## 1996.350  0.119699210  2.902116e-01  8.325213e-02 -0.0556950244
-    ## 1996.354  0.078869138  2.854434e-01  8.023816e-02 -0.0707260155
-    ## 1996.358  0.043848043  2.965282e-01  5.054141e-02 -0.0649736123
-    ## 1996.362  0.017228798  3.275941e-01  3.597845e-02 -0.0544827097
-    ## 1996.365 -0.003950472  3.191006e-01  1.427995e-02 -0.0600884509
-    ## 1996.369 -0.031909109  3.029638e-01  1.741187e-02 -0.0463928863
-    ## 1996.373 -0.021512057  3.106095e-01  2.850267e-02 -0.0304571439
-    ## 1996.377  0.040675625  2.899507e-01  3.892193e-02 -0.0264006460
-    ## 1996.381  0.020161356  3.004329e-01  2.340109e-02 -0.0335242416
-    ## 1996.385  0.070889618  2.860332e-01  2.423659e-02 -0.0248275230
-    ## 1996.388  0.081313099  2.903612e-01  3.180819e-02 -0.0111403616
-    ## 1996.392  0.069777278  2.774678e-01  1.913320e-02 -0.0198255333
-    ## 1996.396  0.113123561  2.838256e-01  3.294607e-02 -0.0087990445
-    ## 1996.400  0.085963806  2.984706e-01  2.416904e-02 -0.0127524809
-    ## 1996.404  0.110700728  2.923135e-01  2.083397e-02 -0.0010509652
-    ## 1996.408  0.057185885  3.084396e-01  4.223543e-03  0.0015921679
-    ## 1996.412  0.055893795  2.833113e-01  3.258365e-03 -0.0048953914
-    ## 1996.415  0.070120018  2.855258e-01  3.722830e-03 -0.0138451294
-    ## 1996.419  0.070120018  2.855258e-01  3.722830e-03 -0.0138451294
-    ## 1996.423  0.095130964  2.709104e-01  1.017584e-02 -0.0126913305
-    ## 1996.427  0.076944697  2.977184e-01  1.860645e-02  0.0016424027
-    ## 1996.431  0.042614783  2.902987e-01  7.495177e-03 -0.0046324601
-    ## 1996.435  0.044625380  2.917437e-01  1.552957e-02 -0.0181728176
-    ## 1996.438  0.055462400  2.695199e-01  5.036625e-03 -0.0077197124
-    ## 1996.442  0.065196564  2.957770e-01  1.042155e-03 -0.0101559176
-    ## 1996.446  0.069472790  2.893272e-01  2.008534e-03 -0.0125809114
-    ## 1996.450  0.095891417  2.708197e-01  1.034510e-02 -0.0135409697
-    ## 1996.454  0.020037430  2.777916e-01 -2.005440e-02 -0.0247067315
-    ## 1996.458  0.063542617  2.684536e-01 -1.006960e-02 -0.0231912723
-    ## 1996.462  0.099807660  2.604857e-01  3.225729e-03 -0.0055588373
-    ## 1996.465  0.113646361  2.723228e-01  9.051970e-03 -0.0131913208
-    ## 1996.469  0.100630767  2.842617e-01 -1.970892e-04 -0.0205870102
-    ## 1996.473  0.070315046  2.978389e-01  1.910133e-03 -0.0256463653
-    ## 1996.477  0.079484938  3.015083e-01  3.235954e-03 -0.0236595531
-    ## 1996.481  0.083170353  3.096852e-01 -8.532412e-03 -0.0374301314
-    ## 1996.485  0.076316749  3.202207e-01 -1.084230e-02 -0.0493249155
-    ## 1996.488  0.040349525  3.399035e-01 -3.184609e-02 -0.0702210687
-    ## 1996.492  0.060634267  3.316345e-01 -4.392333e-02 -0.0814467286
-    ## 1996.496  0.077134984  3.085431e-01 -5.309284e-02 -0.0870699459
-    ## 1996.500  0.085733186  2.615858e-01 -6.836245e-02 -0.0918728308
-    ## 1996.504  0.093897144  2.814628e-01 -6.061916e-02 -0.0998819514
-    ## 1996.508  0.069380425  2.699709e-01 -5.452292e-02 -0.1047073734
-    ## 1996.512  0.112717448  2.776049e-01 -4.519657e-02 -0.0993806638
-    ## 1996.515  0.115989420  2.918119e-01 -4.167001e-02 -0.0901397088
-    ## 1996.519  0.113185893  3.050632e-01 -4.267845e-02 -0.1043435263
-    ## 1996.523  0.111475430  2.963565e-01 -4.907641e-02 -0.1114504471
-    ## 1996.527  0.156176743  3.072453e-01 -2.475405e-02 -0.0956466823
-    ## 1996.531  0.106773939  3.296930e-01 -4.150079e-02 -0.0863750379
-    ## 1996.535  0.086311839  3.560197e-01 -5.004876e-02 -0.0904419879
-    ## 1996.538  0.102364514  3.717087e-01 -4.996263e-02 -0.1057210289
-    ## 1996.542  0.123185506  3.740836e-01 -4.776353e-02 -0.1032870823
-    ## 1996.546  0.108938462  3.797320e-01 -5.714763e-02 -0.1248791876
-    ## 1996.550  0.065669878  3.957060e-01 -7.195180e-02 -0.1259811075
-    ## 1996.554  0.014191415  4.033098e-01 -8.590525e-02 -0.1303614459
-    ## 1996.558 -0.101759410  4.100265e-01 -1.043185e-01 -0.1394793438
-    ## 1996.562 -0.080330248  4.132246e-01 -9.889308e-02 -0.1099605032
-    ## 1996.565 -0.050486268  4.153945e-01 -7.615042e-02 -0.0899970232
-    ## 1996.569 -0.053667746  4.469784e-01 -7.196377e-02 -0.0921251392
-    ## 1996.573 -0.139034220  4.610457e-01 -7.921741e-02 -0.0686856428
-    ## 1996.577 -0.091307074  4.489578e-01 -6.599950e-02 -0.0595026007
-    ## 1996.581 -0.180280532  4.499975e-01 -7.585925e-02 -0.0364969075
-    ## 1996.585 -0.135580679  4.391343e-01 -6.291768e-02 -0.0552578943
-    ## 1996.588 -0.148947097  4.486227e-01 -8.015566e-02 -0.0575289625
-    ## 1996.592 -0.142839033  4.559031e-01 -8.118586e-02 -0.0599440770
-    ## 1996.596 -0.153842750  4.353668e-01 -7.563279e-02 -0.0510411195
-    ## 1996.600 -0.108655511  4.135087e-01 -5.339207e-02 -0.0164177387
-    ## 1996.604 -0.074974079  4.118631e-01 -3.568395e-02  0.0005495729
-    ## 1996.608 -0.004127494  4.303235e-01 -2.841816e-02 -0.0328167909
-    ## 1996.612  0.002060367  4.571408e-01 -2.687539e-02 -0.0348182726
-    ## 1996.615 -0.004578097  4.767886e-01 -4.099200e-02 -0.0342944034
-    ## 1996.619  0.021370256  4.979653e-01 -4.240515e-02 -0.0362163421
-    ## 1996.623  0.016168105  4.959889e-01 -3.631346e-02 -0.0344445365
-    ## 1996.627  0.001772028  5.104454e-01 -4.213250e-02 -0.0302017338
-    ## 1996.631 -0.015982169  5.131045e-01 -4.628259e-02 -0.0246959632
-    ## 1996.635  0.006152717  5.218932e-01 -4.538292e-02 -0.0136297274
-    ## 1996.638  0.014478243  5.304604e-01 -4.347060e-02 -0.0213759472
-    ## 1996.642  0.015901274  5.338997e-01 -3.780384e-02 -0.0172751401
-    ## 1996.646  0.053102781  5.570772e-01 -3.732097e-02 -0.0049666048
-    ## 1996.650  0.046779672  5.421190e-01 -2.974142e-02 -0.0105183282
-    ## 1996.654  0.097763900  5.130865e-01 -5.239010e-03 -0.0177055659
-    ## 1996.658  0.058997456  5.308634e-01 -3.054761e-03 -0.0260705148
-    ## 1996.662  0.103758632  5.219554e-01 -1.343019e-03 -0.0229710339
-    ## 1996.665  0.119690773  5.290212e-01  6.715823e-03 -0.0216488645
-    ## 1996.669  0.112489735  5.281573e-01  1.272597e-02 -0.0195728671
-    ## 1996.673  0.116174103  5.313125e-01  3.238401e-03 -0.0202144137
-    ## 1996.677  0.097739407  5.549977e-01  8.621432e-03 -0.0032865477
-    ## 1996.681  0.052437468  5.689586e-01 -1.992378e-02 -0.0141054116
-    ## 1996.685  0.019930086  5.634968e-01 -2.085622e-02 -0.0089212193
-    ## 1996.688  0.038268781  5.655195e-01 -1.083194e-02 -0.0050859824
-    ## 1996.692  0.005157500  5.525112e-01 -2.085404e-02 -0.0049085647
-    ## 1996.696  0.027023001  5.454708e-01 -2.273077e-03 -0.0047906442
-    ## 1996.700  0.044894421  5.369500e-01  9.384553e-03  0.0066600382
-    ## 1996.704  0.063132166  5.298622e-01  1.010046e-02  0.0077340348
-    ## 1996.708  0.102733577  5.257448e-01  2.061325e-02 -0.0055422560
-    ## 1996.712  0.135756379  4.999911e-01  2.341320e-02 -0.0008011153
-    ## 1996.715  0.122333366  4.971381e-01  1.653001e-02  0.0026674725
-    ## 1996.719  0.170767505  4.760354e-01  3.491048e-02  0.0164872518
-    ## 1996.723  0.222795419  4.794414e-01  4.333922e-02  0.0263128596
-    ## 1996.727  0.241575486  4.772771e-01  4.095590e-02  0.0334274050
-    ## 1996.731  0.222888871  4.768670e-01  4.060687e-02  0.0459998805
-    ## 1996.735  0.205063618  4.787372e-01  2.968222e-02  0.0375629472
-    ## 1996.738  0.226130821  4.768701e-01  4.279488e-02  0.0439513578
-    ## 1996.742  0.226021075  4.743973e-01  2.443535e-02  0.0467394034
-    ## 1996.746  0.166765539  4.574814e-01  9.203395e-03  0.0516760969
-    ## 1996.750  0.191025611  4.359384e-01 -2.429988e-03  0.0433175495
-    ## 1996.754  0.242680283  4.254230e-01  8.604969e-03  0.0429526468
-    ## 1996.758  0.243409452  4.232609e-01  6.207992e-03  0.0418726949
-    ## 1996.762  0.249434178  4.264143e-01  1.923427e-02  0.0461842935
-    ## 1996.765  0.284974041  4.017114e-01  3.861312e-02  0.0272827194
-    ## 1996.769  0.296290854  4.369561e-01  5.484752e-02  0.0412531836
-    ## 1996.773  0.345036575  4.272076e-01  5.620208e-02  0.0514672244
-    ## 1996.777  0.335958714  4.280841e-01  4.305534e-02  0.0402215236
-    ## 1996.781  0.371509629  4.190606e-01  5.453464e-02  0.0572915633
-    ## 1996.785  0.387217808  4.307232e-01  5.290074e-02  0.0397740636
-    ## 1996.788  0.397817567  4.203153e-01  6.276797e-02  0.0379295935
-    ## 1996.792  0.360671648  4.244408e-01  5.148102e-02  0.0258770414
-    ## 1996.796  0.339803030  4.296817e-01  3.849743e-02  0.0249387635
-    ## 1996.800  0.373261189  4.339948e-01  5.747588e-02  0.0375038195
-    ## 1996.804  0.382075792  4.458591e-01  5.488284e-02  0.0408808346
-    ## 1996.808  0.420091881  4.198707e-01  6.423056e-02  0.0483307006
-    ## 1996.812  0.382239672  4.137202e-01  5.561638e-02  0.0482979915
-    ## 1996.815  0.403738120  4.146433e-01  6.108971e-02  0.0586652451
-    ## 1996.819  0.433960972  3.950387e-01  7.196824e-02  0.0617548706
-    ## 1996.823  0.438197341  4.107983e-01  7.735133e-02  0.0794300767
-    ## 1996.827  0.416715333  4.063918e-01  7.487614e-02  0.0747465403
-    ## 1996.831  0.349611583  4.226910e-01  7.412744e-02  0.0622137890
-    ## 1996.835  0.341763027  4.039973e-01  5.646175e-02  0.0470680763
-    ## 1996.838  0.368321095  4.029166e-01  6.965398e-02  0.0568816050
-    ## 1996.842  0.366930337  4.212811e-01  5.477293e-02  0.0610936186
-    ## 1996.846  0.307256664  4.328409e-01  4.332411e-02  0.0531603573
-    ## 1996.850  0.283665452  4.161488e-01  3.432557e-02  0.0416676206
-    ## 1996.854  0.308503137  4.035664e-01  4.797296e-02  0.0489005845
-    ## 1996.858  0.295597146  3.877783e-01  3.059322e-02  0.0313771371
-    ## 1996.862  0.294575646  3.755561e-01  1.316782e-02  0.0206637937
-    ## 1996.865  0.357441534  3.144049e-01  8.768594e-03  0.0152713030
-    ## 1996.869  0.405193038  2.912433e-01  1.744502e-02  0.0133929593
-    ## 1996.873  0.379499901  2.730168e-01  4.498514e-03 -0.0028163894
-    ## 1996.877  0.383112308  2.877834e-01  6.826895e-04  0.0044007264
-    ## 1996.881  0.388821494  2.922515e-01  2.456114e-03 -0.0025837974
-    ## 1996.885  0.435521701  2.703922e-01  5.659808e-03  0.0174442460
-    ## 1996.888  0.423496676  2.815710e-01 -1.005686e-02  0.0195726294
-    ## 1996.892  0.439666458  2.839941e-01 -2.217659e-02  0.0100036181
-    ## 1996.896  0.494913804  2.780006e-01 -5.273447e-03  0.0084110673
-    ## 1996.900  0.469385768  2.953750e-01  1.226176e-02  0.0015723697
-    ## 1996.904  0.494418892  2.893813e-01  1.919934e-02  0.0107390697
-    ## 1996.908  0.470912549  2.888263e-01  1.778919e-02  0.0031090315
-    ## 1996.912  0.459506083  2.801441e-01  1.549987e-02  0.0099401716
-    ## 1996.915  0.519595897  2.904310e-01  6.077543e-02  0.0258086075
-    ## 1996.919  0.573378514  2.819207e-01  7.256543e-02  0.0477249686
-    ## 1996.923  0.578403869  2.902395e-01  7.485270e-02  0.0630046693
-    ## 1996.927  0.548105810  2.805985e-01  7.455838e-02  0.0656176696
-    ## 1996.931  0.593587920  2.594231e-01  5.934434e-02  0.0615736585
-    ## 1996.935  0.633592560  2.314888e-01  6.491348e-02  0.0630564698
-    ## 1996.938  0.619600310  2.119657e-01  5.540681e-02  0.0713079804
-    ## 1996.942  0.694526575  1.897884e-01  5.053117e-02  0.0745644996
-    ## 1996.946  0.638509860  2.340128e-01  3.081840e-02  0.0676216986
-    ## 1996.950  0.635123385  2.595971e-01  1.451249e-02  0.0743015714
-    ## 1996.954  0.493638429  2.698200e-01 -1.798584e-02  0.0538944939
-    ## 1996.958  0.560506497  2.816934e-01 -1.056242e-02  0.0691842448
-    ## 1996.962  0.582154496  3.025589e-01 -1.491382e-02  0.0815429005
-    ## 1996.965  0.488867036  3.215096e-01 -2.898966e-02  0.0527455739
-    ## 1996.969  0.497690583  3.278767e-01 -3.255181e-02  0.0591393786
-    ## 1996.973  0.460184555  3.270696e-01 -2.514897e-02  0.0494336786
-    ## 1996.977  0.508268478  3.168996e-01 -2.117993e-02  0.0532453443
-    ## 1996.981  0.455624342  3.462855e-01 -2.334245e-02  0.0439668394
-    ## 1996.985  0.506505068  3.373746e-01  7.984030e-03  0.0491859170
-    ## 1996.988  0.555646079  3.163741e-01  3.742892e-02  0.0624066353
-    ## 1996.992  0.602125857  2.918692e-01  6.274503e-02  0.0718416883
-    ## 1996.996  0.614117722  2.827608e-01  6.932637e-02  0.0860166138
-    ## 1997.000  0.616957492  2.819246e-01  7.422942e-02  0.0907875105
-    ## 1997.004  0.616957492  2.819246e-01  7.422942e-02  0.0907875105
-    ## 1997.008  0.628987808  2.625768e-01  8.315201e-02  0.0905096172
-    ## 1997.012  0.653876552  2.648466e-01  6.901927e-02  0.0706157916
-    ## 1997.015  0.693939220  2.664722e-01  7.350848e-02  0.0758127084
-    ## 1997.019  0.691060795  2.710981e-01  7.384332e-02  0.0799175513
-    ## 1997.023  0.691060795  2.710981e-01  7.384332e-02  0.0799175513
-    ## 1997.027  0.582548480  3.179522e-01  4.288656e-02  0.0330056081
-    ## 1997.031  0.639920591  2.995540e-01  4.851005e-02  0.0634673901
-    ## 1997.035  0.676445085  2.734348e-01  5.635684e-02  0.0886487043
-    ## 1997.038  0.651343194  2.647134e-01  4.716732e-02  0.0727910726
-    ## 1997.042  0.700707082  2.314551e-01  4.990291e-02  0.0763365224
-    ## 1997.046  0.736924909  2.095952e-01  3.645134e-02  0.0789501272
-    ## 1997.050  0.687681569  2.194482e-01  2.180006e-02  0.0681892417
-    ## 1997.054  0.769798967  2.053735e-01  4.098119e-02  0.0903144704
-    ## 1997.058  0.848179969  1.851071e-01  8.503119e-02  0.1181234648
-    ## 1997.062  0.829212070  1.984745e-01  7.288683e-02  0.1158285971
-    ## 1997.065  0.883140948  1.971070e-01  9.106452e-02  0.1249896260
-    ## 1997.069  0.911893192  1.809769e-01  9.913296e-02  0.1267933954
-    ## 1997.073  0.882071854  1.976999e-01  8.572024e-02  0.1237818959
-    ## 1997.077  0.890867629  1.953927e-01  8.664411e-02  0.1182674970
-    ## 1997.081  0.970629350  1.776439e-01  9.387184e-02  0.0925003366
-    ## 1997.085  1.005350957  1.586162e-01  9.407535e-02  0.0743325514
-    ## 1997.088  0.942716516  1.969095e-01  1.149105e-01  0.0694524474
-    ## 1997.092  0.948562135  1.863361e-01  1.072741e-01  0.0699809576
-    ## 1997.096  1.035173850  1.432481e-01  1.219109e-01  0.0668294755
-    ## 1997.100  0.986890554  1.494228e-01  1.157344e-01  0.0492500569
-    ## 1997.104  1.051397305  1.147923e-01  1.336137e-01  0.0458967334
-    ## 1997.108  1.115076805  1.324281e-01  1.496426e-01  0.0410353003
-    ## 1997.112  1.114899663  1.338738e-01  1.151877e-01  0.0403090372
-    ## 1997.115  1.117273452  1.451277e-01  1.102671e-01  0.0360861607
-    ## 1997.119  1.184883733  1.048125e-01  1.129091e-01  0.0584686253
-    ## 1997.123  1.197392469  7.297028e-02  1.076746e-01  0.0542124133
-    ## 1997.127  1.283532092  4.980799e-02  1.263046e-01  0.0612867607
-    ## 1997.131  1.301054686  5.589447e-02  1.058669e-01  0.0585308738
-    ## 1997.135  1.298031455  7.555505e-02  8.939855e-02  0.0481191991
-    ## 1997.138  1.332542714  5.694922e-02  8.350542e-02  0.0385019277
-    ## 1997.142  1.387817351  2.778720e-02  8.422874e-02  0.0695125642
-    ## 1997.146  1.398949303  4.152562e-02  9.392859e-02  0.0580907443
-    ## 1997.150  1.423805048  3.732607e-02  8.419847e-02  0.0367826009
-    ## 1997.154  1.385621482  5.459653e-02  9.271945e-02  0.0344226052
-    ## 1997.158  1.379613890  1.057474e-01  1.039656e-01  0.0185193521
-    ## 1997.162  1.358388731  1.328623e-01  9.851647e-02  0.0108644127
-    ## 1997.165  1.338633556  1.372953e-01  7.615454e-02  0.0105130761
-    ## 1997.169  1.311268935  1.187996e-01  9.757476e-02  0.0275086413
-    ## 1997.173  1.388821905  7.694725e-02  9.054397e-02  0.0339894856
-    ## 1997.177  1.392389629  8.062444e-02  6.715288e-02  0.0159220871
-    ## 1997.181  1.427464309  4.548635e-02  7.295928e-02  0.0400291226
-    ## 1997.185  1.378279593  5.276894e-02  5.297167e-02  0.0394301986
-    ## 1997.188  1.361898535  5.820986e-02  5.179103e-02  0.0515604059
-    ## 1997.192  1.487743158  2.262947e-02  4.874219e-02  0.0797014403
-    ## 1997.196  1.525523092  8.408042e-03  3.539434e-02  0.0766595838
-    ## 1997.200  1.600688334 -5.609093e-03  5.802660e-02  0.0715285269
-    ## 1997.204  1.640286889 -2.008595e-03  5.689619e-02  0.0725188959
-    ## 1997.208  1.666963092  1.319251e-02  5.775157e-02  0.0599155470
-    ## 1997.212  1.650730914  4.724041e-02  4.503621e-02  0.0683078297
-    ## 1997.215  1.579022933  9.671843e-02  3.786525e-02  0.0411017852
-    ## 1997.219  1.531326475  8.604539e-02  3.419030e-02  0.0580142872
-    ## 1997.223  1.581302632  8.573994e-02  3.032504e-02  0.0702856435
-    ## 1997.227  1.451347592  1.244857e-01  1.901282e-02  0.0627722504
-    ## 1997.231  1.397493991  1.305441e-01  3.646268e-02  0.0548349717
-    ## 1997.235  1.416376047  8.727245e-02  2.458985e-02  0.0442196755
-    ## 1997.238  1.286736335  9.148864e-02  4.625652e-03  0.0371647940
-    ## 1997.242  1.347352557  5.020779e-02 -9.035089e-03  0.0288707607
-    ## 1997.246  1.328689617  3.851240e-02 -4.647672e-02  0.0165557814
-    ## 1997.250  1.447639317  1.624967e-02 -4.182603e-02  0.0373044434
-    ## 1997.254  1.532749007  8.061876e-03 -5.878046e-02  0.0451707005
-    ## 1997.258  1.542470790  1.043798e-02 -2.979111e-02  0.0175196723
-    ## 1997.262  1.542470790  1.043798e-02 -2.979111e-02  0.0175196723
-    ## 1997.265  1.542470790  1.043798e-02 -2.979111e-02  0.0175196723
-    ## 1997.269  1.339310411  5.538658e-02 -1.233461e-02  0.0184042081
-    ## 1997.273  1.253028212  1.190899e-01 -2.061824e-03 -0.0079239447
-    ## 1997.277  1.221763867  1.242596e-01 -2.321814e-02 -0.0032064478
-    ## 1997.281  1.248755355  1.325332e-01 -2.469300e-02  0.0108218083
-    ## 1997.285  1.398040087  9.305936e-02 -5.495371e-02  0.0110426736
-    ## 1997.288  1.394035989  8.217212e-02 -4.164041e-02  0.0065478209
-    ## 1997.292  1.471402363  4.954252e-02 -3.436231e-02  0.0043430991
-    ## 1997.296  1.465747554  7.364653e-02 -1.961320e-02  0.0115547245
-    ## 1997.300  1.393436817  9.249372e-02 -3.966759e-02 -0.0070394497
-    ## 1997.304  1.360992744  9.116218e-02 -3.921070e-02 -0.0144626022
-    ## 1997.308  1.475810876  4.347166e-02 -3.943166e-02 -0.0001041217
-    ## 1997.312  1.464616916  4.531834e-02 -1.836156e-02  0.0025490613
-    ## 1997.315  1.480704393  6.132431e-02 -3.312346e-02 -0.0093077329
-    ## 1997.319  1.439208559  1.651195e-01 -7.189969e-02 -0.0200489960
-    ## 1997.323  1.424574166  2.165909e-01 -5.904099e-02 -0.0461442399
-    ## 1997.327  1.439920533  2.386649e-01 -6.938050e-02 -0.0367460823
-    ## 1997.331  1.494272284  2.404783e-01 -4.913238e-02 -0.0277074331
-    ## 1997.335  1.530412605  2.399426e-01 -7.016845e-02 -0.0420326616
-    ## 1997.338  1.480371540  2.254708e-01 -5.037658e-02 -0.0342475904
-    ## 1997.342  1.515978720  2.205330e-01 -4.282135e-02 -0.0306837308
-    ## 1997.346  1.626128144  1.814852e-01 -2.719841e-02 -0.0231643877
-    ## 1997.350  1.677154391  1.392869e-01 -1.501343e-02 -0.0384387366
-    ## 1997.354  1.681748302  1.444214e-01 -9.965866e-03 -0.0349800399
-    ## 1997.358  1.742179114  1.358496e-01 -3.541146e-02 -0.0364720434
-    ## 1997.362  1.814835398  1.213384e-01 -8.234097e-02 -0.0429451757
-    ## 1997.365  1.809148334  1.804248e-01 -4.413933e-02 -0.0051045613
-    ## 1997.369  1.814371511  2.070250e-01 -3.448189e-02 -0.0159809584
-    ## 1997.373  1.836269153  2.314997e-01 -1.042186e-02  0.0005054959
-    ## 1997.377  1.848679623  2.715322e-01  1.595681e-02  0.0238435114
-    ## 1997.381  1.957962341  2.169168e-01  3.057486e-02  0.0439982893
-    ## 1997.385  1.988226498  2.003170e-01  7.817713e-02  0.0173461847
-    ## 1997.388  2.061564329  1.297633e-01  8.575836e-02  0.0024292340
-    ## 1997.392  2.051041133  1.264168e-01  9.881829e-02 -0.0132327441
-    ## 1997.396  2.071402662  1.246148e-01  1.066454e-01 -0.0143834796
-    ## 1997.400  2.046544500  9.683120e-02  7.933250e-02 -0.0330988718
-    ## 1997.404  1.951256885  1.105356e-01  8.067482e-02 -0.0316731431
-    ## 1997.408  2.067592021  9.442650e-02  5.570636e-02 -0.0317337843
-    ## 1997.412  2.022434351  1.613189e-01  5.025673e-02 -0.0363739469
-    ## 1997.415  2.068444900  1.374818e-01  3.735303e-02 -0.0159909334
-    ## 1997.419  2.003700468  2.858912e-01 -6.442382e-02 -0.0017833590
-    ## 1997.423  2.031656061  2.614064e-01 -3.395727e-02  0.0069798123
-    ## 1997.427  1.911955334  3.838945e-01 -6.545938e-02  0.0189213373
-    ## 1997.431  1.909697169  3.859700e-01 -7.674826e-02  0.0211302680
-    ## 1997.435  1.826360362  3.389015e-01 -4.441662e-02  0.0153986288
-    ## 1997.438  1.859977507  2.969629e-01 -9.943037e-02 -0.0462764257
-    ## 1997.442  1.921826806  2.696965e-01 -1.334313e-01 -0.0519661456
-    ## 1997.446  1.938337931  2.592980e-01 -1.272722e-01 -0.0693576294
-    ## 1997.450  2.014331088  1.955314e-01 -1.052981e-01 -0.0555993920
-    ## 1997.454  2.101801242  2.060300e-01 -6.628935e-02 -0.0566287229
-    ## 1997.458  2.094986611  2.832357e-01 -4.674370e-02 -0.0769719190
-    ## 1997.462  2.102443995  3.422724e-01 -3.196494e-02 -0.0517924067
-    ## 1997.465  2.106159470  2.821434e-01 -1.551331e-02 -0.0318428783
-    ## 1997.469  2.224376209  2.199080e-01 -6.585039e-03 -0.0205775312
-    ## 1997.473  2.291601435  1.715383e-01  2.583637e-02 -0.0152747839
-    ## 1997.477  2.253579020  1.636763e-01  3.748587e-04 -0.0195951208
-    ## 1997.481  2.174946944  1.715706e-01 -3.471602e-02 -0.0472339402
-    ## 1997.485  2.175148151  1.807127e-01 -6.774472e-02 -0.0816091124
-    ## 1997.488  2.217130438  2.097380e-01 -1.191426e-01 -0.1144521236
-    ## 1997.492  2.222085699  1.593847e-01 -1.541483e-01 -0.1583113578
-    ## 1997.496  2.206546827  1.472051e-01 -1.366340e-01 -0.1945223382
-    ## 1997.500  2.238325841  1.259784e-01 -1.181400e-01 -0.1762924599
-    ## 1997.504  2.384011136  4.971356e-02 -8.967526e-02 -0.1789182410
-    ## 1997.508  2.417918212  2.534350e-02 -6.432888e-02 -0.1759407109
-    ## 1997.512  2.411187068  2.374381e-02 -7.181169e-02 -0.2017124056
-    ## 1997.515  2.321043407  3.713068e-02 -7.552888e-02 -0.1938084886
-    ## 1997.519  2.498806191 -5.877679e-03 -1.681657e-03 -0.1364262951
-    ## 1997.523  2.502506724  5.630288e-02 -3.445278e-02 -0.1228154004
-    ## 1997.527  2.640036115  8.229405e-02 -3.367051e-02 -0.1261781683
-    ## 1997.531  2.644151846  8.100709e-02 -5.459032e-02 -0.1507574457
-    ## 1997.535  2.711119359  7.537408e-02 -9.554408e-02 -0.1773035923
-    ## 1997.538  2.701668664  7.912601e-02 -1.605208e-01 -0.2178800383
-    ## 1997.542  2.709053045  4.773101e-02 -1.397264e-01 -0.2007902297
-    ## 1997.546  2.653516973  6.700148e-02 -1.235354e-01 -0.1645331130
-    ## 1997.550  2.689126840  5.320880e-02 -1.397880e-01 -0.0811688482
-    ## 1997.554  2.763733942  9.095925e-02 -1.576245e-01 -0.0523422501
-    ## 1997.558  2.791328222  1.023714e-01 -1.265990e-01 -0.0369233416
-    ## 1997.562  2.920296174  9.864700e-02 -1.317089e-01 -0.0182083442
-    ## 1997.565  2.860458042  1.216549e-01 -1.395969e-01 -0.0028352208
-    ## 1997.569  2.681104428  1.745368e-01 -1.698926e-01  0.0052464320
-    ## 1997.573  2.610763505  1.194129e-01 -2.058516e-01  0.0379564699
-    ## 1997.577  2.762104537  8.271990e-02 -2.657193e-01  0.0906190835
-    ## 1997.581  2.945194511  1.292977e-02 -2.760277e-01  0.0419144543
-    ## 1997.585  2.877636276  4.593504e-02 -2.557798e-01  0.0214586683
-    ## 1997.588  2.937903421 -3.370122e-02 -2.616071e-01  0.0370419145
-    ## 1997.592  2.967662740 -1.705241e-02 -2.831922e-01  0.0345774495
-    ## 1997.596  2.951545351 -1.725679e-02 -2.547170e-01  0.0529196362
-    ## 1997.600  3.080357101 -3.974246e-02 -2.608863e-01  0.0625068867
-    ## 1997.604  3.041432067 -6.294106e-02 -2.289153e-01  0.0479810145
-    ## 1997.608  2.983134778 -2.991793e-02 -2.034878e-01  0.0169133200
-    ## 1997.612  2.878273930  2.759132e-02 -2.057645e-01  0.0643201708
-    ## 1997.615  2.913486945  7.436581e-02 -1.898681e-01  0.1019388439
-    ## 1997.619  3.023978748  4.555098e-02 -1.503243e-01  0.1191844919
-    ## 1997.623  3.134273311  6.874008e-02 -1.581474e-01  0.1149784878
-    ## 1997.627  2.997789080  1.126660e-01 -1.632880e-01  0.0871659800
-    ## 1997.631  2.971007814  1.249218e-01 -1.610739e-01  0.1029486902
-    ## 1997.635  3.021730694  1.253578e-01 -1.553362e-01  0.1463019279
-    ## 1997.638  2.817957163  1.708079e-01 -1.352921e-01  0.1232953316
-    ## 1997.642  2.759348013  1.524791e-01 -1.055358e-01  0.1513745222
-    ## 1997.646  2.615795454  7.207274e-02 -8.813455e-02  0.0936904502
-    ## 1997.650  2.529465899  1.108018e-01 -1.309667e-01  0.1293564203
-    ## 1997.654  2.730009858  8.911206e-02 -1.363404e-01  0.1190637869
-    ## 1997.658  2.851087249  7.044926e-02 -1.367497e-01  0.1071128090
-    ## 1997.662  2.813965144  1.098975e-01 -1.056347e-01  0.1059108596
-    ## 1997.665  2.617859556  1.123908e-01 -8.572496e-02  0.1238661027
-    ## 1997.669  2.606303828  1.201248e-01 -7.997884e-02  0.1193474819
-    ## 1997.673  2.501698757  1.372973e-01 -3.972141e-02  0.1336722852
-    ## 1997.677  2.527516847  1.528334e-01 -2.998049e-02  0.1182908481
-    ## 1997.681  2.357047613  1.504153e-01 -9.019151e-03  0.1499581002
-    ## 1997.685  2.303982961  2.126441e-01 -7.615669e-02  0.1499361027
-    ## 1997.688  2.415607352  2.005064e-01 -8.532269e-02  0.1768185699
-    ## 1997.692  2.667052864  1.130136e-01 -6.885341e-02  0.1723645032
-    ## 1997.696  2.656048882  1.380745e-01 -1.581278e-02  0.1397436808
-    ## 1997.700  2.685446810  1.330367e-01 -2.326354e-02  0.1583277587
-    ## 1997.704  2.692253014  1.469647e-01 -1.510302e-02  0.1246119099
-    ## 1997.708  2.719976970  1.136271e-01 -4.622595e-02  0.1581502935
-    ## 1997.712  2.653611477  1.143882e-01 -5.511484e-02  0.1634901772
-    ## 1997.715  2.529805155  1.388574e-01 -4.842142e-02  0.1582745180
-    ## 1997.719  2.390641229  1.448851e-01  4.573044e-03  0.1193522045
-    ## 1997.723  2.335959805  1.569666e-01  5.830354e-02  0.0776297430
-    ## 1997.727  2.464555126  1.041809e-01  7.622211e-02  0.1082431716
-    ## 1997.731  2.625556627  9.973932e-02  4.902009e-02  0.1411741897
-    ## 1997.735  2.675643635  1.368439e-01  7.611232e-02  0.0801326278
-    ## 1997.738  2.761175691  1.197667e-01  8.594147e-02  0.0678208106
-    ## 1997.742  2.733494973  1.065122e-01  8.858615e-02  0.0593038397
-    ## 1997.746  2.875664073  9.212297e-02  5.678446e-02  0.0798108422
-    ## 1997.750  2.839173453  9.626007e-02  1.800873e-02  0.0472510724
-    ## 1997.754  2.915186692  8.709543e-02  2.219131e-02  0.0893558044
-    ## 1997.758  2.852439589  9.680499e-02  4.163521e-02  0.0979936392
-    ## 1997.762  2.946804837  2.221278e-01  9.415915e-02  0.1485688714
-    ## 1997.765  2.930451455  2.108628e-01  1.079114e-01  0.1505771240
-    ## 1997.769  2.971346603  1.943262e-01  1.091676e-01  0.1841668085
-    ## 1997.773  3.122973864  1.815335e-01  9.821868e-02  0.2165904337
-    ## 1997.777  3.132697040  1.839107e-01  7.575647e-02  0.1756464210
-    ## 1997.781  3.217460722  1.623522e-01  1.115428e-01  0.1374906015
-    ## 1997.785  3.206618780  1.600413e-01  4.643580e-02  0.1663250825
-    ## 1997.788  3.175546437  1.745708e-01  5.621144e-02  0.1870350128
-    ## 1997.792  3.091374070  2.022197e-01  3.851949e-02  0.1649538721
-    ## 1997.796  2.946978413  2.522553e-01  4.183845e-02  0.1567836457
-    ## 1997.800  2.930037692  2.608051e-01  5.717042e-02  0.1701300597
-    ## 1997.804  3.064242100  2.495525e-01  7.792355e-02  0.1768704024
-    ## 1997.808  3.071813615  2.562877e-01  7.962527e-02  0.1510585226
-    ## 1997.812  3.017227257  2.485157e-01  8.698831e-02  0.1283390674
-    ## 1997.815  3.018704406  2.605379e-01  1.145595e-01  0.1343027086
-    ## 1997.819  2.916896049  2.930988e-01  1.568604e-01  0.1136306410
-    ## 1997.823  2.893767278  2.774940e-01  9.996475e-02  0.0866154769
-    ## 1997.827  3.012036816  2.370827e-01  5.721150e-02  0.0925550530
-    ## 1997.831  2.905459040  2.287842e-01  3.202396e-02  0.0728872199
-    ## 1997.835  2.624357416  2.583645e-01 -4.512849e-03  0.0265958442
-    ## 1997.838  2.620586590  2.625326e-01 -2.848080e-02  0.0022954119
-    ## 1997.842  2.388643014  2.764508e-01 -6.135200e-02 -0.0155577610
-    ## 1997.846  2.062780511  3.571709e-01 -6.027624e-03 -0.0159829148
-    ## 1997.850  2.398846058  2.218937e-01  3.564907e-02 -0.0048485062
-    ## 1997.854  2.236958758  2.743071e-01 -3.291182e-03 -0.0014722796
-    ## 1997.858  2.288854141  3.120580e-01  6.736746e-03 -0.0308794320
-    ## 1997.862  2.441343692  2.968314e-01 -1.521374e-03 -0.0239184625
-    ## 1997.865  2.383181083  3.048189e-01  3.205794e-02 -0.0320776219
-    ## 1997.869  2.474573245  2.542557e-01  2.353617e-02 -0.0362356483
-    ## 1997.873  2.391242300  2.783035e-01 -4.021657e-03 -0.0424179095
-    ## 1997.877  2.195258279  3.082236e-01 -2.852643e-02 -0.0621679778
-    ## 1997.881  2.229402166  3.352828e-01 -1.553097e-02 -0.0507275966
-    ## 1997.885  2.233047184  3.312828e-01 -2.956008e-02 -0.0648897805
-    ## 1997.888  2.152444820  3.001734e-01 -4.848092e-02 -0.0839755324
-    ## 1997.892  2.150182426  2.838422e-01 -5.136252e-02 -0.0781612544
-    ## 1997.896  2.158306750  3.074498e-01 -1.987421e-02 -0.0859392051
-    ## 1997.900  2.389043891  2.931864e-01 -1.040695e-02 -0.0435449849
-    ## 1997.904  2.401715462  2.683735e-01 -3.597896e-02 -0.0451386913
-    ## 1997.908  2.415179311  2.474089e-01 -6.151294e-02 -0.0363687176
-    ## 1997.912  2.530516751  2.606884e-01 -4.318528e-02 -0.0224455396
-    ## 1997.915  2.631824573  2.607304e-01  1.159820e-02 -0.0258943654
-    ## 1997.919  2.461816832  2.827797e-01  7.651485e-03 -0.0649137073
-    ## 1997.923  2.444826052  2.874172e-01 -3.643074e-02 -0.0806396838
-    ## 1997.927  2.538085447  2.772611e-01 -6.394532e-02 -0.0737204856
-    ## 1997.931  2.578281131  2.565694e-01 -8.135531e-02 -0.0769847906
-    ## 1997.935  2.576372812  1.895625e-01 -1.046693e-01 -0.0969756339
-    ## 1997.938  2.778349172  1.640825e-01 -1.278038e-01 -0.0481653838
-    ## 1997.942  2.802103188  2.109151e-01 -8.418810e-02 -0.0606876794
-    ## 1997.946  2.780191387  2.226198e-01 -8.023018e-02 -0.0735571591
-    ## 1997.950  2.901264765  2.743931e-01 -7.230757e-02 -0.0183810848
-    ## 1997.954  2.955396110  3.199991e-01 -6.665048e-02 -0.0009413086
-    ## 1997.958  3.030875245  3.274455e-01 -4.699468e-02 -0.0195521642
-    ## 1997.962  3.041021371  2.867267e-01 -2.237790e-02 -0.0366005053
-    ## 1997.965  2.947359734  2.923240e-01 -1.323889e-02 -0.0604082923
-    ## 1997.969  2.753993018  3.771913e-01 -6.039163e-02 -0.1193334031
-    ## 1997.973  2.780376058  3.782541e-01 -8.441158e-02 -0.0955319537
-    ## 1997.977  2.801226865  4.071576e-01 -1.106916e-02 -0.0642286500
-    ## 1997.981  2.994127142  3.655296e-01 -1.130187e-02 -0.0357261773
-    ## 1997.985  2.982587098  3.884165e-01 -3.596146e-02 -0.0527558207
-    ## 1997.988  2.973883253  3.726420e-01 -5.281670e-02 -0.0545520647
-    ## 1997.992  2.749553331  3.699086e-01 -9.586287e-02 -0.0936836188
-    ## 1997.996  2.838886940  3.119370e-01 -1.208992e-01 -0.0951954880
-    ## 1998.000  2.847169333  3.448624e-01 -1.149406e-01 -0.0775762186
-    ## 1998.004  2.843006821  3.028835e-01 -1.252135e-01 -0.0926601376
-    ## 1998.008  2.843006821  3.028835e-01 -1.252135e-01 -0.0926601376
-    ## 1998.012  2.843854026  3.015210e-01 -1.245852e-01 -0.0926797075
-    ## 1998.015  3.054327748  2.878165e-01 -1.330647e-01 -0.0708387988
-    ## 1998.019  3.098980853  2.630180e-01 -7.841074e-02 -0.1188139662
-    ## 1998.023  3.119801707  2.326429e-01 -6.171066e-02 -0.1170189791
-    ## 1998.027  3.119801707  2.326429e-01 -6.171066e-02 -0.1170189791
-    ## 1998.031  3.248324557  2.074115e-01 -9.914607e-02 -0.0374306844
-    ## 1998.035  3.376838085  2.186715e-01 -8.736684e-02 -0.0538209863
-    ## 1998.038  3.315113662  2.660204e-01 -6.771369e-02 -0.0656271995
-    ## 1998.042  3.263273028  2.880173e-01 -9.755676e-02 -0.0957997520
-    ## 1998.046  3.186302319  3.583195e-01 -8.563142e-02 -0.0798752937
-    ## 1998.050  3.056323240  3.395500e-01 -1.176480e-01 -0.1021412024
-    ## 1998.054  2.866735903  3.522854e-01 -1.044482e-01 -0.0780709404
-    ## 1998.058  2.948352025  3.216237e-01 -9.132986e-02 -0.1189135845
-    ## 1998.062  2.966351529  3.089028e-01 -6.281581e-02 -0.1028126038
-    ## 1998.065  3.004618702  3.247478e-01 -1.796847e-02 -0.0819510962
-    ## 1998.069  3.164442724  3.380265e-01  1.755200e-04 -0.0750206780
-    ## 1998.073  3.233551515  3.370541e-01 -4.353672e-02 -0.0729352797
-    ## 1998.077  3.280945175  3.186883e-01 -4.715950e-02 -0.0907855153
-    ## 1998.081  3.239335358  3.300612e-01 -1.535007e-02 -0.1149174705
-    ## 1998.085  3.205328526  3.270527e-01 -2.075651e-02 -0.1097641415
-    ## 1998.088  3.152607386  3.224336e-01 -6.713430e-02 -0.1607736206
-    ## 1998.092  3.236788759  3.092680e-01 -4.617692e-02 -0.1314203038
-    ## 1998.096  3.352990715  2.904441e-01  1.186449e-03 -0.0839021165
-    ## 1998.100  3.465316343  2.781899e-01 -5.147973e-03 -0.0793675759
-    ## 1998.104  3.563452124  2.461580e-01  9.103518e-03 -0.0471208974
-    ## 1998.108  3.629233027  2.225247e-01  4.975162e-02 -0.0602597362
-    ## 1998.112  3.786648130  2.950914e-01  6.884125e-02 -0.0216889381
-    ## 1998.115  3.804049875  3.067059e-01  7.447606e-02 -0.0326257067
-    ## 1998.119  3.763788918  3.259163e-01  6.570823e-02 -0.0412436996
-    ## 1998.123  3.801318264  3.101882e-01  9.008011e-02 -0.0743965649
-    ## 1998.127  3.881635414  2.981987e-01  8.337449e-02 -0.0899356187
-    ## 1998.131  3.853706705  2.722105e-01  8.438987e-02 -0.0942988556
-    ## 1998.135  3.900677531  2.627436e-01  7.109693e-02 -0.0894097173
-    ## 1998.138  3.920091893  2.648319e-01  6.807609e-02 -0.1286174694
-    ## 1998.142  3.796878604  3.065701e-01  3.498588e-02 -0.1297470498
-    ## 1998.146  3.838806901  3.174176e-01  4.437640e-02 -0.1339599452
-    ## 1998.150  3.897744992  2.884945e-01  7.943618e-02 -0.1179101749
-    ## 1998.154  4.059038528  2.743336e-01  9.399690e-02 -0.0879704842
-    ## 1998.158  4.052439090  2.774127e-01  1.155734e-01 -0.0773496878
-    ## 1998.162  4.005406399  3.159186e-01  1.152757e-01 -0.0849742900
-    ## 1998.165  4.026560072  3.047160e-01  1.182084e-01 -0.1007202674
-    ## 1998.169  4.040549094  2.798730e-01  9.763195e-02 -0.0952162767
-    ## 1998.173  3.989305047  2.595414e-01  6.964020e-02 -0.0974133298
-    ## 1998.177  4.193219292  2.114776e-01  9.696231e-02 -0.0801026006
-    ## 1998.181  4.256661775  1.645316e-01  1.395264e-01 -0.1030571781
-    ## 1998.185  4.288606579  1.373068e-01  1.545585e-01 -0.1201892442
-    ## 1998.188  4.414065748  1.494995e-01  1.289767e-01 -0.1222079828
-    ## 1998.192  4.366200025  1.840687e-01  1.179809e-01 -0.1290908413
-    ## 1998.196  4.228341082  1.697923e-01  1.143059e-01 -0.1229119184
-    ## 1998.200  4.198777815  1.210050e-01  1.170660e-01 -0.1175351638
-    ## 1998.204  4.393942323  6.734389e-02  1.508845e-01 -0.1083225233
-    ## 1998.208  4.476366683  2.630059e-02  1.539499e-01 -0.0631470405
-    ## 1998.212  4.506303181  4.601710e-02  1.350703e-01 -0.0784408566
-    ## 1998.215  4.536039299  2.664088e-02  1.372306e-01 -0.0887790281
-    ## 1998.219  4.493605646  2.347593e-02  1.265070e-01 -0.1075383996
-    ## 1998.223  4.532613129  5.926000e-03  9.949185e-02 -0.1279660709
-    ## 1998.227  4.578526879 -8.272036e-02  1.213737e-01 -0.0816476642
-    ## 1998.231  4.668601048 -1.450635e-01  1.639171e-01 -0.0349840609
-    ## 1998.235  4.647232156 -1.085375e-01  2.322702e-01  0.0268130356
-    ## 1998.238  4.748752597 -1.035463e-01  2.787536e-01  0.0739451245
-    ## 1998.242  4.819583071 -1.066277e-01  1.758709e-01  0.0211147387
-    ## 1998.246  4.805219560 -9.290883e-02  1.822773e-01 -0.0148901939
-    ## 1998.250  4.916959550 -1.429644e-01  1.991063e-01 -0.0134504291
-    ## 1998.254  5.019599097 -2.529759e-01  2.005951e-01 -0.0320056776
-    ## 1998.258  4.901591560 -2.469240e-01  2.069286e-01 -0.0631546817
-    ## 1998.262  4.993516238 -2.474681e-01  2.057076e-01 -0.0907383259
-    ## 1998.265  4.974270947 -2.486543e-01  1.814519e-01 -0.1027555667
-    ## 1998.269  5.075925120 -3.327545e-01  2.167363e-01 -0.1090468447
-    ## 1998.273  5.153136774 -2.915082e-01  2.409311e-01 -0.0751976598
-    ## 1998.277  5.243080113 -3.408468e-01  2.618489e-01 -0.0559301197
-    ## 1998.281  5.307074545 -3.180516e-01  2.063539e-01 -0.0626849717
-    ## 1998.285  5.448260321 -3.562592e-01  1.922174e-01 -0.0593880852
-    ## 1998.288  5.329326436 -2.607800e-01  1.657208e-01 -0.0366778675
-    ## 1998.292  5.217516638 -2.652528e-01  1.692148e-01  0.0075370799
-    ## 1998.296  5.292473583 -2.604900e-01  1.764519e-01  0.0275479561
-    ## 1998.300  5.292473583 -2.604900e-01  1.764519e-01  0.0275479561
-    ## 1998.304  5.292473583 -2.604900e-01  1.764519e-01  0.0275479561
-    ## 1998.308  5.306775929 -2.205316e-01  1.172947e-01  0.0317460275
-    ## 1998.312  5.287572488 -2.674683e-01  1.214988e-01  0.0389656321
-    ## 1998.315  5.151870177 -2.715158e-01  1.128707e-01  0.0411425091
-    ## 1998.319  5.126034254 -3.464375e-01  5.961269e-02  0.0467367957
-    ## 1998.323  5.214669078 -3.564312e-01  3.303996e-02  0.0696390313
-    ## 1998.327  5.138056366 -3.402681e-01  5.339670e-02  0.1201495215
-    ## 1998.331  5.057511793 -3.267413e-01  7.161308e-02  0.1152732150
-    ## 1998.335  4.993339233 -3.329685e-01  8.282823e-02  0.1033723276
-    ## 1998.338  4.882497469 -3.085414e-01  1.259923e-01  0.0580521565
-    ## 1998.342  4.605909596 -2.768793e-01  9.755405e-02  0.0339534765
-    ## 1998.346  4.812051623 -3.324797e-01  1.144002e-01  0.0477780101
-    ## 1998.350  4.788480979 -2.377463e-01  1.096500e-01  0.0176661500
-    ## 1998.354  5.078851798 -3.569581e-01  1.299476e-01  0.0390170196
-    ## 1998.358  5.121217865 -3.096062e-01  1.764973e-01  0.0709138892
-    ## 1998.362  5.333174273 -4.279922e-01  1.580026e-01 -0.0078722546
-    ## 1998.365  5.226406163 -3.995750e-01  2.028071e-01 -0.0412802938
-    ## 1998.369  5.253431669 -3.978480e-01  1.799091e-01 -0.0302295687
-    ## 1998.373  5.127133365 -3.900061e-01  2.024346e-01 -0.0553784495
-    ## 1998.377  5.208096402 -3.672227e-01  1.436469e-01 -0.0242039685
-    ## 1998.381  5.381830262 -4.512132e-01  1.741399e-01 -0.0152055445
-    ## 1998.385  5.293033035 -4.695747e-01  1.532528e-01 -0.0348250305
-    ## 1998.388  5.345130287 -5.130863e-01  1.434519e-01  0.0190644860
-    ## 1998.392  5.318386495 -5.230839e-01  1.273422e-01  0.0263826501
-    ## 1998.396  5.293499684 -5.167907e-01  7.216044e-02  0.0468868304
-    ## 1998.400  5.130903574 -5.281985e-01  5.472958e-02  0.0553680960
-    ## 1998.404  5.266563382 -5.330601e-01  2.919883e-02  0.0604067570
-    ## 1998.408  5.376571752 -6.078405e-01  3.688994e-02  0.0948205293
-    ## 1998.412  5.390966006 -5.917523e-01  5.270563e-02  0.1056577789
-    ## 1998.415  5.424315122 -5.762935e-01  4.997004e-02  0.0969596849
-    ## 1998.419  5.537919971 -6.410579e-01  3.374049e-02  0.0658973613
-    ## 1998.423  5.596507093 -6.323228e-01  7.368278e-03  0.0547883324
-    ## 1998.427  5.351343713 -5.652810e-01  1.592433e-02 -0.0057250091
-    ## 1998.431  5.355395436 -5.718767e-01 -1.479274e-02  0.0219641438
-    ## 1998.435  5.420578074 -5.966381e-01 -3.213381e-02  0.0203661917
-    ## 1998.438  5.403835821 -6.153507e-01 -5.052936e-02  0.0077611637
-    ## 1998.442  5.457806270 -6.758167e-01 -3.762284e-02  0.0190064219
-    ## 1998.446  5.571361752 -7.276423e-01 -7.142563e-03  0.0536572256
-    ## 1998.450  5.484794716 -7.192665e-01 -1.554371e-02  0.0659027915
-    ## 1998.454  5.672873531 -7.473413e-01 -1.671593e-02  0.0954258724
-    ## 1998.458  5.777917017 -7.174587e-01 -1.861095e-04  0.1342752808
-    ## 1998.462  5.752187581 -7.276853e-01 -4.118469e-04  0.1348625109
-    ## 1998.465  5.733697968 -7.657555e-01 -2.546051e-02  0.1641159106
-    ## 1998.469  5.561293164 -7.747573e-01 -1.283863e-01  0.1887146318
-    ## 1998.473  5.339406909 -7.055694e-01 -1.101621e-01  0.1285413136
-    ## 1998.477  5.227251956 -6.842764e-01 -1.279271e-01  0.1242559952
-    ## 1998.481  5.273976565 -6.814128e-01 -1.469228e-01  0.1238536760
-    ## 1998.485  5.503178915 -7.083221e-01 -1.380279e-01  0.1273406463
-    ## 1998.488  5.410952409 -6.745106e-01 -1.319996e-01  0.1346554916
-    ## 1998.492  5.345122767 -6.709955e-01 -1.555683e-01  0.0766974840
-    ## 1998.496  5.319277780 -6.806510e-01 -1.830414e-01  0.0680748544
-    ## 1998.500  5.469965382 -6.957030e-01 -1.993120e-01  0.0765886548
-    ## 1998.504  5.568559916 -7.549891e-01 -1.709466e-01  0.0819902734
-    ## 1998.508  5.747897292 -8.135836e-01 -1.735611e-01  0.0818866085
-    ## 1998.512  5.766600243 -8.154102e-01 -1.468349e-01  0.0712150374
-    ## 1998.515  5.846926620 -8.476557e-01 -1.715776e-01  0.0678689686
-    ## 1998.519  5.739751994 -8.137162e-01 -1.665044e-01  0.0105929605
-    ## 1998.523  5.912195483 -8.201653e-01 -1.431529e-01 -0.0045554111
-    ## 1998.527  5.925745148 -7.839228e-01 -1.231945e-01  0.0044432176
-    ## 1998.531  6.026349587 -8.329180e-01 -1.176756e-01  0.0124198438
-    ## 1998.535  6.044294798 -8.302595e-01 -1.056924e-01 -0.0276675723
-    ## 1998.538  6.083547538 -8.546576e-01 -1.068839e-01 -0.0061125239
-    ## 1998.542  6.132888936 -8.514756e-01 -1.347700e-01 -0.0187644453
-    ## 1998.546  6.079845149 -8.488658e-01 -1.557762e-01 -0.0303634037
-    ## 1998.550  6.001667892 -7.890645e-01 -2.177392e-01 -0.0388932319
-    ## 1998.554  6.012088979 -7.800636e-01 -2.108583e-01  0.0065099752
-    ## 1998.558  6.132876586 -6.955087e-01 -1.882374e-01  0.0748715043
-    ## 1998.562  6.228690735 -7.895193e-01 -1.049286e-01  0.1055217238
-    ## 1998.565  6.213967336 -8.329551e-01 -1.139679e-01  0.1081007468
-    ## 1998.569  6.343524162 -8.188819e-01 -1.155487e-01  0.0734589929
-    ## 1998.573  6.374450866 -7.729671e-01 -1.516465e-01  0.0305383111
-    ## 1998.577  6.313640003 -7.338627e-01 -2.067477e-01  0.0073788143
-    ## 1998.581  6.084593151 -6.843020e-01 -2.743822e-01 -0.0535978517
-    ## 1998.585  6.039946264 -7.292542e-01 -2.359524e-01 -0.0201987020
-    ## 1998.588  5.962642447 -7.390233e-01 -2.977137e-01 -0.0417387468
-    ## 1998.592  5.728605114 -7.071707e-01 -2.244162e-01 -0.0384367603
-    ## 1998.596  5.748707955 -6.701605e-01 -2.533319e-01 -0.0786997103
-    ## 1998.600  5.752063093 -6.857148e-01 -2.127500e-01 -0.0966500997
-    ## 1998.604  5.902853429 -7.140050e-01 -2.012173e-01 -0.0901020504
-    ## 1998.608  5.837332790 -7.219287e-01 -2.279594e-01 -0.1533164617
-    ## 1998.612  5.682819627 -6.380056e-01 -2.264554e-01 -0.1493361590
-    ## 1998.615  5.588826882 -6.095025e-01 -2.625436e-01 -0.2148978054
-    ## 1998.619  5.358104731 -6.024929e-01 -2.732473e-01 -0.1858210270
-    ## 1998.623  5.262118271 -6.259158e-01 -2.315824e-01 -0.1891058772
-    ## 1998.627  5.433329713 -6.624626e-01 -1.950014e-01 -0.1802441214
-    ## 1998.631  5.164732840 -6.068931e-01 -1.955873e-01 -0.1582569793
-    ## 1998.635  4.842230078 -6.040711e-01 -1.963992e-01 -0.1551521210
-    ## 1998.638  5.037230133 -7.019516e-01 -2.012289e-01 -0.1816060223
-    ## 1998.642  4.978793844 -7.532709e-01 -2.056993e-01 -0.1923062678
-    ## 1998.646  5.136604428 -7.653588e-01 -2.397675e-01 -0.1828638203
+    ##                PC1        PC2        PC3        PC4
+    ## 1991.496 -1.893408 -0.2507029 -0.1401344 0.03097159
+    ## 1991.500 -1.907713 -0.2088328 -0.1355814 0.02644876
+    ## 1991.504 -1.947691 -0.1726866 -0.1569514 0.02434343
+    ## 1991.508 -1.936312 -0.1461250 -0.1611058 0.03641569
+    ## 1991.512 -1.916888 -0.1579422 -0.1419475 0.03920500
+    ## 1991.515 -1.941546 -0.1582128 -0.1509523 0.03667497
 
 compare functionality / output with `timetk` package see the
 [vignette](https://business-science.github.io/timetk/articles/TK00_Time_Series_Coercion.html).

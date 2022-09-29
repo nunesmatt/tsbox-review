@@ -153,7 +153,7 @@ ts_plot(ts_forecast(AirPassengers))
 library(datasets)
 data("EuStockMarkets")
 ts_plot(EuStockMarkets)
-ts_prcomp(EuStockMarkets)
+head(ts_prcomp(EuStockMarkets))
 ```
 
 compare functionality / output with `timetk` package see the [vignette](https://business-science.github.io/timetk/articles/TK00_Time_Series_Coercion.html).
