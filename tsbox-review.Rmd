@@ -9,6 +9,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Thank you for thinking of me to review this package (this is my first ROpenSci review).  Please find some comments on the package below.  The full script of this review can be found at my github page  [here](https://github.com/nunesmatt/tsbox-review/tsbox-review.md).
+
 ## Package Review
 
 *Please check off boxes as applicable, and elaborate in comments below.  Your review is not limited to these topics, as described in the reviewer guide*
@@ -41,8 +43,6 @@ Estimated hours spent reviewing: 7
 ---
 
 ### Review Comments
-
-Thank you for thinking of me to review this package (this is my first ROpenSci review).  Please find some comments on the package below.  The full script of this review can be found at my github page  [here](https://github.com/nunesmatt/tsbox-review/tsbox-review.md).
 
 **Summary**
 
