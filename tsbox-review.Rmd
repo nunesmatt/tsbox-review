@@ -42,7 +42,7 @@ Estimated hours spent reviewing: 7
 
 ### Review Comments
 
-Thank you for thinking of me to review this package (this is my first ROpenSci review).  Please find some comments on the package below.  The full script of this review can be found at my github page on this [tsbox review](https://github.com/nunesmatt/tsbox-review).
+Thank you for thinking of me to review this package (this is my first ROpenSci review).  Please find some comments on the package below.  The full script of this review can be found at my github page  [here](https://github.com/nunesmatt/tsbox-review/tsbox-review.md).
 
 **Summary**
 
