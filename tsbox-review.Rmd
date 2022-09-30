@@ -1,7 +1,7 @@
 ---
 title: "tsbox review"
 author: "nunesmatt"
-date: "29/09/2022"
+date: "30/09/2022"
 output: github_document
 ---
 
@@ -77,6 +77,7 @@ The package developer might want to consider an additional function handling the
 
 Full script for checking the package is below.
 
+<br><br><br>
 ```{r}
 # some setup
 library(devtools)
@@ -196,7 +197,7 @@ ts_tbl(ts_xts(q10_quarterly))
 ts_tbl(ts_long(ts_xts(q10_quarterly)))
 ```
 
-### a minor something else
+### something else minor 
 ```{r}
 try(tsbox:::guess_time(as.data.frame(x=runif(10))))
 

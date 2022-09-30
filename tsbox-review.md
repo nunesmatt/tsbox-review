@@ -1,7 +1,7 @@
 tsbox review
 ================
 nunesmatt
-29/09/2022
+30/09/2022
 
 ## Package Review
 
@@ -127,6 +127,8 @@ handling the `zooreg` class for completeness.
     error messages for the `guess_time` and `guess_value` functions.
 
 Full script for checking the package is below.
+
+<br><br><br>
 
 ``` r
 # some setup
@@ -273,7 +275,7 @@ devtools::check("./tsbox-temp")
     ## • _R_CHECK_FORCE_SUGGESTS_          : FALSE
     ## • NOT_CRAN                          : true
     ## ── R CMD check ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ## * using log directory ‘/tmp/RtmpGR3C9L/tsbox.Rcheck’
+    ## * using log directory ‘/tmp/RtmppuW62w/tsbox.Rcheck’
     ## * using R version 4.1.3 (2022-03-10)
     ## * using platform: x86_64-pc-linux-gnu (64-bit)
     ## * using session charset: UTF-8
@@ -339,7 +341,7 @@ devtools::check("./tsbox-temp")
     ## <   WORD        FOUND IN
     ## < POSIXct     NEWS.md:12
     ## < stopifnot   NEWS.md:13
-    ##   Running ‘testthat.R’ [72s/24s]
+    ##   Running ‘testthat.R’ [71s/24s]
     ##  OK
     ## * checking for unstated dependencies in vignettes ... OK
     ## * checking package vignettes in ‘inst/doc’ ... OK
@@ -350,11 +352,11 @@ devtools::check("./tsbox-temp")
     ## 
     ## Status: 1 NOTE
     ## See
-    ##   ‘/tmp/RtmpGR3C9L/tsbox.Rcheck/00check.log’
+    ##   ‘/tmp/RtmppuW62w/tsbox.Rcheck/00check.log’
     ## for details.
 
     ## ── R CMD check results ─────────────────────────────────────────────────────────────────────────── tsbox 0.3.1.9004 ────
-    ## Duration: 1m 1.4s
+    ## Duration: 1m 4.8s
     ## 
     ## ❯ checking R code for possible problems ... NOTE
     ##   dts_first_of_period: no visible binding for global variable ‘time.orig’
@@ -399,107 +401,117 @@ devtools::test("./tsbox-temp")
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 6 ] @ auto                                                                          
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 6 ] @ auto                                                                          
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 6 ] @ auto                                                                          
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 7 ] @ auto                                                                          
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 6 ] @ auto                                                                          
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 8 ] @ auto                                                                          
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 13 ] @ auto                                                                         
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 13 ] @ auto                                                                         
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 17 ] @ auto                                                                         
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 18 ] @ auto                                                                         
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 19 ] @ auto                                                                         
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 18 ] @ auto                                                                         
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 20 ] @ auto                                                                         
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 23 ] @ auto                                                                         
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 22 ] @ auto                                                                         
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 23 ] @ auto                                                                         
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 32 ] @ auto                                                                         
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 33 ] @ auto                                                                         
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 35 ] @ auto                                                                         
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 36 ] @ auto                                                                         
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 41 ] @ auto                                                                         
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 46 ] @ auto                                                                         
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 51 ] @ auto                                                                         
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 56 ] @ auto                                                                         
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 61 ] @ auto                                                                         
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 25 ] @ auto                                                                         
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 32 ] @ auto                                                                         
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 33 ] @ auto                                                                         
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 35 ] @ auto                                                                         
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 36 ] @ auto                                                                         
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 41 ] @ auto                                                                         
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 41 ] @ auto                                                                         
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 46 ] @ auto                                                                         
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 51 ] @ auto                                                                         
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 56 ] @ auto                                                                         
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 61 ] @ auto                                                                         
     ##                                                                                                                         
-    ## ✔ |        58 | auto [3.8s]                                                                                             
+    ## ✔ |        58 | auto [4.0s]                                                                                             
     ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 64 ] Starting up...                                                                 
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 64 ] Starting up...                                                                 
     ##                                                                                                                         
     ## ✔ |         5 | date_utils                                                                                              
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 69 ] Starting up...                                                                 
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 69 ] Starting up...                                                                 
     ##                                                                                                                         
     ## ✔ |         4 | defects                                                                                                 
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 73 ] Starting up...                                                                 
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 73 ] Starting up...                                                                 
     ##                                                                                                                         
     ## ✔ |         4 | dirty [0.1s]                                                                                            
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 77 ] Starting up...                                                                 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 80 ] @ edge                                                                         
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 77 ] Starting up...                                                                 
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 80 ] @ edge                                                                         
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 80 ] @ edge                                                                         
     ##                                                                                                                         
-    ## ✔ |        82 | edge [1.3s]                                                                                             
+    ## ✔ |        82 | edge [1.4s]                                                                                             
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 159 ] Starting up...                                                                
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 166 ] @ error_handling                                                              
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 185 ] @ error_handling                                                              
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 159 ] Starting up...                                                                
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 166 ] @ error_handling                                                              
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 185 ] @ error_handling                                                              
     ##                                                                                                                         
     ## ✔ |        43 | error_handling [0.9s]                                                                                   
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 202 ] Starting up...                                                                
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 202 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |        16 | high_freq [0.3s]                                                                                        
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 218 ] Starting up...                                                                
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 218 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |         8 | irregular [0.1s]                                                                                        
     ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 226 ] Starting up...                                                                
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 226 ] Starting up...                                                                
     ##                                                                                                                         
     ## ✔ |         4 | issues                                                                                                  
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 230 ] Starting up...                                                                
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 262 ] @ missing                                                                     
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 264 ] @ missing                                                                     
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 266 ] @ missing                                                                     
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 268 ] @ missing                                                                     
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 230 ] Starting up...                                                                
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 262 ] @ missing                                                                     
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 264 ] @ missing                                                                     
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 266 ] @ missing                                                                     
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 268 ] @ missing                                                                     
     ##                                                                                                                         
     ## ✔ |        39 | missing [1.1s]                                                                                          
     ## 
     ##                                                                                                                         
     ## ✔ |         2 | non_heuristic                                                                                           
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 271 ] Starting up...                                                                
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 275 ] @ nonstandard_cnames                                                          
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames                                                          
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 271 ] Starting up...                                                                
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 275 ] @ nonstandard_cnames                                                          
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 276 ] @ nonstandard_cnames                                                          
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 292 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 286 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 287 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 287 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 287 ] @ nonstandard_cnames, nyc_flights                                             
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 292 ] @ nonstandard_cnames, nyc_flights                                             
     ##                                                                                                                         
-    ## ✔ |        25 | nonstandard_cnames [1.5s]                                                                               
+    ## ✔ |         2 | nyc_flights [1.0s]                                                                                      
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 297 ] @ nyc_flights                                                                 
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 294 ] @ nonstandard_cnames                                                          
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 294 ] @ nonstandard_cnames                                                          
     ##                                                                                                                         
-    ## ✔ |         2 | nyc_flights [0.9s]                                                                                      
+    ## ✔ |        25 | nonstandard_cnames [1.7s]                                                                               
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 323 ] @ object_conversion                                                           
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 323 ] @ object_conversion                                                           
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 324 ] @ object_conversion, readme                                                   
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 326 ] @ object_conversion, readme                                                   
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 327 ] @ object_conversion, readme                                                   
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 365 ] @ object_conversion, readme                                                   
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 300 ] @ object_conversion                                                           
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 300 ] @ object_conversion                                                           
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 324 ] @ object_conversion, readme                                                   
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 324 ] @ object_conversion, readme                                                   
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 326 ] @ object_conversion, readme                                                   
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 365 ] @ object_conversion, readme                                                   
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 384 ] @ object_conversion, readme                                                   
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
@@ -508,111 +520,111 @@ devtools::test("./tsbox-temp")
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 385 ] @ object_conversion, readme                                                   
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 390 ] @ object_conversion, readme                                                   
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 392 ] @ object_conversion, readme                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 390 ] @ object_conversion, readme                                                   
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 392 ] @ object_conversion, readme                                                   
     ##                                                                                                                         
-    ## ✔ |        95 | object_conversion [4.2s]                                                                                
+    ## ✔ |        95 | object_conversion [5.0s]                                                                                
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 465 ] @ readme, subannual                                                           
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 394 ] @ readme                                                                      
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 465 ] @ readme, subannual                                                           
     ##                                                                                                                         
-    ## ✔ |       180 | subannual [2.8s]                                                                                        
+    ## ✔ |         2 | readme [6.3s]                                                                                           
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 574 ] @ readme                                                                      
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 574 ] @ readme                                                                      
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 467 ] @ subannual                                                                   
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 467 ] @ subannual                                                                   
     ##                                                                                                                         
     ## ✔ |        12 | time_conversion [0.1s]                                                                                  
     ## 
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 586 ] @ readme                                                                      
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 586 ] @ readme                                                                      
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 484 ] @ subannual                                                                   
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 484 ] @ subannual                                                                   
     ##                                                                                                                         
-    ## ✔ |         2 | readme [7.1s]                                                                                           
+    ## ✔ |        17 | tricky [0.7s]                                                                                           
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 592 ] @ tricky                                                                      
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 592 ] @ tricky                                                                      
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 601 ] @ tricky, ts_                                                                 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 602 ] @ tricky, ts_                                                                 
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 547 ] @ subannual                                                                   
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 547 ] @ subannual                                                                   
     ##                                                                                                                         
-    ## ✔ |        17 | tricky [0.6s]                                                                                           
+    ## ✔ |       180 | subannual [3.0s]                                                                                        
     ## 
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_                                                                         
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 609 ] @ ts_, ts_bind                                                                
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 614 ] @ ts_, ts_bind                                                                
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 615 ] @ ts_, ts_bind                                                                
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 616 ] @ ts_, ts_bind                                                                
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 620 ] @ ts_, ts_bind                                                                
-    ##                                                                                                                         
-    ## ✔ |        16 | ts_bind [0.9s]                                                                                          
-    ## 
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 625 ] @ ts_                                                                         
-    ##                                                                                                                         
-    ## ✔ |         2 | ts_c                                                                                                    
-    ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 627 ] @ ts_                                                                         
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 628 ] @ ts_, ts_chain                                                               
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 608 ] @ ts_, ts_bind                                                                
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 614 ] @ ts_, ts_bind                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 615 ] @ ts_, ts_bind                                                                
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 617 ] @ ts_, ts_bind                                                                
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 620 ] @ ts_, ts_bind                                                                
     ##                                                                                                                         
     ## ✔ |         6 | ts_ [1.6s]                                                                                              
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 629 ] @ ts_chain                                                                    
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 623 ] @ ts_bind                                                                     
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 623 ] @ ts_bind                                                                     
+    ##                                                                                                                         
+    ## ✔ |         2 | ts_c                                                                                                    
+    ## 
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 626 ] @ ts_bind                                                                     
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 626 ] @ ts_bind                                                                     
+    ##                                                                                                                         
+    ## ✔ |        16 | ts_bind [1.0s]                                                                                          
+    ## 
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 628 ] @ ts_chain                                                                    
     ##                                                                                                                         
     ## ✔ |         1 | ts_default                                                                                              
     ## 
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain                                                                    
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 629 ] @ ts_chain                                                                    
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 629 ] @ ts_chain                                                                    
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 630 ] @ ts_chain, ts_first_of_period                                                
     ##                                                                                                                         
     ## ✔ |         3 | ts_chain [0.3s]                                                                                         
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period                                                          
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 632 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period                                                          
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period                                                          
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 635 ] @ ts_first_of_period, ts_frequency                                            
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 636 ] @ ts_first_of_period, ts_frequency                                            
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 638 ] @ ts_first_of_period, ts_frequency                                            
     ##                                                                                                                         
     ## ✔ |        11 | ts_frequency [0.7s]                                                                                     
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 648 ] @ ts_first_of_period                                                          
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 650 ] @ ts_first_of_period, ts_index                                                
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 649 ] @ ts_first_of_period                                                          
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 649 ] @ ts_first_of_period                                                          
     ##                                                                                                                         
-    ## ✔ |         7 | ts_first_of_period [1.2s]                                                                               
+    ## ✔ |         7 | ts_first_of_period [1.0s]                                                                               
     ## 
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 654 ] @ ts_index                                                                    
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 654 ] @ ts_index                                                                    
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 656 ] @ ts_index, ts_lag                                                            
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 661 ] @ ts_index, ts_lag                                                            
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 650 ] @ ts_index                                                                    
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 650 ] @ ts_index                                                                    
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 659 ] @ ts_index, ts_lag                                                            
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 669 ] @ ts_index, ts_lag                                                            
     ##                                                                                                                         
-    ## ✔ |        10 | ts_index [0.9s]                                                                                         
+    ## ✔ |        10 | ts_index [0.8s]                                                                                         
     ## 
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 669 ] @ ts_lag                                                                      
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 669 ] @ ts_lag                                                                      
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 671 ] @ ts_lag                                                                      
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 671 ] @ ts_lag                                                                      
     ##                                                                                                                         
-    ## ✔ |        12 | ts_lag [1.0s]                                                                                           
+    ## ✔ |        12 | ts_lag [0.9s]                                                                                           
     ## 
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 677 ] @ ts_long_wide                                                                
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 677 ] @ ts_long_wide                                                                
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 674 ] @ ts_long_wide                                                                
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 674 ] @ ts_long_wide                                                                
     ##                                                                                                                         
     ## ✔ |         1 | ts_low_freq                                                                                             
     ## 
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 678 ] @ ts_long_wide                                                                
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 678 ] @ ts_long_wide                                                                
-    ##                                                                                                                         
-    ## ✔ |         6 | ts_long_wide [0.4s]                                                                                     
-    ## 
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 676 ] @ ts_long_wide                                                                
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 676 ] @ ts_long_wide                                                                
     ##                                                                                                                         
     ## ✔ |         3 | ts_na_omit                                                                                              
+    ## 
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 681 ] @ ts_long_wide                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 681 ] @ ts_long_wide                                                                
+    ##                                                                                                                         
+    ## ✔ |         6 | ts_long_wide [0.4s]                                                                                     
     ## 
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 682 ] @ ts_pc                                                                       
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 682 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         4 | ts_pick [0.2s]                                                                                          
     ## 
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 687 ] @ ts_pc                                                                       
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 688 ] @ ts_pc, ts_plot                                                              
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 688 ] @ ts_pc                                                                       
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 688 ] @ ts_pc                                                                       
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 689 ] @ ts_pc, ts_plot                                                              
     ##                                                                                                                         
     ## ✔ |         1 | ts_plot [0.1s]                                                                                          
     ## 
@@ -627,33 +639,33 @@ devtools::test("./tsbox-temp")
     ## 
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 701 ] @ ts_pc                                                                       
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 704 ] @ ts_pc, ts_span                                                              
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 715 ] @ ts_pc, ts_span                                                              
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 717 ] @ ts_pc, ts_span                                                              
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 715 ] @ ts_pc, ts_span                                                              
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 717 ] @ ts_pc, ts_span                                                              
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 721 ] @ ts_pc, ts_span                                                              
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 722 ] @ ts_pc, ts_span                                                              
     ##                                                                                                                         
-    ## ✔ |        16 | ts_span [1.0s]                                                                                          
+    ## ✔ |        16 | ts_span [0.9s]                                                                                          
     ## 
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 723 ] @ ts_pc                                                                       
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 724 ] @ ts_pc                                                                       
     ##                                                                                                                         
     ## ✔ |         7 | ts_summary [0.2s]                                                                                       
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 732 ] @ ts_pc, tsibble                                                              
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 731 ] @ ts_pc                                                                       
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 732 ] @ ts_pc, tsibble                                                              
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 734 ] @ ts_pc, tsibble                                                              
-    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 746 ] @ ts_pc, tsibble                                                              
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 745 ] @ ts_pc, tsibble                                                              
     ##                                                                                                                         
-    ## ✔ |        25 | ts_pc [2.9s]                                                                                            
+    ## ✔ |        25 | ts_pc [2.7s]                                                                                            
     ## 
-    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 748 ] @ tsibble                                                                     
-    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 748 ] @ tsibble                                                                     
-    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 750 ] @ tsibble, tslist                                                             
-    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 751 ] @ tsibble, tslist                                                             
+    ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 749 ] @ tsibble                                                                     
+    ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 749 ] @ tsibble                                                                     
+    ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 751 ] @ tsibble, tslist                                                             
+    ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 751 ] @ tsibble, tslist                                                             
     ##                                                                                                                         
-    ## ✔ |         2 | tslist [0.2s]                                                                                           
+    ## ✔ |         2 | tslist [0.3s]                                                                                           
     ## 
+    ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 752 ] @ tsibble                                                                     
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 752 ] @ tsibble                                                                     
     ##                                                                                                                         
     ## ✔ |         1 | tzone                                                                                                   
@@ -661,17 +673,17 @@ devtools::test("./tsbox-temp")
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble                                                                     
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 753 ] @ tsibble, units                                                              
-    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 764 ] @ tsibble, units                                                              
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 765 ] @ tsibble, units                                                              
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 766 ] @ tsibble, units                                                              
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 767 ] @ tsibble, units                                                              
     ##                                                                                                                         
-    ## ✔ |        13 | tsibble [2.3s]                                                                                          
+    ## ✔ |        13 | tsibble [2.4s]                                                                                          
     ## 
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
@@ -680,10 +692,10 @@ devtools::test("./tsbox-temp")
     ## ⠹ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠸ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
-    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 773 ] @ units                                                                       
-    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
-    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 768 ] @ units                                                                       
     ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠋ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠙ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
@@ -692,13 +704,15 @@ devtools::test("./tsbox-temp")
     ## ⠼ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠴ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ## ⠦ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
+    ## ⠇ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 775 ] @ units                                                                       
     ##                                                                                                                         
     ## ✔ |        17 | units [3.4s]                                                                                            
     ## 
-    ## ⠧ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ] Starting up...                                                                
+    ## ⠏ [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ] Starting up...                                                                
     ##                                                                                                                         
     ## ══ Results ═════════════════════════════════════════════════════════════════════════════════════════════════════════════
-    ## Duration: 29.7 s
+    ## Duration: 30.0 s
     ## 
     ## [ FAIL 0 | WARN 0 | SKIP 0 | PASS 777 ]
 
@@ -1114,7 +1128,7 @@ ts_tbl(ts_long(ts_xts(q10_quarterly)))
     ## 10 2002-04-01 2418.
     ## # … with 49 more rows
 
-### a minor something else
+### something else minor
 
 ``` r
 try(tsbox:::guess_time(as.data.frame(x=runif(10))))
