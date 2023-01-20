@@ -90,8 +90,9 @@ comments from my first review:
     has a suggestion of using `vapply` rather than `sapply`. These are
     left to the developer to tackle if desired.
 
-@christophsax : You are right that these are SRR stats related, and as
-such I am fine with them being left as is.
+@christophsax : **You are right that these are SRR stats related, and as
+such I am fine with them being left as is. The use of `vapply` has also
+been included as suggested**.
 
 3.  **Error message about `ts_boxable(x)`**. I wonder whether a more
     informative error message could be shown when `ts_boxable(x)` is not
@@ -119,7 +120,7 @@ overkill, and I suggest leaving the documentation as is.
 
 Having run through various checks on the package, in summary
 @christophsax has addressed all my comments and has a great package for
-end-users.
+end-users, and **I approve the final package**.
 
 <br><br><br>
 
@@ -137,7 +138,7 @@ install_github("christophsax/tsbox", force = TRUE)
     ## Downloading GitHub repo christophsax/tsbox@HEAD
 
     ## 
-    ## * checking for file ‘/tmp/RtmpTsqAhk/remotes1dd02dae6ef/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
+    ## * checking for file ‘/tmp/Rtmpxoe6vt/remotes3f7423537f4a/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
     ## * preparing ‘tsbox’:
     ## * checking DESCRIPTION meta-information ... OK
     ## * checking for LF line-endings in source and make files and shell scripts
@@ -233,7 +234,7 @@ devtools::check("./tsbox-temp")
     ## • _R_CHECK_FORCE_SUGGESTS_          : FALSE
     ## • NOT_CRAN                          : true
     ## ── R CMD check ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ## * using log directory ‘/tmp/RtmpTsqAhk/tsbox.Rcheck’
+    ## * using log directory ‘/tmp/Rtmpxoe6vt/tsbox.Rcheck’
     ## * using R version 4.1.3 (2022-03-10)
     ## * using platform: x86_64-pc-linux-gnu (64-bit)
     ## * using session charset: UTF-8
@@ -299,7 +300,7 @@ devtools::check("./tsbox-temp")
     ## < timetk      tsbox.Rmd:346
     ## < zooreg      NEWS.md:5
     ## <             README.md:44
-    ##   Running ‘testthat.R’ [69s/23s]
+    ##   Running ‘testthat.R’ [72s/24s]
     ##  OK
     ## * checking for unstated dependencies in vignettes ... OK
     ## * checking package vignettes in ‘inst/doc’ ... OK
@@ -311,7 +312,7 @@ devtools::check("./tsbox-temp")
     ## Status: OK
 
     ## ── R CMD check results ─────────────────────────────────────────────────────────────────────────── tsbox 0.3.1.9005 ────
-    ## Duration: 59.9s
+    ## Duration: 1m 1.6s
     ## 
     ## 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
