@@ -3,6 +3,9 @@ tsbox review 2
 nunesmatt
 19/01/2023
 
+@christophsax, @rkillick, @mpadge – apologies for the slow turnaround on
+this second review.
+
 The full script of this review can be found at my github page
 [here](https://github.com/nunesmatt/tsbox-review/tsbox-review2.md).
 
@@ -70,9 +73,6 @@ of functionality and scope for the R community. The associated package
 vignettes and other documentation are well set out. Readdressing the
 comments from my first review:
 
-Some comments on the package are below. Note that these are suggestions
-rather than fixes per se:
-
 1.  **Package checking**. When checking the package, I get:
 
 <!-- end list -->
@@ -102,7 +102,7 @@ such I am fine with them being left as is.
 4.  The package developer might want to consider an additional function
     handling the `zooreg` class for completeness.
 
-@christophsax : thanks for the inclusion.
+@christophsax : **thanks for the inclusion**.
 
 5.  Whilst users are probably familiar with usage, the developer might
     want to consider adding examples to show functionality of
@@ -115,7 +115,7 @@ overkill, and I suggest leaving the documentation as is.
 6.  I noticed that there is a spelling mistake of *explicit* in the
     error messages for the `guess_time` and `guess_value` functions.
 
-\*\* this has been fixed successfully \*\*.
+**this has been fixed successfully**.
 
 Having run through various checks on the package, in summary
 @christophsax has addressed all my comments and has a great package for
@@ -137,7 +137,7 @@ install_github("christophsax/tsbox", force = TRUE)
     ## Downloading GitHub repo christophsax/tsbox@HEAD
 
     ## 
-    ## * checking for file ‘/tmp/RtmpRfIN0y/remotesc5917a8cadac/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
+    ## * checking for file ‘/tmp/RtmpTsqAhk/remotes1dd02dae6ef/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
     ## * preparing ‘tsbox’:
     ## * checking DESCRIPTION meta-information ... OK
     ## * checking for LF line-endings in source and make files and shell scripts
@@ -233,7 +233,7 @@ devtools::check("./tsbox-temp")
     ## • _R_CHECK_FORCE_SUGGESTS_          : FALSE
     ## • NOT_CRAN                          : true
     ## ── R CMD check ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ## * using log directory ‘/tmp/RtmpRfIN0y/tsbox.Rcheck’
+    ## * using log directory ‘/tmp/RtmpTsqAhk/tsbox.Rcheck’
     ## * using R version 4.1.3 (2022-03-10)
     ## * using platform: x86_64-pc-linux-gnu (64-bit)
     ## * using session charset: UTF-8
@@ -311,7 +311,7 @@ devtools::check("./tsbox-temp")
     ## Status: OK
 
     ## ── R CMD check results ─────────────────────────────────────────────────────────────────────────── tsbox 0.3.1.9005 ────
-    ## Duration: 1m 0.3s
+    ## Duration: 59.9s
     ## 
     ## 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
