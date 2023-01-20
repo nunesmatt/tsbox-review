@@ -91,7 +91,9 @@ comments from my first review:
     left to the developer to tackle if desired.
 
 @christophsax : **You are right that these are SRR stats related, and as
-such I am fine with them being left as is. The use of `vapply` has also
+such I am fine with them being left as is.** 
+
+**The use of `vapply` has also
 been included as suggested**.
 
 3.  **Error message about `ts_boxable(x)`**. I wonder whether a more
