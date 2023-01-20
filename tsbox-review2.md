@@ -63,12 +63,12 @@ The package includes all the following forms of documentation:
 
 **Summary**
 
-The package aims to supply a structure/class-agnostic approach to time
-series analysis to circumvent some of the arguably tedious user
-conversion between classes before analysis tasks. In doing so, the
-functionality aims at generality – I feel this is a useful package in
-terms of functionality and scope for a wide range of end-users. The
-package is well-documented and the three vignettes all run smoothly.
+The package is a comprehensive conversion tool for all current time
+series objects, stemming from the desire to be structure/class-agnostic.
+As outlined in my first review, I feel this is a useful package in terms
+of functionality and scope for the R community. The associated package
+vignettes and other documentation are well set out. Readdressing the
+comments from my first review:
 
 Some comments on the package are below. Note that these are suggestions
 rather than fixes per se:
@@ -81,10 +81,7 @@ rather than fixes per se:
     ## Undefined global functions or variables:
     ##   time.orig
 
-Whilst this is not an error, one suggestion might be to define
-`time.orig` as `NULL` (like is done for `has.value`) at the start of the
-function or before the subsetting in the `dts_first_of_period` function
-(contained within `ts_first_of_period.R`).
+**This has been fixed successfully**.
 
 2.  **good practice**. A few things came up when using `gp`. Many code
     lines come up as 81 characters (as opposed to suggested lengths of
@@ -93,38 +90,36 @@ function or before the subsetting in the `dts_first_of_period` function
     has a suggestion of using `vapply` rather than `sapply`. These are
     left to the developer to tackle if desired.
 
+@christophsax : You are right that these are SRR stats related, and as
+such I am fine with them being left as is.
+
 3.  **Error message about `ts_boxable(x)`**. I wonder whether a more
     informative error message could be shown when `ts_boxable(x)` is not
-    `TRUE`. For example, whilst I realise that the package is designed
-    for existing time series classes, using a `tsbox` function on a
-    vector or inappropriate object results in the error, but the user
-    may not know how to fix the issue, especially as `ts_boxable()` is
-    primarily internal. Perhaps the message could point to the expected
-    structure of the argument of the main package functions, e.g. “…
-    please ensure the object `x` has components…” or “Is the object of
-    class x, y or z?”
+    `TRUE`.
 
-4.  **Comparison with `timetk`**. During playing with this package, I
-    mainly focussed on the conversion functions (`ts_tbl()`,
-    `ts_long()`,`ts_ts()`etc), as, whilst delving into testing datasets,
-    I came across the `timetk` package, which at first glance aims to do
-    a similar job to `tsbox`.
+**This new error message is now more helpful to the beginner user**.
 
-All functions in `tsbox` worked as expected, and some arguably have a
-more natural output than `timetk` (see full review document).
+4.  The package developer might want to consider an additional function
+    handling the `zooreg` class for completeness.
 
-The package developer might want to consider an additional function
-handling the `zooreg` class for completeness.
+@christophsax : thanks for the inclusion.
 
 5.  Whilst users are probably familiar with usage, the developer might
     want to consider adding examples to show functionality of
     `ts_prcomp` and `ts_forecast` under the `ts_examples` documentation
     file.
 
+On reflection, including examples within `ts_plot` might indeed be
+overkill, and I suggest leaving the documentation as is.
+
 6.  I noticed that there is a spelling mistake of *explicit* in the
     error messages for the `guess_time` and `guess_value` functions.
 
-Full script for checking the package is below.
+\*\* this has been fixed successfully \*\*.
+
+Having run through various checks on the package, in summary
+@christophsax has addressed all my comments and has a great package for
+end-users.
 
 <br><br><br>
 
@@ -142,7 +137,7 @@ install_github("christophsax/tsbox", force = TRUE)
     ## Downloading GitHub repo christophsax/tsbox@HEAD
 
     ## 
-    ## * checking for file ‘/tmp/RtmpXEq7MP/remotesb7a12f56c247/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
+    ## * checking for file ‘/tmp/RtmpRfIN0y/remotesc5917a8cadac/christophsax-tsbox-f651fc7/DESCRIPTION’ ... OK
     ## * preparing ‘tsbox’:
     ## * checking DESCRIPTION meta-information ... OK
     ## * checking for LF line-endings in source and make files and shell scripts
@@ -238,7 +233,7 @@ devtools::check("./tsbox-temp")
     ## • _R_CHECK_FORCE_SUGGESTS_          : FALSE
     ## • NOT_CRAN                          : true
     ## ── R CMD check ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ## * using log directory ‘/tmp/RtmpXEq7MP/tsbox.Rcheck’
+    ## * using log directory ‘/tmp/RtmpRfIN0y/tsbox.Rcheck’
     ## * using R version 4.1.3 (2022-03-10)
     ## * using platform: x86_64-pc-linux-gnu (64-bit)
     ## * using session charset: UTF-8
@@ -304,7 +299,7 @@ devtools::check("./tsbox-temp")
     ## < timetk      tsbox.Rmd:346
     ## < zooreg      NEWS.md:5
     ## <             README.md:44
-    ##   Running ‘testthat.R’ [70s/24s]
+    ##   Running ‘testthat.R’ [69s/23s]
     ##  OK
     ## * checking for unstated dependencies in vignettes ... OK
     ## * checking package vignettes in ‘inst/doc’ ... OK
@@ -316,7 +311,7 @@ devtools::check("./tsbox-temp")
     ## Status: OK
 
     ## ── R CMD check results ─────────────────────────────────────────────────────────────────────────── tsbox 0.3.1.9005 ────
-    ## Duration: 1m 2.5s
+    ## Duration: 1m 0.3s
     ## 
     ## 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
